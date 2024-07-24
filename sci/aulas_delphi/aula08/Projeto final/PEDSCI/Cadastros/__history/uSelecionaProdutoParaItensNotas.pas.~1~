@@ -1,0 +1,46 @@
+unit uSelecionaProdutoParaLancNotas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFormPadraoConsultaPEDSCI, Data.DB,
+  System.ImageList, Vcl.ImgList, Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls,
+  Vcl.ToolWin, Datasnap.DBClient;
+
+type
+  TfrSelecionaProduto = class(TfrFormPadraoConsultaPEDSCI)
+    procedure grConsultaDblClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function setTabela: TClientDataSet; override;
+  end;
+
+var
+  frSelecionaProduto: TfrSelecionaProduto;
+
+implementation
+
+uses
+  udmDadosPEDSCI, uCadLancNotas;
+
+{$R *.dfm}
+
+{ TfrSelecionaProduto }
+
+procedure TfrSelecionaProduto.grConsultaDblClick(Sender: TObject);
+begin
+  inherited;
+  TfrCadLancNotas(Owner).edCODPRODNOTA.Text  := grConsulta.DataSource.DataSet.FieldByName('BDCODPROD').AsString;
+  TfrCadLancNotas(Owner).edDESCPRODNOTA.Text := grConsulta.DataSource.DataSet.FieldByName('BDDESCRICAO').AsString;
+  Close;
+end;
+
+function TfrSelecionaProduto.setTabela: TClientDataSet;
+begin
+  Result := dmDadosPEDSCI.tbProdutos;
+end;
+
+end.

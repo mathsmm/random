@@ -1,0 +1,54 @@
+F9: Executa o projeto
+
+*Método e rotina são a mesma coisa!
+**Procedure é um método sem retorno
+**Função    é um método com retorno
+Após criar um método (procedure ou função) global privada:
+Ctrl + Shift + C
+
+wStringList.Clear
+
+ComboBox: cada item possui um índice, começando do 0
+    Para selecionar o índice do item atual, escreve-se:
+        cbNomeComboBox.ItemIndex
+
+TabOrder: ordem dos componentes na tela
+
+Insert: troca modos de edição
+
+
+DEBUG:
+
+F5: Adiciona um breakpoint na linha selecionada 
+F8: Continua a execução para a próxima linha
+Ctrl + F7: Mostra o que está dentro da variável/rotina selecionada.
+F9: Executa até o próximo breakpoint. Se não tiver breakpoint, termina de executar tudo
+
+
+Métodos com arquivos:
+
+function TForm1.fDiretorio: String;
+begin
+  Result := 'C:\Users\prog27\Desktop\Aulas Delphi\aula02\Exercicio1\Arquivo';
+end;
+
+procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  //Ao fechar o formulário, salva a wStringList em um arquivo
+  //Se o diretório não existir, cria o diretório
+  if not DirectoryExists(fDiretorio) then
+     ForceDirectories(fDiretorio);
+
+  //Sobrescreve o arquivo que já existir
+  wStringList.SaveToFile(fDiretorio + '\Cadastro.txt');
+end;
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  wStringList := TStringList.Create;
+
+  if FileExists(fDiretorio + '\Cadastro.txt') then
+     wStringList.LoadFromFile(fDiretorio + '\Cadastro.txt');
+
+  pCarregaPessoasNaLista;
+end;

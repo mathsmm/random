@@ -1,0 +1,89 @@
+Console -> Classe que representa o Terminal Console;
+
+
+public static void WriteLine("");
+--> Retorna void, ou seja, retorna nada. É um método.
+
+
+public static string ReadLine();
+--> Retorna string. É uma função.
+
+------------------------------------------------------------
+
+Ctrl + Espaço
+
+Mostra todas as variáveis no código
+
+------------------------------------------------------------
+
+INTERPOLAÇÃO DE STRINGS C#:
+
+int numero1 = 10;
+int numero2 = 20;
+string resultado = $"O resultado da soma é: {numero1 + numero2}";
+
+------------------------------------------------------------
+
+int resultado = 10;
+int numero = 20;
+
+
+resultado = resultado + numero
+OU:
+resultado += numero
+
+
+resultado = resultado - numero
+OU:
+resultado -= numero
+
+
+resultado = resultado * numero
+OU:
+resultado *= numero
+
+
+resultado = resultado / numero
+OU:
+resultado /= numero
+
+------------------------------------------------------------
+
+10 > 56 =             false
+(100 + 1 + 5) > 200 = false
+45 <= 45 =            true
+10 < 34 =             true
+-10 > -20 =           true
+20 == 30 =            false
+
+bool ehNumeroPositivo = 100 > 0;    // true
+ehNumeroPositivo = -455 > 0;        // false
+
+------------------------------------------------------------
+
+=   -> "Recebe"
+==  -> "É igual a"
+
+------------------------------------------------------------
+
+while(contador <= 50)
+{
+    -algo-
+    contador++
+}
+
+
+
+do
+{
+    -algo-
+} while(-condição-);
+
+
+
+for(int index = 0; index < length; index++)
+{
+    -algo-
+}
+
+------------------------------------------------------------

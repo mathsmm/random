@@ -1,0 +1,95 @@
+1) Em qualquer base de dados existente, crie uma tabela Produtos com os campos ID, NOME, VALOR
+..........
+CREATE TABLE PRODUTOS (
+    ID INT PRIMARY KEY,
+    NOME VARCHAR(100) NOT NULL,
+    VALOR FLOAT
+)
+==============================================================================================
+2) Insira os seguintes produtos:
+    1, 'Televisao LED 42', 1400.40
+    2, 'Televisao LED 32', 1250.30
+    3, 'Aparelho de Jantar Tramontina', 800.0
+    4, 'Playstation 4', 2400.40
+    5, 'Playstation 3', 720.99
+    6, 'Sofa ', 2400.60
+    7, 'Fritadeira elétrica', 200
+    8, 'Forno Microondas 20l', 630.90
+    9, 'Banheira Hidromassagem G',19999.90
+    10, 'Roupeiro 6 portas', 1110.10
+    11, 'Notebook Del vostro', 2200.40
+    12, 'IPhone 6S', 3500.23
+..........
+INSERT INTO PRODUTOS(ID, NOME, VALOR)
+VALUES(1, 'Televisao LED 42', 1400.40),
+    (2, 'Televisao LED 32', 1250.30),
+    (3, 'Aparelho de Jantar Tramontina', 800.0),
+    (4, 'Playstation 4', 2400.40),
+    (5, 'Playstation 3', 720.99),
+    (6, 'Sofa ', 2400.60),
+    (7, 'Fritadeira elétrica', 200),
+    (8, 'Forno Microondas 20l', 630.90),
+    (9, 'Banheira Hidromassagem G',19999.90),
+    (10, 'Roupeiro 6 portas', 1110.10),
+    (11, 'Notebook Del vostro', 2200.40),
+    (12, 'IPhone 6S', 3500.23)
+==============================================================================================
+3) Selecione o produto com maior valor
+..........
+SELECT MAX(VALOR)
+  FROM PRODUTOS
+==============================================================================================
+4) Selecione o produto com o menor valor
+..........
+SELECT MIN(VALOR)
+  FROM PRODUTOS
+==============================================================================================
+5) Selecione a média de valor dos produtos cadastrados
+..........
+SELECT AVG(VALOR)
+  FROM PRODUTOS
+==============================================================================================
+6) Selecione a quantidade de produdos cadastrados
+..........
+SELECT COUNT(*)
+  FROM PRODUTOS
+==============================================================================================
+7) Selecione a o valor total em produtos cadastrados
+..........
+SELECT SUM(VALOR)
+  FROM PRODUTOS
+==============================================================================================
+8) Selecione os produtos ordenados pelo preço em ordem ascendente
+..........
+SELECT *
+  FROM PRODUTOS
+ ORDER BY VALOR
+==============================================================================================
+9) Selecione os produtos ordenados pelo nome em ordem descendente
+..........
+SELECT *
+  FROM PRODUTOS
+ ORDER BY NOME DESC
+==============================================================================================
+10) Selecione os produtos com preço entre 1000 e 2000
+..........
+SELECT *
+  FROM PRODUTOS
+ WHERE VALOR BETWEEN 1000 AND 2000
+==============================================================================================
+11) Selecione os produtos cujo nome tenha G
+..........
+SELECT *
+ FROM PRODUTOS
+WHERE NOME LIKE '%G%'
+==============================================================================================
+12) Selecione apenas os 5 primeiros produtos cadastrados
+..........
+SELECT TOP 5 *
+  FROM PRODUTOS
+==============================================================================================
+13) Selecione apenas os 5 ultimos produtos cadastrados
+..........
+SELECT TOP 5 *
+  FROM PRODUTOS
+ ORDER BY ID DESC

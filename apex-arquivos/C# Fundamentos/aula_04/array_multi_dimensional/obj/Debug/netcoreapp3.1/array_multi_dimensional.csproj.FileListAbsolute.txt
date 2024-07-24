@@ -1,0 +1,13 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\obj\Debug\netcoreapp3.1\array_multi_dimensional.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\obj\Debug\netcoreapp3.1\array_multi_dimensional.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\obj\Debug\netcoreapp3.1\array_multi_dimensional.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\obj\Debug\netcoreapp3.1\array_multi_dimensional.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\bin\Debug\netcoreapp3.1\array_multi_dimensional.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\bin\Debug\netcoreapp3.1\array_multi_dimensional.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\bin\Debug\netcoreapp3.1\array_multi_dimensional.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\bin\Debug\netcoreapp3.1\array_multi_dimensional.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\bin\Debug\netcoreapp3.1\array_multi_dimensional.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\bin\Debug\netcoreapp3.1\array_multi_dimensional.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\obj\Debug\netcoreapp3.1\array_multi_dimensional.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\obj\Debug\netcoreapp3.1\array_multi_dimensional.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\array_multi_dimensional\obj\Debug\netcoreapp3.1\array_multi_dimensional.genruntimeconfig.cache

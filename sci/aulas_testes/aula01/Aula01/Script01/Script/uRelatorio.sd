@@ -1,0 +1,32 @@
+procedure pAbrirRelEmpresas;
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+begin
+  w1 := Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor');
+  w1.MainMenu.Click('Relatórios|Empresas');
+  w2 := w1.Window('MDIClient');
+  w1 := w2.Window('TfrRelEmpresas', 'Relatório de empresas');
+  w1.Window('TToolBar').ClickItem(0, false);
+  w2.Window('TfrxPreviewForm', 'Preview').Close;
+  w1.Close;
+end;
+
+procedure pAbrirRelLancNotas;
+  var p1 : OleVariant;
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+  var w3 : OleVariant;
+begin
+  p1 := Sys.Process('PEDSCI');
+  w1 := p1.Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor');
+  w1.MainMenu.Click('Relatórios|Lançamentos de notas');
+  w2 := w1.Window('MDIClient');
+  w1 := w2.Window('TfrRelLancNotas', 'Relatório de lançamentos de notas');
+  w1.Window('TDatePicker', '', 2).Click(87, 12);
+  p1.Window('TPickerPopupControl').Click(29, 154);
+  w1.Window('TToolBar').ClickItem(0, false);
+  w3 := w2.Window('TfrxPreviewForm', 'Preview');
+  w2 := w3.Window('TfrxPreview').Window('TfrxPreviewWorkspace', '', 2);
+  w3.Close;
+  w1.Close;
+end;

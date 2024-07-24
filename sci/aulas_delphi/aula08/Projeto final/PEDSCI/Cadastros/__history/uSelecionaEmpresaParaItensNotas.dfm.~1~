@@ -1,0 +1,5 @@
+inherited frSelecionaClienteItensNotas: TfrSelecionaClienteItensNotas
+  Caption = 'Selecionar cliente'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

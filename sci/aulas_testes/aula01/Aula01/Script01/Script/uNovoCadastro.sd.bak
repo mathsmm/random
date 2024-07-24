@@ -1,0 +1,18 @@
+uses
+  uTeste;
+
+procedure Test1;
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+begin
+  w1 := Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor');
+  w1.MainMenu.Click('Cadastros|Clientes');
+  w2 := w1.Window('MDIClient').Window('TfrCadClientes', 'Cadastro de clientes');
+  w2.Window('TEdit', '', 4).Keys('20[Tab]');
+  w2.Window('TEdit', '', 2).Keys('08414531954[Tab]');
+  w2.Window('TEdit', '', 3).Keys('[Caps]T[Caps]homas de [Caps]S[Caps]ouza[Tab]');
+  w2.Window('TComboBox').Keys('[Caps]S[Caps][D222]ao[Enter]esa[Tab]');
+  w2.Window('TEdit', '', 1).Keys('999999999');
+  w2.Window('TToolBar').ClickItem(0, false);
+  w2.Close;
+end;

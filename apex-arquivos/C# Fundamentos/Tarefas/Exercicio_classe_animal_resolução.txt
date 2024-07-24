@@ -1,0 +1,58 @@
+1)  
+    a)  Criar a classe Animal que contenha os atributos:
+        Nome    string
+        Idade   int
+        Tipo    string
+    b)  Criar um construtor que recebe por parâmetro os valores para 
+        os atributos da classe.
+    c)  Criar uma função que retorne uma string contendo a mensagem:
+        $"O {this.Tipo} tem o nome {this.Nome} e idade {this.Idade}"
+
+        namespace Exercicio_classe_animal.Animais
+        {
+            public class Animal
+            {
+                private string Nome { get; set; }
+                private int Idade { get; set; }
+                private string Tipo { get; set; }
+
+                public Animal(string nome, int idade, string tipo)
+                {
+                    this.Nome = nome;
+                    this.Idade = idade;
+                    this.Tipo = tipo;
+                }
+
+                public string ObterMensagemDeDescricao()
+                {
+                    return $"O animal {this.Tipo} tem o nome {this.Nome} e {this.Idade} anos de idade.";
+                }
+            }
+        }
+
+------------------------------------------------------------
+
+    d)  Na classe Program no metodo Main
+        Crie um objeto Animal que seja do tipo cachorro.
+        Chame a funcao que retorne a descricao do animal
+
+        using System;
+        using Exercicio_classe_animal.Animais;
+
+        namespace Exercicio_classe_animal
+        {
+            class Program
+            {
+                static void Main(string[] args)
+                {
+                    Animal objAnimal = new Animal(
+                        "Bob",
+                        3,
+                        "cachorro"
+                    );
+
+                    Console.WriteLine(objAnimal.ObterMensagemDeDescricao());
+                }
+            }
+        }
+

@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="child list">
+				<Node name="child4">
+					<Node name="child data">
+						<Node name="child list">
+							<Node name="child0">
+								<Node name="child data">
+									<Node name="child list">
+										<Node name="child0">
+											<Node name="child data">
+												<Node name="units"/>
+												<Node name="children"/>
+												<Prp name="project" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+												<Prp name="test moniker" type="S" value="{45D31855-7D9F-4260-BE2A-4F0F76F99FE7}pTestarFechamentoAplicacao"/>
+												<Prp name="name" type="S" value="Test Log [tTeste\pTestarFechamentoAplicacao]"/>
+												<Prp name="status" type="I" value="0"/>
+											</Node>
+											<Prp name="id" type="S" value="{70825605-FA68-4B1A-A1C0-4B8EC17E832E}"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="name" type="S" value="Test Log [tTeste\pTestarFechamentoAplicacao]"/>
+											<Prp name="child type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+										</Node>
+									</Node>
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages"/>
+											<Prp name="start time" type="D" value="44776.7195132755"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44776.7195178472"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run [ Script\tTeste - pTestarFechamentoAplicacao ]"/>
+											<Prp name="details" type="S" value="{70825605-FA68-4B1A-A1C0-4B8EC17E832E}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="name" type="S" value="Fechar"/>
+								</Node>
+								<Prp name="id" type="S" value="{E383A687-ED3E-4AB5-B417-A7F0C242369B}"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="name" type="S" value="Fechar Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+						</Node>
+						<Node name="log data">
+							<Node name="row1">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44776.7195132755"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7195178472"/>
+								<Prp name="index" type="I" value="1"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Fechar"/>
+								<Prp name="details" type="S" value="{E383A687-ED3E-4AB5-B417-A7F0C242369B}"/>
+							</Node>
+							<Node name="row0">
+								<Node name="messages">
+									<Node name="row0">
+										<Prp name="time" type="D" value="44776.7195132755"/>
+										<Prp name="message" type="S" value="The element to be run was not specified."/>
+										<Prp name="type" type="I" value="0"/>
+										<Prp name="priority" type="I" value="300"/>
+										<Prp name="index" type="I" value="0"/>
+										<Prp name="extended message" type="S" value=""/>
+									</Node>
+								</Node>
+								<Prp name="start time" type="D" value="44776.7195132755"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7195132755"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Element to be run"/>
+								<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+							</Node>
+						</Node>
+						<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+						<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+						<Prp name="name" type="S" value="Fechar Aplicação"/>
+					</Node>
+					<Prp name="id" type="S" value="{32A99AA4-420E-40FC-AB77-B84A04992769}"/>
+					<Prp name="index" type="I" value="4"/>
+					<Prp name="name" type="S" value="Fechar Aplicação Log"/>
+					<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+				</Node>
+				<Node name="child3">
+					<Node name="child data">
+						<Node name="child list">
+							<Node name="child1">
+								<Node name="child data">
+									<Node name="child list">
+										<Node name="child0">
+											<Node name="child data">
+												<Node name="message 3">
+													<Prp name="date" type="D" value="44776.7195077546"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="3"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Toolbar button 0 was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (15, 15) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrRelLancNotas', 'Relatório de lançamentos de notas', 1).Window('TToolBar', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="26"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 2">
+													<Prp name="date" type="D" value="44776.7195059375"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="2"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (29, 154) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TPickerPopupControl', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="25"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 1">
+													<Prp name="date" type="D" value="44776.7195040046"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="1"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (87, 12) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrRelLancNotas', 'Relatório de lançamentos de notas', 1).Window('TDatePicker', '', 2)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="24"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 0">
+													<Prp name="date" type="D" value="44776.7195016204"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="0"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The menu item 'Relatórios|Lançamentos de notas' was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).MainMenu"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="21"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="children"/>
+												<Node name="units">
+													<Prp name="unit 0" type="S" value="{4A09E3EB-0F08-4B0A-BD09-F458FF362463}"/>
+												</Node>
+												<Node name="message 5">
+													<Prp name="date" type="D" value="44776.7195128009"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="5"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The 'Relatório de lançamentos de notas' window was closed."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrRelLancNotas', 'Relatório de lançamentos de notas', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="30"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 4">
+													<Prp name="date" type="D" value="44776.7195116551"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="4"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The 'Preview' window was closed."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrxPreviewForm', 'Preview', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="29"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Prp name="project" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+												<Prp name="test moniker" type="S" value="{E035DE3E-C130-4421-A514-F95B14B20655}pTestarRelatorioLancNotas"/>
+												<Prp name="name" type="S" value="Test Log [tRelatorio\pTestarRelatorioLancNotas]"/>
+												<Prp name="status" type="I" value="0"/>
+											</Node>
+											<Prp name="id" type="S" value="{57D4A971-D7B4-4C5C-A3FF-8E24BF673B1A}"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="name" type="S" value="Test Log [tRelatorio\pTestarRelatorioLancNotas]"/>
+											<Prp name="child type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+										</Node>
+									</Node>
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages"/>
+											<Prp name="start time" type="D" value="44776.719497963"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44776.7195132755"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run [ Script\tRelatorio - pTestarRelatorioLancNotas ]"/>
+											<Prp name="details" type="S" value="{57D4A971-D7B4-4C5C-A3FF-8E24BF673B1A}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="name" type="S" value="Abrir Rel. LancNotas"/>
+								</Node>
+								<Prp name="id" type="S" value="{119CD6C0-8842-4D68-B242-847F8CD6C832}"/>
+								<Prp name="index" type="I" value="1"/>
+								<Prp name="name" type="S" value="Abrir Rel. LancNotas Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+							<Node name="child0">
+								<Node name="child data">
+									<Node name="child list">
+										<Node name="child0">
+											<Node name="child data">
+												<Node name="units">
+													<Prp name="unit 0" type="S" value="{4A09E3EB-0F08-4B0A-BD09-F458FF362463}"/>
+												</Node>
+												<Node name="message 3">
+													<Prp name="date" type="D" value="44776.7194974421"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="3"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The 'Relatório de empresas' window was closed."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrRelEmpresas', 'Relatório de empresas', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="10"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 2">
+													<Prp name="date" type="D" value="44776.7194964352"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="2"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The 'Preview' window was closed."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrxPreviewForm', 'Preview', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="9"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="children"/>
+												<Node name="message 1">
+													<Prp name="date" type="D" value="44776.7194938079"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="1"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Toolbar button 0 was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (15, 15) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrRelEmpresas', 'Relatório de empresas', 1).Window('TToolBar', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="8"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 0">
+													<Prp name="date" type="D" value="44776.719488287"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="0"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The menu item 'Relatórios|Empresas' was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).MainMenu"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="5"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Prp name="project" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+												<Prp name="test moniker" type="S" value="{E035DE3E-C130-4421-A514-F95B14B20655}pTestarRelatorioEmpresa"/>
+												<Prp name="name" type="S" value="Test Log [tRelatorio\pTestarRelatorioEmpresa]"/>
+												<Prp name="status" type="I" value="0"/>
+											</Node>
+											<Prp name="id" type="S" value="{CB3E7C33-05DA-428B-A644-C095578DEA8D}"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="name" type="S" value="Test Log [tRelatorio\pTestarRelatorioEmpresa]"/>
+											<Prp name="child type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+										</Node>
+									</Node>
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages"/>
+											<Prp name="start time" type="D" value="44776.7194846875"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44776.719497963"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run [ Script\tRelatorio - pTestarRelatorioEmpresa ]"/>
+											<Prp name="details" type="S" value="{CB3E7C33-05DA-428B-A644-C095578DEA8D}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="name" type="S" value="Abrir Rel. Empresas"/>
+								</Node>
+								<Prp name="id" type="S" value="{5BEFD66F-BBD6-408F-A58A-48E136E2B2D3}"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="name" type="S" value="Abrir Rel. Empresas Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+						</Node>
+						<Node name="log data">
+							<Node name="row2">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44776.719497963"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7195132755"/>
+								<Prp name="index" type="I" value="2"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Abrir Rel. LancNotas"/>
+								<Prp name="details" type="S" value="{119CD6C0-8842-4D68-B242-847F8CD6C832}"/>
+							</Node>
+							<Node name="row1">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44776.7194846875"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.719497963"/>
+								<Prp name="index" type="I" value="1"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Abrir Rel. Empresas"/>
+								<Prp name="details" type="S" value="{5BEFD66F-BBD6-408F-A58A-48E136E2B2D3}"/>
+							</Node>
+							<Node name="row0">
+								<Node name="messages">
+									<Node name="row0">
+										<Prp name="time" type="D" value="44776.7194846875"/>
+										<Prp name="message" type="S" value="The element to be run was not specified."/>
+										<Prp name="type" type="I" value="0"/>
+										<Prp name="priority" type="I" value="300"/>
+										<Prp name="index" type="I" value="0"/>
+										<Prp name="extended message" type="S" value=""/>
+									</Node>
+								</Node>
+								<Prp name="start time" type="D" value="44776.7194846875"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7194846875"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Element to be run"/>
+								<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+							</Node>
+						</Node>
+						<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+						<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+						<Prp name="name" type="S" value="Relatório"/>
+					</Node>
+					<Prp name="id" type="S" value="{C1B6BC04-4B86-4C93-85D9-65A1D7AFC317}"/>
+					<Prp name="index" type="I" value="3"/>
+					<Prp name="name" type="S" value="Relatório Log"/>
+					<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+				</Node>
+				<Node name="child2">
+					<Node name="child data">
+						<Node name="child list">
+							<Node name="child0">
+								<Node name="child data">
+									<Node name="child list">
+										<Node name="child0">
+											<Node name="child data">
+												<Node name="message 3">
+													<Prp name="date" type="D" value="44776.7194774537"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="3"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (33, 17) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1).Window('TEdit', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="10"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 2">
+													<Prp name="date" type="D" value="44776.7194755093"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="2"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Selected 'Código' from the combo box."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1).Window('TComboBox', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="8"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 1">
+													<Prp name="date" type="D" value="44776.7194687037"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="1"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Toolbar button 3 was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (85, 15) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1).Window('TToolBar', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="7"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 0">
+													<Prp name="date" type="D" value="44776.7194663426"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="0"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The menu item 'Consultas|Clientes' was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).MainMenu"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="5"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="children"/>
+												<Node name="units">
+													<Prp name="unit 0" type="S" value="{B8C2D822-9605-4605-8FC1-A0478766EFAA}"/>
+												</Node>
+												<Node name="message 6">
+													<Prp name="date" type="D" value="44776.7194842245"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="6"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The 'Consulta de clientes' window was closed."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="16"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 5">
+													<Prp name="date" type="D" value="44776.7194830556"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="5"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (141, 30) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1).Window('TDBGrid', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="15"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 4">
+													<Prp name="date" type="D" value="44776.7194811343"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="4"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Keyboard input."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="'30' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1).Window('TEdit', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="12"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Prp name="project" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+												<Prp name="test moniker" type="S" value="{F5F08D8B-ED68-4164-9C47-6D651CE8905A}pTestarConsultaCliente"/>
+												<Prp name="name" type="S" value="Test Log [tConsulta\pTestarConsultaCliente]"/>
+												<Prp name="status" type="I" value="0"/>
+											</Node>
+											<Prp name="id" type="S" value="{0FFF1263-B0CB-43A6-A457-989A6FBFAE22}"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="name" type="S" value="Test Log [tConsulta\pTestarConsultaCliente]"/>
+											<Prp name="child type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+										</Node>
+									</Node>
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages"/>
+											<Prp name="start time" type="D" value="44776.7194620486"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44776.7194846875"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run [ Script\tConsulta - pTestarConsultaCliente ]"/>
+											<Prp name="details" type="S" value="{0FFF1263-B0CB-43A6-A457-989A6FBFAE22}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="name" type="S" value="Consultar cliente"/>
+								</Node>
+								<Prp name="id" type="S" value="{B0ACBFFB-B09D-42BC-A500-1C0BB630A1CF}"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="name" type="S" value="Consultar cliente Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+						</Node>
+						<Node name="log data">
+							<Node name="row1">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44776.7194620486"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7194846875"/>
+								<Prp name="index" type="I" value="1"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Consultar cliente"/>
+								<Prp name="details" type="S" value="{B0ACBFFB-B09D-42BC-A500-1C0BB630A1CF}"/>
+							</Node>
+							<Node name="row0">
+								<Node name="messages">
+									<Node name="row0">
+										<Prp name="time" type="D" value="44776.7194620486"/>
+										<Prp name="message" type="S" value="The element to be run was not specified."/>
+										<Prp name="type" type="I" value="0"/>
+										<Prp name="priority" type="I" value="300"/>
+										<Prp name="index" type="I" value="0"/>
+										<Prp name="extended message" type="S" value=""/>
+									</Node>
+								</Node>
+								<Prp name="start time" type="D" value="44776.7194620486"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7194620486"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Element to be run"/>
+								<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+							</Node>
+						</Node>
+						<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+						<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+						<Prp name="name" type="S" value="Consulta"/>
+					</Node>
+					<Prp name="id" type="S" value="{6F9182B7-538F-4552-9FAD-1CE82500A8AA}"/>
+					<Prp name="index" type="I" value="2"/>
+					<Prp name="name" type="S" value="Consulta Log"/>
+					<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+				</Node>
+				<Node name="child1">
+					<Node name="child data">
+						<Node name="child list">
+							<Node name="child1">
+								<Node name="child data">
+									<Node name="child list">
+										<Node name="child0">
+											<Node name="child data">
+												<Node name="message 3">
+													<Prp name="date" type="D" value="44776.7194464005"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="3"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Selected 'Código' from the combo box."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1).Window('TComboBox', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="31"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 2">
+													<Prp name="date" type="D" value="44776.7194394097"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="2"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Toolbar button 3 was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (85, 15) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1).Window('TToolBar', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="30"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 1">
+													<Prp name="date" type="D" value="44776.7194373843"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="1"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Toolbar button 5 was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (124, 15) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrCadClientes', 'Cadastro de clientes', 1).Window('TToolBar', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="28"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 0">
+													<Prp name="date" type="D" value="44776.7194345833"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="0"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The menu item 'Cadastros|Clientes' was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).MainMenu"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="24"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="children"/>
+												<Node name="units">
+													<Prp name="unit 0" type="S" value="{646543E8-9D68-45A7-97CA-8885EAA8B819}"/>
+												</Node>
+												<Node name="message 8">
+													<Prp name="date" type="D" value="44776.7194616898"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="8"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The 'Cadastro de clientes' window was closed."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrCadClientes', 'Cadastro de clientes', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="40"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 7">
+													<Prp name="date" type="D" value="44776.7194604282"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="7"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Toolbar button 0 was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (15, 15) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrCadClientes', 'Cadastro de clientes', 1).Window('TToolBar', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="39"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 6">
+													<Prp name="date" type="D" value="44776.7194593403"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="6"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The window was double-clicked by the left mouse button."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (173, 26) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1).Window('TDBGrid', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="38"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 5">
+													<Prp name="date" type="D" value="44776.7194568634"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="5"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Keyboard input."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="'30[Enter]![D222][Down]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1).Window('TEdit', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="35"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 4">
+													<Prp name="date" type="D" value="44776.7194481597"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="4"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (19, 10) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrConsClientes', 'Consulta de clientes', 1).Window('TEdit', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="33"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Prp name="project" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+												<Prp name="test moniker" type="S" value="{5B3D8577-1AEC-4863-B17C-4248319BBBB3}pTestarTrazerCliente"/>
+												<Prp name="name" type="S" value="Test Log [tCadastro\pTestarTrazerCliente]"/>
+												<Prp name="status" type="I" value="0"/>
+											</Node>
+											<Prp name="id" type="S" value="{F6AD3D8D-A197-4D0D-996E-D1210E8B80B6}"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="name" type="S" value="Test Log [tCadastro\pTestarTrazerCliente]"/>
+											<Prp name="child type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+										</Node>
+									</Node>
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages"/>
+											<Prp name="start time" type="D" value="44776.7194309838"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44776.7194620486"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run [ Script\tCadastro - pTestarTrazerCliente ]"/>
+											<Prp name="details" type="S" value="{F6AD3D8D-A197-4D0D-996E-D1210E8B80B6}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="name" type="S" value="Trazer cliente"/>
+								</Node>
+								<Prp name="id" type="S" value="{1730F5D3-A75A-4B81-812C-744BA171CEC6}"/>
+								<Prp name="index" type="I" value="1"/>
+								<Prp name="name" type="S" value="Trazer cliente Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+							<Node name="child0">
+								<Node name="child data">
+									<Node name="child list">
+										<Node name="child0">
+											<Node name="child data">
+												<Node name="message 3">
+													<Prp name="date" type="D" value="44776.7193999306"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="3"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Keyboard input."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="'[Caps]T[Caps]homas de [Caps]S[Caps]ouza[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrCadClientes', 'Cadastro de clientes', 1).Window('TEdit', '', 3)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="10"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 2">
+													<Prp name="date" type="D" value="44776.7193742361"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="2"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Keyboard input."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="'08414531954[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrCadClientes', 'Cadastro de clientes', 1).Window('TEdit', '', 2)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="9"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 1">
+													<Prp name="date" type="D" value="44776.719358588"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="1"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Keyboard input."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="'30[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrCadClientes', 'Cadastro de clientes', 1).Window('TEdit', '', 4)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="8"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 0">
+													<Prp name="date" type="D" value="44776.7193531944"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="0"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The menu item 'Cadastros|Clientes' was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).MainMenu"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="5"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="children"/>
+												<Node name="units">
+													<Prp name="unit 0" type="S" value="{646543E8-9D68-45A7-97CA-8885EAA8B819}"/>
+												</Node>
+												<Node name="message 7">
+													<Prp name="date" type="D" value="44776.7194306481"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="7"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The 'Cadastro de clientes' window was closed."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrCadClientes', 'Cadastro de clientes', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="14"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 6">
+													<Prp name="date" type="D" value="44776.7194286921"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="6"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Toolbar button 0 was clicked."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="A click at point (15, 15) with no key pressed.&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrCadClientes', 'Cadastro de clientes', 1).Window('TToolBar', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="13"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 5">
+													<Prp name="date" type="D" value="44776.7194269792"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="5"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Keyboard input."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="'999999999' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrCadClientes', 'Cadastro de clientes', 1).Window('TEdit', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="12"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Node name="message 4">
+													<Prp name="date" type="D" value="44776.7194150463"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="4"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="Keyboard input."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value="'[Caps]S[Caps][D222]ao[Enter]esa[Tab]' was sent as a keyboard input to a window:&#xA;&#xA;Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor', 1).Window('MDIClient', '', 1).Window('TfrCadClientes', 'Cadastro de clientes', 1).Window('TComboBox', '', 1)"/>
+													<Prp name="type" type="I" value="1"/>
+													<Prp name="line no" type="I" value="11"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Prp name="project" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+												<Prp name="test moniker" type="S" value="{5B3D8577-1AEC-4863-B17C-4248319BBBB3}pTestarCadastroCliente"/>
+												<Prp name="name" type="S" value="Test Log [tCadastro\pTestarCadastroCliente]"/>
+												<Prp name="status" type="I" value="0"/>
+											</Node>
+											<Prp name="id" type="S" value="{A8E04EB9-59BB-48EE-995C-55C70CDA080D}"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="name" type="S" value="Test Log [tCadastro\pTestarCadastroCliente]"/>
+											<Prp name="child type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+										</Node>
+									</Node>
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages"/>
+											<Prp name="start time" type="D" value="44776.7193494907"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44776.7194309838"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run [ Script\tCadastro - pTestarCadastroCliente ]"/>
+											<Prp name="details" type="S" value="{A8E04EB9-59BB-48EE-995C-55C70CDA080D}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="name" type="S" value="Cadastrar cliente"/>
+								</Node>
+								<Prp name="id" type="S" value="{D8F53DD7-6B49-433E-B910-074E4DCD7CD8}"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="name" type="S" value="Cadastrar cliente Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+						</Node>
+						<Node name="log data">
+							<Node name="row2">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44776.7194309838"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7194620486"/>
+								<Prp name="index" type="I" value="2"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Trazer cliente"/>
+								<Prp name="details" type="S" value="{1730F5D3-A75A-4B81-812C-744BA171CEC6}"/>
+							</Node>
+							<Node name="row1">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44776.7193494907"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7194309838"/>
+								<Prp name="index" type="I" value="1"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Cadastrar cliente"/>
+								<Prp name="details" type="S" value="{D8F53DD7-6B49-433E-B910-074E4DCD7CD8}"/>
+							</Node>
+							<Node name="row0">
+								<Node name="messages">
+									<Node name="row0">
+										<Prp name="time" type="D" value="44776.7193494907"/>
+										<Prp name="message" type="S" value="The element to be run was not specified."/>
+										<Prp name="type" type="I" value="0"/>
+										<Prp name="priority" type="I" value="300"/>
+										<Prp name="index" type="I" value="0"/>
+										<Prp name="extended message" type="S" value=""/>
+									</Node>
+								</Node>
+								<Prp name="start time" type="D" value="44776.7193494907"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7193494907"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Element to be run"/>
+								<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+							</Node>
+						</Node>
+						<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+						<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+						<Prp name="name" type="S" value="Cadastro"/>
+					</Node>
+					<Prp name="id" type="S" value="{FCEA8477-3909-49B9-9436-A562ED0D072A}"/>
+					<Prp name="index" type="I" value="1"/>
+					<Prp name="name" type="S" value="Cadastro Log"/>
+					<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+				</Node>
+				<Node name="child0">
+					<Node name="child data">
+						<Node name="child list">
+							<Node name="child1">
+								<Node name="child data">
+									<Node name="child list">
+										<Node name="child0">
+											<Node name="child data">
+												<Node name="units"/>
+												<Node name="children"/>
+												<Prp name="project" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+												<Prp name="test moniker" type="S" value="{45D31855-7D9F-4260-BE2A-4F0F76F99FE7}pTestarFechamentoTelaInicial"/>
+												<Prp name="name" type="S" value="Test Log [tTeste\pTestarFechamentoTelaInicial]"/>
+												<Prp name="status" type="I" value="0"/>
+											</Node>
+											<Prp name="id" type="S" value="{3AE5881D-97CA-4BF3-8127-391978A041B6}"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="name" type="S" value="Test Log [tTeste\pTestarFechamentoTelaInicial]"/>
+											<Prp name="child type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+										</Node>
+									</Node>
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages"/>
+											<Prp name="start time" type="D" value="44776.7193222569"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44776.7193494907"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run [ Script\tTeste - pTestarFechamentoTelaInicial ]"/>
+											<Prp name="details" type="S" value="{3AE5881D-97CA-4BF3-8127-391978A041B6}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="name" type="S" value="Fechar tela inicial"/>
+								</Node>
+								<Prp name="id" type="S" value="{464B5593-A501-4711-B656-3D769B3E5DA9}"/>
+								<Prp name="index" type="I" value="1"/>
+								<Prp name="name" type="S" value="Fechar tela inicial Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+							<Node name="child0">
+								<Node name="child data">
+									<Node name="child list">
+										<Node name="child0">
+											<Node name="child data">
+												<Node name="units">
+													<Prp name="unit 0" type="S" value="{8A1AC748-2AA2-4F9A-9612-0116BF9A710C}"/>
+												</Node>
+												<Node name="children"/>
+												<Node name="message 0">
+													<Prp name="date" type="D" value="44776.7193193982"/>
+													<Prp name="priority" type="I" value="300"/>
+													<Prp name="owner id" type="I" value="-1"/>
+													<Prp name="color" type="I" value="-252645136"/>
+													<Prp name="id" type="I" value="0"/>
+													<Prp name="bkcolor" type="I" value="-252645136"/>
+													<Prp name="message" type="S" value="The application &quot;C:\Users\prog27\Desktop\sci\aulas_delphi\aula08\Projeto final\PEDSCI\Win32\Debug\PEDSCI.exe&quot; started."/>
+													<Prp name="picture" type="S" value=""/>
+													<Prp name="link" type="S" value=""/>
+													<Prp name="unit id" type="I" value="0"/>
+													<Prp name="remarks" type="S" value=""/>
+													<Prp name="type" type="I" value="0"/>
+													<Prp name="line no" type="I" value="2"/>
+													<Prp name="child index" type="I" value="-1"/>
+												</Node>
+												<Prp name="project" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+												<Prp name="test moniker" type="S" value="{45D31855-7D9F-4260-BE2A-4F0F76F99FE7}pTestarAberturaAplicacao"/>
+												<Prp name="name" type="S" value="Test Log [tTeste\pTestarAberturaAplicacao]"/>
+												<Prp name="status" type="I" value="0"/>
+											</Node>
+											<Prp name="id" type="S" value="{542C80C2-1E75-4AED-A94D-157163755513}"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="name" type="S" value="Test Log [tTeste\pTestarAberturaAplicacao]"/>
+											<Prp name="child type" type="S" value="{C0A16E40-A745-4685-B1CC-65EC03A4C819}"/>
+										</Node>
+									</Node>
+									<Node name="log data">
+										<Node name="row0">
+											<Node name="messages"/>
+											<Prp name="start time" type="D" value="44776.7193140278"/>
+											<Prp name="ownerid" type="I" value="-1"/>
+											<Prp name="end time" type="D" value="44776.7193222569"/>
+											<Prp name="index" type="I" value="0"/>
+											<Prp name="status" type="I" value="0"/>
+											<Prp name="name" type="S" value="Element to be run [ Script\tTeste - pTestarAberturaAplicacao ]"/>
+											<Prp name="details" type="S" value="{542C80C2-1E75-4AED-A94D-157163755513}"/>
+										</Node>
+									</Node>
+									<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+									<Prp name="name" type="S" value="Abrir"/>
+								</Node>
+								<Prp name="id" type="S" value="{F0330FC5-A51E-4377-84E9-1EAC81D91A49}"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="name" type="S" value="Abrir Log"/>
+								<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+							</Node>
+						</Node>
+						<Node name="log data">
+							<Node name="row2">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44776.7193222569"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7193494907"/>
+								<Prp name="index" type="I" value="2"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Fechar tela inicial"/>
+								<Prp name="details" type="S" value="{464B5593-A501-4711-B656-3D769B3E5DA9}"/>
+							</Node>
+							<Node name="row1">
+								<Node name="messages"/>
+								<Prp name="start time" type="D" value="44776.7193140278"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7193222569"/>
+								<Prp name="index" type="I" value="1"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Abrir"/>
+								<Prp name="details" type="S" value="{F0330FC5-A51E-4377-84E9-1EAC81D91A49}"/>
+							</Node>
+							<Node name="row0">
+								<Node name="messages">
+									<Node name="row0">
+										<Prp name="time" type="D" value="44776.7193140278"/>
+										<Prp name="message" type="S" value="The element to be run was not specified."/>
+										<Prp name="type" type="I" value="0"/>
+										<Prp name="priority" type="I" value="300"/>
+										<Prp name="index" type="I" value="0"/>
+										<Prp name="extended message" type="S" value=""/>
+									</Node>
+								</Node>
+								<Prp name="start time" type="D" value="44776.7193140278"/>
+								<Prp name="ownerid" type="I" value="-1"/>
+								<Prp name="end time" type="D" value="44776.7193140278"/>
+								<Prp name="index" type="I" value="0"/>
+								<Prp name="status" type="I" value="0"/>
+								<Prp name="name" type="S" value="Element to be run"/>
+								<Prp name="details" type="S" value="{00000000-0000-0000-0000-000000000000}"/>
+							</Node>
+						</Node>
+						<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+						<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+						<Prp name="name" type="S" value="Abrir aplicação"/>
+					</Node>
+					<Prp name="id" type="S" value="{98C81F09-B1DF-48D8-A439-367D3527D6BD}"/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="name" type="S" value="Abrir aplicação Log"/>
+					<Prp name="child type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+				</Node>
+			</Node>
+			<Node name="log data">
+				<Node name="row4">
+					<Node name="messages"/>
+					<Prp name="start time" type="D" value="44776.7195132755"/>
+					<Prp name="ownerid" type="I" value="-1"/>
+					<Prp name="end time" type="D" value="44776.7195178472"/>
+					<Prp name="index" type="I" value="4"/>
+					<Prp name="status" type="I" value="0"/>
+					<Prp name="name" type="S" value="Fechar Aplicação"/>
+					<Prp name="details" type="S" value="{32A99AA4-420E-40FC-AB77-B84A04992769}"/>
+				</Node>
+				<Node name="row3">
+					<Node name="messages"/>
+					<Prp name="start time" type="D" value="44776.7194846875"/>
+					<Prp name="ownerid" type="I" value="-1"/>
+					<Prp name="end time" type="D" value="44776.7195132755"/>
+					<Prp name="index" type="I" value="3"/>
+					<Prp name="status" type="I" value="0"/>
+					<Prp name="name" type="S" value="Relatório"/>
+					<Prp name="details" type="S" value="{C1B6BC04-4B86-4C93-85D9-65A1D7AFC317}"/>
+				</Node>
+				<Node name="row2">
+					<Node name="messages"/>
+					<Prp name="start time" type="D" value="44776.7194620486"/>
+					<Prp name="ownerid" type="I" value="-1"/>
+					<Prp name="end time" type="D" value="44776.7194846875"/>
+					<Prp name="index" type="I" value="2"/>
+					<Prp name="status" type="I" value="0"/>
+					<Prp name="name" type="S" value="Consulta"/>
+					<Prp name="details" type="S" value="{6F9182B7-538F-4552-9FAD-1CE82500A8AA}"/>
+				</Node>
+				<Node name="row1">
+					<Node name="messages"/>
+					<Prp name="start time" type="D" value="44776.7193494907"/>
+					<Prp name="ownerid" type="I" value="-1"/>
+					<Prp name="end time" type="D" value="44776.7194620486"/>
+					<Prp name="index" type="I" value="1"/>
+					<Prp name="status" type="I" value="0"/>
+					<Prp name="name" type="S" value="Cadastro"/>
+					<Prp name="details" type="S" value="{FCEA8477-3909-49B9-9436-A562ED0D072A}"/>
+				</Node>
+				<Node name="row0">
+					<Node name="messages"/>
+					<Prp name="start time" type="D" value="44776.7193140278"/>
+					<Prp name="ownerid" type="I" value="-1"/>
+					<Prp name="end time" type="D" value="44776.7193494907"/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="status" type="I" value="0"/>
+					<Prp name="name" type="S" value="Abrir aplicação"/>
+					<Prp name="details" type="S" value="{98C81F09-B1DF-48D8-A439-367D3527D6BD}"/>
+				</Node>
+			</Node>
+			<Prp name="project key" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+			<Prp name="test moniker" type="S" value="{1D6BAA55-C168-4235-9C0A-094AD8F9D2E5}"/>
+			<Prp name="name" type="S" value="Script01"/>
+		</Node>
+		<Prp name="data type" type="S" value="{74D0AECC-37DB-4F6C-AC1E-26EA65F436C7}"/>
+	</Node>
+</Nodes>

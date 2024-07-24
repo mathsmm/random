@@ -1,0 +1,13 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\bin\Debug\netcoreapp3.1\projetoClienteProduto.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\bin\Debug\netcoreapp3.1\projetoClienteProduto.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\bin\Debug\netcoreapp3.1\projetoClienteProduto.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\bin\Debug\netcoreapp3.1\projetoClienteProduto.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\bin\Debug\netcoreapp3.1\projetoClienteProduto.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\bin\Debug\netcoreapp3.1\projetoClienteProduto.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\obj\Debug\netcoreapp3.1\projetoClienteProduto.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\obj\Debug\netcoreapp3.1\projetoClienteProduto.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\obj\Debug\netcoreapp3.1\projetoClienteProduto.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\obj\Debug\netcoreapp3.1\projetoClienteProduto.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\obj\Debug\netcoreapp3.1\projetoClienteProduto.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\obj\Debug\netcoreapp3.1\projetoClienteProduto.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoClienteProduto\obj\Debug\netcoreapp3.1\projetoClienteProduto.genruntimeconfig.cache

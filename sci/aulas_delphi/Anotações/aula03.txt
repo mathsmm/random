@@ -1,0 +1,119 @@
+CLIENT DATA SET.
+uses
+  Datasnap.DBClient;
+
+Ctrl + Shift + A --> AUTO IMPORT
+
+
+CRIAÇÃO.
+cdsClientDataSet : TClientDataSet;
+
+cdsClientDataSet := TClientDataSet.Create(prQualTela?);
+*A tela para se criar o ClientDataSet pode ser:
+    Self (para a tela atual)
+    nil (para nenhuma tela)
+cdsClientDataSet.FieldDefs (Colunas padrões).Add('bdCODIGO', ftInteger (TIPO_COLUNA))
+cdsClientDataSet.FieldDefs.Add('bdNOME', ftString, 255 (LIMITE))
+cdsClientDataSet.FieldDefs.Add('bdSEXO', ftInteger (Salva o índice do item))
+cdsClientDataSet.FieldDefs.Add('bdESTRANGEIRO', ftBoolean)
+
+cdsClientDataSet.IndexDefs.Add('iCODIGO' (NOME), 'bdCODIGO' (COLUNA), [ixPrimary, ixUnique] (OPÇÕES))
+cdsClientDataSet.IndexDefs.Add('iNOME', 'bdNOME', [ixCaseInsensitive])
+*Só é criado índices para campos que vou usar no código fonte. Exemplo: consultar por CODIGO, ordenar nomes.
+
+*FieldDefs são as colunas e IndexDefs são "os índices" usados para ordenação e foco (seleção)
+
+cdsClientDataSet.CreateDataSet;
+cdsClientDataSet.Open;
+
+
+CONSULTA, INSERÇÃO E EDIÇÃO.
+cdsClientDataSet.IndexFieldNames := 'bdCODIGO';
+*O ClientDataSet ordena os registros pelo bdCODIGO e "foca" nesta coluna.
+*A partir de agora, as consultas vão ser em cima da coluna bdCODIGO.
+if cdsClientDataSet.FindKey([edCodigo.Text]) then
+   cdsClientDataSet.Edit
+else
+   cdsClientDataSet.Insert;
+
+cdsClientDataSet.Insert; --> Permite que o ClientDataSet receba uma nova linha
+cdsClientDataSet.Edit;   --> Permite que o ClientDataSet edite uma nova linha
+cdsClientDataSet.FieldByName('bdCODIGO').AsInteger      := StrToInt(edCodigo.Text);
+cdsClientDataSet.FieldByName('bdNOME').AsString         := edNome.Text;
+cdsClientDataSet.FieldByName('bdSEXO').AsInteger        := cbSexo.ItemIndex;
+cdsClientDataSet.FieldByName('bdESTRANGEIRO').AsBoolean := ckEstrangeiro.Checked;
+cdsClientDataSet.Post;   --> Salva o registro
+
+cdsClientDataSet.First; --> Faz o ClientDataSet selecionar a primeira linha.
+cdsClientDataSet.Eof; --> Retorna false quando o ClientDataSet passar pela última linha.
+*Ainda retornará True caso o ClientDataSet estiver na última linha
+
+
+EXEMPLO 1.
+*Se o código no campo existe no ClientDataSet, ocorrerá uma edição.
+*Se o código no campo não existe no ClientDataSet, ocorrerá uma inserção.
+cdsClientDataSet.IndexFieldNames := 'bdCODIGO';
+  if cdsClientDataSet.FindKey([edCodigo.Text]) then
+     cdsClientDataSet.Edit
+  else
+     cdsClientDataSet.Insert;
+
+EXEMPLO 2.
+function TForm1.fRetornarRegistroAtual: String;
+var
+  wStrSexo : String;
+  wStrEstrangeiro : String;
+begin
+    wStrSexo := 'Masculino';
+    if cdsClientDataSet.FieldByName('bdSEXO').AsInteger = 1 then
+       wStrSexo := 'Feminino';
+
+    wStrEstrangeiro := 'Não';
+    if cdsClientDataSet.FieldByName('bdESTRANGEIRO').AsBoolean then
+       wStrEstrangeiro := 'Sim';
+
+    Result := 'Código: '      + IntToStr(cdsClientDataSet.FieldByName('bdCODIGO').AsInteger) + ' | ' +
+              'Nome: '        + cdsClientDataSet.FieldByName('bdNOME').AsString              + ' | ' +
+              'Sexo: '        + wStrSexo                                                     + ' | ' +
+              'Estrangeiro: ' + wStrEstrangeiro;
+end;
+
+EXEMPLO 3.
+procedure TForm1.pCarregarCampos;
+begin
+  cdsClientDataSet.IndexFieldNames := 'bdCODIGO';
+  if cdsClientDataSet.FindKey([edCodigo.Text]) then
+     begin
+       edNome.Text := cdsClientDataSet.FieldByName('bdNOME').AsString;
+       edNome.SetFocus;
+       cbSexo.ItemIndex := cdsClientDataSet.FieldByName('bdSEXO').AsInteger;
+       cbSexo.SetFocus;
+       ckEstrangeiro.Checked := cdsClientDataSet.FieldByName('bdESTRANGEIRO').AsBoolean;
+       ckEstrangeiro.SetFocus;
+     end;
+end;
+
+EXEMPLO 4.
+procedure TForm1.pCarregarListBox;
+var
+  wStringList : TStringList;
+begin
+  wStringList := TStringList.Create;
+
+  if rbCodigo.Checked then
+     cdsClientDataSet.IndexFieldNames := 'bdCODIGO';
+
+  if rbNome.Checked then
+     cdsClientDataSet.IndexFieldNames := 'bdNOME';
+
+  cdsClientDataSet.First;
+  while not cdsClientDataSet.Eof do
+  //Enquanto não "passar pela última linha do ClientDataSet"
+    begin
+     wStringList.Add(fRetornarRegistroAtual);
+
+     cdsClientDataSet.Next;
+    end;
+
+    lbxListaPessoas.Items := wStringList;
+end;

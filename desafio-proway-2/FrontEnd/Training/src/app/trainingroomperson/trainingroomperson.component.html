@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div *ngIf="selectedTrainingRoomPerson.id != 0" class="col-sm-6">
+      <app-title [title]="(selectedTrainingRoomPerson.id === -1 ? 'New Training-Room-Person': 'Code: ' + selectedTrainingRoomPerson.id)">
+        <button class="btn btn-sm btn-outline-danger" (click)="goBack()">Go Back</button>
+      </app-title>
+      <form [formGroup]="trainingRoomPersonForm" (submit)="onSubmit()">
+        <div class="form-group">
+          <label>StageTime_Id</label>
+          <input type="text" formControlName="stageTimeId" class="form-control">
+        </div>
+        <div class="form-group">
+          <label >TrainingRoom_Id</label>
+          <input type="text" formControlName="trainingRoomId" class="form-control">
+        </div>
+        <div class="form-group">
+          <label >Person_Id</label>
+          <input type="text" formControlName="personId" class="form-control">
+        </div>
+        <div class="row form-group">
+          <button class="btn btn-success" [disabled]="!trainingRoomPersonForm.valid">Save</button>
+        </div>
+      </form>
+    </div>
+
+    <div [ngClass]="{'col-sm-6': selectedTrainingRoomPerson.id != 0, 'col-sm-12': selectedTrainingRoomPerson.id == 0}">
+      <app-title [title]="trainingRoomPersonTitle">
+        <button class="btn btn-sm btn-success" (click)="newTrainingRoomPerson()">Register Training-Room-Person</button>
+      </app-title>
+      <table class="table table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th style="width:12%" scope="col">Options</th>
+            <th style="width:22%" scope="col">#</th>
+            <th style="width:22%" scope="col">StageTime_Id</th>
+            <th style="width:22%" scope="col">TrainingRoom_Id</th>
+            <th style="width:22%" scope="col">Person_Id</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let trainingRoomPerson of trainingRoomPeople">
+            <td>
+              <div class="btn-group">
+                <button (click)="selectTrainingRoomPerson(trainingRoomPerson)" class="text-dark btn btn-sm btn-outline-warning mr-2">
+                  Select
+                </button>
+                <button (click)="deleteTrainingRoomPerson(trainingRoomPerson)" class="text-dark btn btn-sm btn-outline-danger">
+                  Delete
+                </button>
+              </div>
+            </td>
+            <th scope="row">{{trainingRoomPerson.id}}</th>
+            <td>{{trainingRoomPerson.stageTimeId}}</td>
+            <td>{{trainingRoomPerson.trainingRoomId}}</td>
+            <td>{{trainingRoomPerson.personId}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+uses
+  uTeste; 
+  
+procedure pTestarAberturaAplicacao;
+begin
+  uTeste.pAbrirAplicacao;
+end;
+
+procedure pTestarFechamentoTelaInicial;
+begin
+  uTeste.pFecharTelaInicial;
+end; 
+
+procedure pTestarFechamentoAplicacao;
+begin
+  uTeste.pFechar;
+end;

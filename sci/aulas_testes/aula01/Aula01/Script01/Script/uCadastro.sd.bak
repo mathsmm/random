@@ -1,0 +1,42 @@
+procedure pCadastrarCliente(prCodigoCliente : Integer);
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+begin
+  w1 := Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor');
+  w1.MainMenu.Click('Cadastros|Clientes');
+  w2 := w1.Window('MDIClient').Window('TfrCadClientes', 'Cadastro de clientes');
+  //Parâmetro adicionado à próxima linha
+  w2.Window('TEdit', '', 4).Keys(IntToStr(prCodigoCliente)+ '[Tab]');
+  w2.Window('TEdit', '', 2).Keys('08414531954[Tab]');
+  w2.Window('TEdit', '', 3).Keys('[Caps]T[Caps]homas de [Caps]S[Caps]ouza[Tab]');
+  w2.Window('TComboBox').Keys('[Caps]S[Caps][D222]ao[Enter]esa[Tab]');
+  w2.Window('TEdit', '', 1).Keys('999999999');
+  w2.Window('TToolBar').ClickItem(0, false);
+  w2.Close;
+end;
+
+procedure pTrazerCliente(prCodigoCliente : Integer);
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+  var w3 : OleVariant;
+  var w4 : OleVariant;
+begin
+  w1 := Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor');
+  w1.MainMenu.Click('Cadastros|Clientes');
+  w2 := w1.Window('MDIClient');
+  w1 := w2.Window('TfrCadClientes', 'Cadastro de clientes');
+  w3 := w1.Window('TToolBar');
+  w3.ClickItem(5, false);
+  w4 := w2.Window('TfrConsClientes', 'Consulta de clientes');
+  w4.Window('TToolBar').ClickItem(3, false);
+  w4.Window('TComboBox').ClickItem('Código');
+  w2 := w4.Window('TEdit');
+  w2.Click(19, 10);
+  //Parâmetro adicionado à próxima linha 
+  w2.Keys(IntToStr(prCodigoCliente) + '[Enter]![D222][Down]');
+  w2 := w4.Window('TDBGrid');
+  w2.HScroll.Pos := 0;
+  w2.DblClick(173, 26);
+  w3.ClickItem(0, false);
+  w1.Close;
+end;

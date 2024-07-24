@@ -1,0 +1,19 @@
+TDBGrid --> Componente que mostra uma tabela de um banco
+Liga-se a propriedade DataSource do GRID com o componente DataSource
+
+TDataSource --> Componente que lida com a tabela de um banco
+Liga-se a propriedade DataSet do DataSource a um banco (ClientDataSet)
+
+Só é possível ligar o TDBGrid com um DataSource. O DataSource, por sua vez,
+vai lidar com a tabela (com o ClientDataSet)
+
+dsCadastro (Componente DataSource) .DataSet (propriedade) := cdsClientDataSet;
+
+cdsClientDataSet.Delete; --> exclui o registro atual do ClientDataSet
+
+Componente TDBGrid
+    Column.FieldName = 'bdCODIGO'
+
+
+MOD : Resto de divisão
+DIV : Divisão inteira

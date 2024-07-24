@@ -1,0 +1,16 @@
+inherited frRelProdutos: TfrRelProdutos
+  Caption = 'Relat'#243'rio de produtos'
+  ClientHeight = 194
+  ClientWidth = 338
+  ExplicitWidth = 354
+  ExplicitHeight = 233
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited tbFerramentas: TToolBar
+    Width = 338
+    ExplicitWidth = 774
+  end
+  inherited frxReportLayout: TfrxReport
+    ScriptText.Strings = ()
+  end
+end

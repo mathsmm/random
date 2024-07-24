@@ -1,0 +1,13 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\obj\Debug\netcoreapp3.1\Exercicio_classe_animal.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\obj\Debug\netcoreapp3.1\Exercicio_classe_animal.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\obj\Debug\netcoreapp3.1\Exercicio_classe_animal.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\obj\Debug\netcoreapp3.1\Exercicio_classe_animal.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\bin\Debug\netcoreapp3.1\Exercicio_classe_animal.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\bin\Debug\netcoreapp3.1\Exercicio_classe_animal.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\bin\Debug\netcoreapp3.1\Exercicio_classe_animal.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\bin\Debug\netcoreapp3.1\Exercicio_classe_animal.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\bin\Debug\netcoreapp3.1\Exercicio_classe_animal.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\bin\Debug\netcoreapp3.1\Exercicio_classe_animal.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\obj\Debug\netcoreapp3.1\Exercicio_classe_animal.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\obj\Debug\netcoreapp3.1\Exercicio_classe_animal.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_05\Exercicio_classe_animal\obj\Debug\netcoreapp3.1\Exercicio_classe_animal.genruntimeconfig.cache

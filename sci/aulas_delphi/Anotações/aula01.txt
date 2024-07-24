@@ -1,0 +1,11 @@
+Unit e arquivo de projeto devem estar sempre na mesma pasta
+
+edNomeDoEdit.Text --> Pega o valor (como string) que está no edit no momento da execução
+edNomeDoEdit.SetFocus --> Seta no campo do edit o valor atribuído no código fonte
+
+wStringList : TStringList
+wStringList := TStringList.Create;
+*O índice da StringList começa em 0
+wStringList.Add(elemento);
+wStringList.Count
+wStringList.Clear

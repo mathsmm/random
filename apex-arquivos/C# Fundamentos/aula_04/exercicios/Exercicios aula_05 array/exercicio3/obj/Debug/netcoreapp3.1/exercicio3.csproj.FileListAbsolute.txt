@@ -1,0 +1,13 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\obj\Debug\netcoreapp3.1\exercicio3.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\obj\Debug\netcoreapp3.1\exercicio3.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\obj\Debug\netcoreapp3.1\exercicio3.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\obj\Debug\netcoreapp3.1\exercicio3.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\bin\Debug\netcoreapp3.1\exercicio3.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\bin\Debug\netcoreapp3.1\exercicio3.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\bin\Debug\netcoreapp3.1\exercicio3.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\bin\Debug\netcoreapp3.1\exercicio3.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\bin\Debug\netcoreapp3.1\exercicio3.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\bin\Debug\netcoreapp3.1\exercicio3.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\obj\Debug\netcoreapp3.1\exercicio3.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\obj\Debug\netcoreapp3.1\exercicio3.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\Exercicios aula_05 array\exercicio3\obj\Debug\netcoreapp3.1\exercicio3.genruntimeconfig.cache

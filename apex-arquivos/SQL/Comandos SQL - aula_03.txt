@@ -1,0 +1,160 @@
+PK - Primary Key (Chave primária)
+FK - Foreign Key (Chave estrangeira)
+
+A chave estrangeira faz relação de um item de uma tabela com outra tabela.
+Só é usada em banco de dados relacional.
+
+Ex:
+
+TABELA PESSOA:
+PK do Diego = 50
+PK do Jonathas = 67
+
+TABELA VEICULO:
+PK de uma moto = 11
+FK dessa moto = 50
+(A moto é do Diego)
+PK de um carro = 80
+FK desse carro = 67
+(O carro é do Jonathas)
+==========
+CREATE TABLE PESSOA(
+    ID INT PRIMARY KEY IDENTITY(1, 1),
+    NOME VARCHAR(100) NOT NULL
+)
+==========
+CREATE TABLE VEICULO(
+    ID INT PRIMARY KEY IDENTITY(1, 1),
+    MARCA VARCHAR(50) NOT NULL,
+    MODELO VARCHAR(50) NOT NULL,
+    ANO INT NOT NULL,
+    PESSOAID INT
+)
+
+ALTER TABLE VEICULO
+ADD CONSTRAINT FK_VEICULO_PESSOA
+FOREIGN KEY(PESSOAID)
+REFERENCES PESSOA(ID)
+----------
+/* Aterar uma tabela */
+ALTER TABLE VEICULO
+
+/* Adicionando nome para referência criada */
+ADD CONSTRAINT FK_PESSOA
+
+/* Definindo qual campo da tabela será a chave estrangeira */
+FOREIGN KEY(PESSOAID)
+
+/* Definindo de qual tabela e qual campo será o valor da chave estrangeira */
+REFERENCES PESSOA(ID)
+==========
+INSERT INTO PESSOA(NOME)
+VALUES('DIEGO'),
+      ('DANIEL'),
+      ('JONATHAS'),
+      ('MARCELA'),
+      ('ALEXANDRE'),
+      ('MATHEUS'),
+      ('FELIPE')
+==========
+SELECT P.ID AS ID_PESSOA,
+       P.NOME,
+       V.MARCA,
+       V.ANO
+  FROM VEICULO AS V
+       INNER JOIN PESSOA AS P ON P.ID = V.PESSOAID
+ WHERE P.ID = 1
+
+(INNER JOIN -> Cita a tabela PESSOA na consulta)
+==========
+TABELAS:
+CLIENTE
+COMPRA
+COMPRA_ITEM
+
+
+
+INSERT INTO CLIENTE(NOME)
+VALUES('DIEGO'),
+('DANIEL'),
+('JONATHAS'),
+('MARCELA'),
+('ALEXANDRE')
+
+
+
+INSERT INTO COMPRA(DATA, VALOR_TOTAL, CLIENTEID)
+VALUES ('2003-11-21', 200, 1),
+('2004-12-05', 150, 1),
+('2005-03-02', 175, 2),
+('2006-05-01', 300, 2),
+('2007-04-21', 120, 3),
+('2008-07-15', 90, 3),
+('2009-06-12', 400, 4),
+('2010-02-20', 220, 4),
+('2011-09-08', 140, 5),
+('2012-12-21', 110, 5)
+
+
+
+INSERT INTO COMPRA_ITEM(DESCRICAO, QTDE, COMPRAID, VALOR)
+VALUES('DETERGENTE', 3, 1, 10),
+('PACOTE DE BISCOITOS', 1, 1, 10),
+('POTE DE NESCAU', 2, 1, 10),
+('PACOTE DE BIS', 1, 1, 10),
+('PACOTE DE ESPONJAS', 1, 1, 10),
+('DETERGENTE', 3, 2, 10),
+('PACOTE DE BISCOITOS', 1, 2, 10),
+('POTE DE NESCAU', 2, 2, 10),
+('PACOTE DE BIS', 1, 2, 10),
+('PACOTE DE ESPONJAS', 1, 2, 10),
+('DETERGENTE', 3, 3, 10),
+('PACOTE DE BISCOITOS', 1, 3, 10),
+('POTE DE NESCAU', 2, 3, 10),
+('PACOTE DE BIS', 1, 3, 10),
+('PACOTE DE ESPONJAS', 1, 3, 10),
+('DETERGENTE', 3, 4, 10),
+('PACOTE DE BISCOITOS', 1, 4, 10),
+('POTE DE NESCAU', 2, 4, 10),
+('PACOTE DE BIS', 1, 4, 10),
+('PACOTE DE ESPONJAS', 1, 4, 10),
+('DETERGENTE', 3, 5, 10),
+('PACOTE DE BISCOITOS', 1, 5, 10),
+('POTE DE NESCAU', 2, 5, 10),
+('PACOTE DE BIS', 1, 5, 10),
+('PACOTE DE ESPONJAS', 1, 5, 10),
+('DETERGENTE', 3, 6, 10),
+('PACOTE DE BISCOITOS', 1, 6, 10),
+('POTE DE NESCAU', 2, 6, 10),
+('PACOTE DE BIS', 1, 6, 10),
+('PACOTE DE ESPONJAS', 1, 6, 10),
+('DETERGENTE', 3, 7, 10),
+('PACOTE DE BISCOITOS', 1, 7, 10),
+('POTE DE NESCAU', 2, 7, 10),
+('PACOTE DE BIS', 1, 7, 10),
+('PACOTE DE ESPONJAS', 1, 7, 10),
+('DETERGENTE', 3, 8, 10),
+('PACOTE DE BISCOITOS', 1, 8, 10),
+('POTE DE NESCAU', 2, 8, 10),
+('PACOTE DE BIS', 1, 8, 10),
+('PACOTE DE ESPONJAS', 1, 8, 10),
+('DETERGENTE', 3, 9, 10),
+('PACOTE DE BISCOITOS', 1, 9, 10),
+('POTE DE NESCAU', 2, 9, 10),
+('PACOTE DE BIS', 1, 9, 10),
+('PACOTE DE ESPONJAS', 1, 9, 10),
+('DETERGENTE', 3, 10, 10),
+('PACOTE DE BISCOITOS', 1, 10, 10),
+('POTE DE NESCAU', 2, 10, 10),
+('PACOTE DE BIS', 1, 10, 10),
+('PACOTE DE ESPONJAS', 1, 10, 10)
+
+
+
+SELECT CI.DESCRICAO,
+       CP.DATA,
+	   C.NOME
+  FROM CLIENTE AS C
+       INNER JOIN COMPRA AS CP ON CP.CLIENTEID = C.ID
+       INNER JOIN COMPRA_ITEM AS CI ON CI.COMPRAID = CP.ID
+==========

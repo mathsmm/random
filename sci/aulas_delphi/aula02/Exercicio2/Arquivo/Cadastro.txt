@@ -1,0 +1,5 @@
+Nome: a | Sexo: Masculino | Data Nasc.:23/06/2022 | PCD: Não | CPF: 11111111111
+Nome: b | Sexo: Feminino | Data Nasc.:23/06/2022 | PCD: Sim | CPF: 11111111111
+Nome: a | Sexo: Masculino | Data Nasc.:23/06/2022 | PCD: Não | CPF: 11111111111
+Nome: a | Sexo: Masculino | Data Nasc.:23/06/2022 | PCD: Não | CPF: 22222222222
+Nome: a | Sexo: Masculino | Data Nasc.:23/06/2022 | PCD: Não | CPF: 11111111111

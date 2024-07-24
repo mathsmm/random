@@ -1,0 +1,10 @@
+Nome: Matheus | Sexo: Masculino | Estrangeiro: Não
+Nome: Thomas | Sexo: Masculino | Estrangeiro: Sim
+Nome: Ana | Sexo: Feminino | Estrangeiro: Não
+Nome: Alessandra | Sexo: Feminino | Estrangeiro: Sim
+Nome:  | Sexo:  | Estrangeiro: Não
+Nome: a | Sexo: Masculino | Estrangeiro: Sim
+Nome:  | Sexo:  | Estrangeiro: Não
+Nome:  | Sexo:  | Estrangeiro: Não
+Nome:  | Sexo:  | Estrangeiro: Não
+Nome: aaaaaaaaaaaaaaaaaaaaaaaaaaa | Sexo: Feminino | Estrangeiro: Sim

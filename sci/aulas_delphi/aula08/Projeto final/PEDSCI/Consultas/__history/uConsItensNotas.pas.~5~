@@ -1,0 +1,73 @@
+unit uConsItensNotas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFormPadraoConsultaPEDSCI, Data.DB,
+  System.ImageList, Vcl.ImgList, Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls,
+  Vcl.ToolWin, Datasnap.DBClient;
+
+type
+  TfrConsItensNotas = class(TfrFormPadraoConsultaPEDSCI)
+    procedure grConsultaDblClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function setTabela: TClientDataSet; override;
+    function fRetornarInformacoesRegistroAtual : String;
+  end;
+
+var
+  frConsItensNotas: TfrConsItensNotas;
+
+implementation
+
+uses
+  udmDadosPEDSCI, uCadItensNotas;
+
+{$R *.dfm}
+
+{ TfrConsItensNotas }
+
+function TfrConsItensNotas.fRetornarInformacoesRegistroAtual: String;
+begin
+  Result := 'Código: '         + dmDadosPEDSCI.tbItensNotas.FieldByName('BDCODIGO').AsString + ' | ' +
+            'Código Nota: '    + dmDadosPEDSCI.tbItensNotas.FieldByName('BDCODNOTA').AsString + ' | ' +
+            'Código Empresa'   + dmDadosPEDSCI.tbItensNotas.FieldByName('BDCODEMP').AsString  + ' | ' +
+            'Código Produto: ' + dmDadosPEDSCI.tbItensNotas.FieldByName('BDCODPROD').AsString                + ' | ' +
+            'Valor unitário: ' + dmDadosPEDSCI.tbItensNotas.FieldByName('BDVLRUNIT').AsString                + ' | ' +
+            'Quantidade: '     + dmDadosPEDSCI.tbItensNotas.FieldByName('BDQTD').AsString                    + ' | ' +
+            'Valor total: '    + dmDadosPEDSCI.tbItensNotas.FieldByName('BDVLRTOTAL').AsString               + ' | ' +
+            'Base ICMS: '      + dmDadosPEDSCI.tbItensNotas.FieldByName('BDBCICMS').AsString                 + ' | ' +
+            'AlíquotaICMS: '   + dmDadosPEDSCI.tbItensNotas.FieldByName('BDALIQICMS').AsString               + ' | ' +
+            'Valor ICMS: '     + dmDadosPEDSCI.tbItensNotas.FieldByName('BDVLRICMS').AsString;
+end;
+
+procedure TfrConsItensNotas.grConsultaDblClick(Sender: TObject);
+begin
+  inherited;
+
+  if not(Owner is TfrCadItensNotas) then
+     exit;
+
+  TfrCadItensNotas(Owner).edCODNOTA.Text      := dmDadosPEDSCI.tbItensNotas.FieldByName('BDCODNOTA').AsString;
+  TfrCadItensNotas(Owner).edCODEMP.Text       := dmDadosPEDSCI.tbItensNotas.FieldByName('BDCODEMP').AsString;
+  TfrCadItensNotas(Owner).edNOMEEMP.Text      := dmDadosPEDSCI.tbItensNotas.FieldByName('BDNOMEEMP').AsString;
+  TfrCadItensNotas(Owner).edCODPROD.Text      := dmDadosPEDSCI.tbItensNotas.FieldByName('BDCODPROD').AsString;
+  TfrCadItensNotas(Owner).edDESCPROD.Text     := dmDadosPEDSCI.tbItensNotas.FieldByName('BDDESCPROD').AsString;
+  TfrCadItensNotas(Owner).edVLRUNIT.Text      := dmDadosPEDSCI.tbItensNotas.FieldByName('BDVLRUNIT').AsString;
+  TfrCadItensNotas(Owner).edQTD.Text          := dmDadosPEDSCI.tbItensNotas.FieldByName('BDQTD').AsString;
+  TfrCadItensNotas(Owner).edVLRTOTAL.Text     := dmDadosPEDSCI.tbItensNotas.FieldByName('BDVLRTOTAL').AsString;
+  TfrCadItensNotas(Owner).edBaseICMS.Text     := dmDadosPEDSCI.tbItensNotas.FieldByName('BDBCICMS').AsString;
+  TfrCadItensNotas(Owner).edAliquotaICMS.Text := dmDadosPEDSCI.tbItensNotas.FieldByName('BDALIQICMS').AsString;
+  TfrCadItensNotas(Owner).edValorICMS.Text    := dmDadosPEDSCI.tbItensNotas.FieldByName('BDVLRICMS').AsString;
+end;
+
+function TfrConsItensNotas.setTabela: TClientDataSet;
+begin
+  Result := dmDadosPEDSCI.tbItensNotas;
+end;
+
+end.

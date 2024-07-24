@@ -1,0 +1,13 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\bin\Debug\netcoreapp3.1\projeto01.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\bin\Debug\netcoreapp3.1\projeto01.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\bin\Debug\netcoreapp3.1\projeto01.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\bin\Debug\netcoreapp3.1\projeto01.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\bin\Debug\netcoreapp3.1\projeto01.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\bin\Debug\netcoreapp3.1\projeto01.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\obj\Debug\netcoreapp3.1\projeto01.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\obj\Debug\netcoreapp3.1\projeto01.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\obj\Debug\netcoreapp3.1\projeto01.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\obj\Debug\netcoreapp3.1\projeto01.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\obj\Debug\netcoreapp3.1\projeto01.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\obj\Debug\netcoreapp3.1\projeto01.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_03\projeto01\obj\Debug\netcoreapp3.1\projeto01.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+uses
+  uRelatorio;
+
+procedure pTestarRelatorioEmpresa;
+begin
+  uRelatorio.pAbrirRelEmpresas;
+end;
+
+procedure pTestarRelatorioLancNotas;
+begin
+  uRelatorio.pAbrirRelLancNotas;
+end;

@@ -1,0 +1,218 @@
+document -> classe
+write -> método (não tem retorno)
+window -> classe
+prompt -> função (tem retorno)
+paresInt -> função
+
+================================================================
+
+ESTRUTURA BÁSICA HTML
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>
+                Estrutura básica
+        </title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+    </body>
+</html>
+
+=============================================================
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>
+                Primeiro documento HTML
+        </title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        Texto simples
+        <h1>Título primário</h1>
+        <h2>Título secundário</h2>
+        <h3>Título terciário</h3>
+        <h4>Título quaternário</h4>
+        <h5>Título quinário</h5>
+        <h6>Título senário</h6>
+
+        <p>Primeiro parágrafo</p>
+        <p>
+            Segundo parágrafo. Aprender HTML é simples, basta conhecer 
+            o significado das TAGs de marcação e tudo dará certo!
+        </p>
+        <p>Terceiro parágrafo</p>
+
+        <ul>
+            <li>Maçã</li>
+            <li>Goiaba</li>
+            <li>Pêssego</li>
+            <li>Laranja</li>
+            <li>Abacaxi</li>
+        </ul>
+
+        <ol>
+            <li>Maçã</li>
+            <li>Goiaba</li>
+            <li>Pêssego</li>
+            <li>Laranja</li>
+            <li>Abacaxi</li>
+        </ol>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>001</th>
+                    <th>Televisão</th>
+                    <th>1.257,00</th>
+                </tr>
+                <tr>
+                    <th>002</th>
+                    <th>Computador</th>
+                    <th>5.399,00</th>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+==================================================================
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>
+                Formulário HTML
+        </title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1>Formulário</h1>
+        <form>
+            <fieldset>
+                <legend>Informações do candidato</legend>
+                <div>
+                    <label>Nome Completo</label>
+                    <input type="text">
+                    <br>
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <input type="email">
+                    <br>
+                </div>
+                <div>
+                    <label>Gênero</label><br>
+                    <input type="radio" name="genero">Masculino<br>
+                    <input type="radio" name="genero">Feminino
+                </div>
+                <div>
+                    <label>Benefícios</label><br>
+                    <input type="checkbox">Vale transporte<br>
+                    <input type="checkbox">Vale refeição<br>
+                    <input type="checkbox">Plano de saúde<br>
+                    <input type="checkbox">Plano odontológico<br>
+                </div>
+
+                <button type="submit">Salvar</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+================================================================
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>
+                Javascript exemplo
+        </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
+js/main.js
+document.write('<p>Escrevendo texto com aspas simples</p>')
+document.write("<p>Escrevendo texto com aspas duplas</p>")
+
+let nome = "Matheus"
+let sobreNome = " Marchi Moro"
+let idade = 17
+
+document.write('<h3>Dados do usuário</h3>')
+document.write('<p>Nome completo: ' + nome + sobreNome + ' </p>')
+document.write('<p>Idade: ' + idade + ' </p>')
+
+let wNome = window.prompt('Informe seu nome')
+let wSobreNome = window.prompt('Informe seu sobrenome')
+let wIdade = window.prompt('Informe sua idade')
+
+document.write('<h3>Dados do usuário</h3>')
+document.write('<p>Nome completo: ' + wNome + ' ' + wSobreNome + ' </p>')
+document.write('<p>Idade: ' + wIdade + ' </p>')
+
+=================================================================
+
+js/main2.js
+/* Converter uma string para número inteiro -> parseInt(variável do número) */
+let numero = window.prompt('Informe um número: ')
+numero = parseInt(numero)
+let numeroMais20 = numero + 20
+document.write('<h1>' + numeroMais20 + '</h1>')
+
+/* Converter uma string para número flutuante (quebrado) -> parseFloat(variável do número)
+toFixed(quantas casas decimais) -> limita a quantidade de casas decimais */
+let valor = window.prompt('Informe o valor de um produto')
+valor = parseFloat(valor)
+let valorMais20 = valor + 20
+document.write('<h1>' + valorMais20.toFixed(2) + '</h1>')
+
+==================================================================
+
+js/main3.js
+let valor = window.prompt('Informe o valor de um produto')
+valor = parseFloat(valor)
+
+let desconto = window.prompt('Informe o valor em porcentagem de desconto (0-100')
+desconto = parseFloat(desconto)
+
+let valorTotal = valor - (valor * desconto / 100)
+
+document.write('<h1>' + valorTotal.toFixed(2) + '</h1>')
+
+====================================================================
+
+COMANDOS
+
+CTRL + SHIFT + P 
+vários comandos
+
+TAB
+adiciona 4 espaços (    )
+
+SEGURAR ALT E CLICAR EM ALGUM LUGAR
+digita em dois ou mais lugares ao mesmo tempo
+
+MACETES
+
+ul>li*5
+
+table>thead>tr>th*3

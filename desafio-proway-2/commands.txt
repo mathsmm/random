@@ -1,0 +1,34 @@
+DOTNET:
+dotnet new webapi -n Training_API
+cd Training_API
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.Analyzers
+dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson --version 3.1.7
+dotnet tool install --global dotnet-ef
+dotnet ef migrations add InitialMigration
+dotnet ef database update
+dotnet build
+dotnet watch run
+
+UNIT TESTING:
+cd Training_API
+dotnet add package NUnit --version 3.12.0
+dotnet new sln -n Training_API
+dotnet sln Training_API.sln add Training_API.csproj
+cd ..
+cd UnitTesting
+dotnet new nunit -n Verification.tests
+cd ..
+cd Training_API
+dotnet sln Training_API.sln add ../UnitTesting/Verification.tests/Verification.tests.csproj
+dotnet add ../UnitTesting/Verification.tests/Verification.tests.csproj reference Training_API.csproj
+
+ANGULAR:
+cd FrontEnd
+ng new Training
+npm install bootstrap
+npm install ngx-bootstrap --save
+npm install -g @angular/cli

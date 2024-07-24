@@ -1,0 +1,5 @@
+Código: 1 | Descrição: Tomada bem perigosa | NCM: 434152345
+Código: 2 | Descrição: Saco de pancadas | NCM: 434152345
+Código: 3 | Descrição: Fio desencapado | NCM: 1242131
+Código: 4 | Descrição: par de luvas de boxe | NCM: 19782364
+Código: 5 | Descrição: guarda-CHUVA pra usar em dia de sol | NCM: 87123

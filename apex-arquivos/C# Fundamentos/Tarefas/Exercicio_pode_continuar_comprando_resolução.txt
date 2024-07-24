@@ -1,0 +1,78 @@
+    Faça um programa lê o valor disponível para fazer compras.
+    Cada vez que for informado um valor de compra, 
+    o valor disponivel deve ter o desconto de cada compra.
+    Após finalizar a compra deve ser apresentado o 
+    total gasto e o saldo que sobrou do valor disponivel.
+    o programa deve parar quando não tiver mais 
+    saldo disponivel.
+    
+    Dicas:
+    crie uma variavel podeContinuarComprando do tipo bool
+    crie uma variavel valorDisponivel do tipo double
+    crie uma variavel somaDasCompras do tipo double
+    crie uma variavel valorCompra do tipo double
+
+    utilize um laço while.
+
+    a) Solicite ao usuario para informar o valor disponivel para compras.
+    b) Inicie o laço while se pode comprar
+    c) Solicite o valor da compra
+    d) Verifique se o valor da compra é maior do que zero
+    e) Se o valor da compra for maior que zero:
+        e.1)    Verifique se o valor da compra é menor ou igual ao valor disponivel
+                se for verdadeiro:
+                    atualize o valor de saldo
+                    atualize o valor total das compras
+                    exiba a mensagem "Compra aceita! Saldo disponivel: valorDisponivel"
+                se nao for verdadeiro
+                    o usuario nao pode mais comprar
+                    exiba a mensagem "Fim das compras. Saldo indisponivel"
+    f) Ao final exibir a soma total das compras e o saldo restante
+
+....................
+
+using System;
+
+namespace Exercicio_pode_continuar_comprando
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double valorDisponivel = 0;
+            double valorCompra = 0;
+            double somaDasCompras = 0;
+            bool podeContinuarComprando = true;
+
+            Console.WriteLine("Informe o valor disponível para comprar: ");
+            valorDisponivel = Convert.ToDouble(Console.ReadLine());
+
+            while (podeContinuarComprando)
+            {
+                Console.WriteLine("Informe o valor da compra: ");
+                valorCompra = Convert.ToDouble(Console.ReadLine());
+
+                if (valorCompra > 0)
+                {
+                    if (valorCompra <= valorDisponivel)
+                    {
+                        valorDisponivel -= valorCompra;
+                        somaDasCompras += valorCompra;
+                        Console.WriteLine($"Compra aceita! Saldo disponivel: {valorDisponivel}");
+                    }
+                    else
+                    {
+                        podeContinuarComprando = false;
+                        Console.WriteLine("Fim das compras. Saldo indisponível.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Informe um valor maior que zero.");
+                }
+            }
+            Console.WriteLine($"Soma total das compras: {somaDasCompras}");
+            Console.WriteLine($"Saldo restante: {valorDisponivel}");
+        }
+    }
+}

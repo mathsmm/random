@@ -1,0 +1,13 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\obj\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\obj\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\obj\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\obj\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\bin\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\bin\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\bin\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\bin\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\bin\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\bin\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\obj\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\obj\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoMediaSituacaoAluno\obj\Debug\netcoreapp3.1\projetoMediaSituacaoAluno.genruntimeconfig.cache

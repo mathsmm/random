@@ -1,0 +1,66 @@
+Orientação a objetos:
+    Abstração:
+        Modelar o objeto (adicionar propriedades) e reutilizar seus métodos
+
+    Herança
+        Classe herda propriedades de outra classe
+        Exemplo01: Pessoa -> Funcionário -> Supervisor
+
+        Exemplo02:
+        type
+          TVeiculo = class
+          public
+            wMarca  : String;
+            wModelo : String;
+            wCor    : String;
+          end;
+
+        type
+          TCarro = class(TVeiculo)
+            wCilindradas : Integer;
+          end;
+
+    Encapsulamento
+        Níveis de acesso
+            Public (Todos podem acessar)
+            Protected (Classes herdadas ou mesmo arquivo fonte podem acessar)
+            Private (Somente a própria classe pode acessar)
+            Published (Parecido com o Public - Componentes)
+
+    Polimorfismo
+        - Overload (Sobrecarga)
+            Duas rotinas com o mesmo nome porém com parâmetros diferentes
+                procedure pCriar(prTipo: Integer); overload;
+                procedure pCriar(prTipo: String); overload;
+
+        - Override (Sobreposição)
+            Reescrito em outra rotina
+                procedure (da classe Veiculo) pModelo; Virtual; Abstract;
+                procedure (da classe Carro)   pModelo; Override;
+                procedure (da classe Moto)    pModelo; Override
+                *A partir da classe TCarro e TMoto será possível chamar a procedure pModelo.
+                *Porém, ao chamar pModelo a partir de uma classe filha, 
+                *será executada a versão pModelo da classe filha
+
+        - Virtual
+            Rotina não precisará ser implementada na classe pai.
+            Ela poderá ser implementada pela classe de onde foi chamada.
+
+        - Abstract
+            Rotina não será implementada na classe pai.
+            Ela será implementada pela classe de onde foi chamada.
+
+        - Inherited (comando)
+            Comando "inherited" faz com que a execução vá para 
+            a rotina da classe pai a partir de onde foi instruído
+
+
+*É possível criar telas a partir de telas pai (telas padrão).
+*A empresa possui uma tela padrão de cadastro
+
+**Pode criar units sem forms para serem usadas em todas as telas!
+
+Units (telas) pai devem chamar a tela filha do seguinte modo:
+implementation
+  uses
+    unitFilha

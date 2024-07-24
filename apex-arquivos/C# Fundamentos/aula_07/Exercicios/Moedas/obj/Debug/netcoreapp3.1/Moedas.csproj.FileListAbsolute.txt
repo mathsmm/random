@@ -1,0 +1,13 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\obj\Debug\netcoreapp3.1\Moedas.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\obj\Debug\netcoreapp3.1\Moedas.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\obj\Debug\netcoreapp3.1\Moedas.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\obj\Debug\netcoreapp3.1\Moedas.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\bin\Debug\netcoreapp3.1\Moedas.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\bin\Debug\netcoreapp3.1\Moedas.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\bin\Debug\netcoreapp3.1\Moedas.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\bin\Debug\netcoreapp3.1\Moedas.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\bin\Debug\netcoreapp3.1\Moedas.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\bin\Debug\netcoreapp3.1\Moedas.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\obj\Debug\netcoreapp3.1\Moedas.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\obj\Debug\netcoreapp3.1\Moedas.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\Moedas\obj\Debug\netcoreapp3.1\Moedas.genruntimeconfig.cache

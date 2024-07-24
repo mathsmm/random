@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <div *ngIf="selectedStageTimes.id != 0" class="col-sm-6">
+      <app-title [title]="(selectedStageTimes.id === -1 ? 'New Stage-Time': 'Code: ' + selectedStageTimes.id)">
+        <button class="btn btn-sm btn-outline-danger" (click)="goBack()">Go Back</button>
+      </app-title>
+      <form [formGroup]="stageTimeForm" (submit)="onSubmit()">
+        <div class="form-group">
+          <label>Starting time</label>
+          <input type="text" formControlName="startingDateTime" class="form-control">
+        </div>
+        <div class="form-group">
+          <label >Ending time</label>
+          <input type="text" formControlName="endingDateTime" class="form-control">
+        </div>
+        <div class="row form-group">
+          <button class="btn btn-success" [disabled]="!stageTimeForm.valid">Save</button>
+        </div>
+      </form>
+    </div>
+
+    <div [ngClass]="{'col-sm-6': selectedStageTimes.id != 0, 'col-sm-12': selectedStageTimes.id == 0}">
+      <app-title [title]="stageTimeTitle">
+        <button class="btn btn-sm btn-success" (click)="newStageTime()">Register Stage-Time</button>
+      </app-title>
+      <table class="table table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th style="width:12%" scope="col">Options</th>
+            <th style="width:8%" scope="col">#</th>
+            <th style="width:40%" scope="col">Starting time</th>
+            <th style="width:40%" scope="col">Ending time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let stageTime of stageTimes">
+            <td>
+              <div class="btn-group">
+                <button (click)="selectStageTime(stageTime)" class="text-dark btn btn-sm btn-outline-warning mr-2">
+                  Select
+                </button>
+                <button (click)="deleteStageTime(stageTime)" class="text-dark btn btn-sm btn-outline-danger">
+                  Delete
+                </button>
+              </div>
+            </td>
+            <th scope="row">{{stageTime.id}}</th>
+            <td>{{stageTime.startingDateTime}}</td>
+            <td>{{stageTime.endingDateTime}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+unit uRelLancNotas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFormPadraoRelatorioPEDSCI, Data.FMTBcd,
+  Data.DB, Data.SqlExpr, frxClass, frxDBSet, frxExportCSV, frxExportDOCX,
+  frxExportXLSX, frxExportBaseDialog, frxExportPDF, frxDesgn, System.ImageList,
+  Vcl.ImgList, Vcl.ComCtrls, Vcl.ToolWin, Vcl.StdCtrls, Vcl.WinXPickers;
+
+type
+  TfrRelLancNotas = class(TfrFormPadraoRelatorioPEDSCI)
+    lbDATAINICIAL: TLabel;
+    lbCODNOTAINICIAL: TLabel;
+    lbEMP: TLabel;
+    lbCLI: TLabel;
+    edNOMEEMPNOTA: TEdit;
+    edNOMECLINOTA: TEdit;
+    edCODCLINOTA: TEdit;
+    edCODEMPNOTA: TEdit;
+    btCODCLINOTA: TButton;
+    btCODEMPNOTA: TButton;
+    DatePicker1: TDatePicker;
+    lbDATAFINAL: TLabel;
+    DatePicker2: TDatePicker;
+    Edit1: TEdit;
+    lbCODNOTAFINAL: TLabel;
+    Edit2: TEdit;
+    imBotoesDiversos: TImageList;
+    procedure btVisualizarClick(Sender: TObject);
+    procedure btCODCLINOTAClick(Sender: TObject);
+    procedure btCODEMPNOTAClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frRelLancNotas: TfrRelLancNotas;
+
+implementation
+
+uses
+  uSelecionaClienteRelLancNotas, uSelecionaEmpresaRelLancNotas;
+
+{$R *.dfm}
+
+procedure TfrRelLancNotas.btCODCLINOTAClick(Sender: TObject);
+begin
+  inherited;
+  TfrSelecionaClienteParaRelLancNotas.Create(Self);
+end;
+
+procedure TfrRelLancNotas.btCODEMPNOTAClick(Sender: TObject);
+begin
+  inherited;
+  TfrSelecionaEmpresaParaRelLancNotas.Create(Self);
+end;
+
+procedure TfrRelLancNotas.btVisualizarClick(Sender: TObject);
+var
+  wSQLScript : String;
+begin
+  inherited;
+  SQLQueryPadrao.Close;
+  SQLQueryPadrao.SQL.Clear;
+  wSQLScript := 'SELECT NOTA.BDCODNOTA     CODNOTA,                       ' +
+                'NOTA.BDCODCLI      CODCLI,                               ' +
+                'NOTA.BDCODEMP      CODEMP,                               ' +
+                'NOTA.BDCODPROD     CODPROD,                              ' +
+                'NOTA.BDDATAEMISSAO DATAEMISSAO,                          ' +
+                'NOTA.BDQTD         QTD,                                  ' +
+                'NOTA.BDVLRNOTA     VLR,                                  ' +
+                'NOTA.BDBCICMS      BASEICMS,                             ' +
+                'NOTA.BDALIQICMS    ALIQUOTAICMS,                         ' +
+                'NOTA.BDVLRICMS     VLRICMS,                              ' +
+                'CLI.BDCNPJCPF      CPFCNPJCLI,                           ' +
+                'CLI.BDNOMECLI      NOMECLI,                              ' +
+                'CLI.BDTELEFONE     TELEFONECLI,                          ' +
+                'UFCLI.BDSIGLAUF    UFCLI,                                ' +
+                'EMP.BDCNPJCPF      CPFCNPJEMP,                           ' +
+                'EMP.BDNOMEEMP      NOMEEMP,                              ' +
+                'EMP.BDTELEFONE     TELEFONEEMP,                          ' +
+                'UFEMP.BDSIGLAUF    UFEMP,                                ' +
+                'PROD.BDDESCRICAO   DESCPROD                              ' +
+         'FROM TLANCNOTA NOTA                                             ' +
+         'INNER JOIN TCLIENTE CLI ON (NOTA.BDCODCLI = CLI.BDCODIGO)       ' +
+         'INNER JOIN TUF UFCLI ON (CLI.BDCODUF = UFCLI.BDCODUF)           ' +
+         'INNER JOIN TEMPRESA EMP ON (NOTA.BDCODEMP = EMP.BDCODEMP)       ' +
+         'INNER JOIN TUF UFEMP ON (EMP.BDCODUF = UFEMP.BDCODUF)           ' +
+         'INNER JOIN TCADPRODUTO PROD ON (NOTA.BDCODPROD = PROD.BDCODPROD)' +
+         'ORDER BY NOTA.BDCODNOTA';
+  SQLQueryPadrao.SQL.Add(wSQLScript);
+  SQLQueryPadrao.Open;
+end;
+
+end.

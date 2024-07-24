@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/06/22 14:49:13.000.592,=C:\Users\prog27\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/24 14:02:34.000.949,=C:\Users\prog27\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/24 14:04:01.000.089,C:\Users\prog27\Desktop\delphi-classes\aula04\Projeto1\uProjeto.pas=C:\Users\prog27\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/24 14:04:01.000.089,C:\Users\prog27\Desktop\delphi-classes\aula04\Projeto1\uProjeto.dfm=C:\Users\prog27\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/06/24 14:04:03.000.167,C:\Users\prog27\Desktop\delphi-classes\aula04\Projeto1\Projeto.dproj=C:\Users\prog27\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/07/07 15:56:52.000.813,=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 16:01:33.000.075,=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit2.pas</Transaction>
+    <Transaction>2022/07/07 16:04:21.000.536,=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit3.pas</Transaction>
+    <Transaction>2022/07/07 16:05:00.000.378,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit3.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uConsulta.pas</Transaction>
+    <Transaction>2022/07/07 16:05:00.000.378,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit3.dfm=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uConsulta.dfm</Transaction>
+    <Transaction>2022/07/07 16:05:12.000.232,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uProjeto.dfm=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uCadastro.dfm</Transaction>
+    <Transaction>2022/07/07 16:05:12.000.232,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uProjeto.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uCadastro.pas</Transaction>
+    <Transaction>2022/07/07 16:05:23.000.174,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uDataModule.pas</Transaction>
+    <Transaction>2022/07/07 16:05:23.000.174,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.dfm=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uDataModule.dfm</Transaction>
+    <Transaction>2022/07/07 16:05:33.000.487,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit2.dfm=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uPai.dfm</Transaction>
+    <Transaction>2022/07/07 16:05:33.000.487,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit2.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uPai.pas</Transaction>
+    <Transaction>2022/07/07 16:36:06.000.718,=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas</Transaction>
+    <Transaction>2022/07/07 16:36:40.000.127,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\u.pas</Transaction>
+    <Transaction>2022/07/07 16:37:03.000.638,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\u.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uPessoa.pas</Transaction>
+    <Transaction>2022/07/08 13:50:09.000.118,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uCadastroPessoa.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uCadastro.pas</Transaction>
+    <Transaction>2022/07/08 13:50:09.000.118,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uCadastroPessoa.dfm=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uCadastro.dfm</Transaction>
+    <Transaction>2022/07/08 14:05:09.000.866,=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas</Transaction>
+    <Transaction>2022/07/08 14:05:50.000.963,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uConsultaPai.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas</Transaction>
+    <Transaction>2022/07/08 14:05:50.000.963,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uConsultaPai.dfm=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.dfm</Transaction>
+    <Transaction>2022/07/08 14:06:11.000.860,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uConsulta.pas=</Transaction>
+    <Transaction>2022/07/08 14:06:40.000.129,=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas</Transaction>
+    <Transaction>2022/07/08 14:06:55.000.526,=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas</Transaction>
+    <Transaction>2022/07/08 14:07:13.000.902,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uConsultaPessoa.dfm=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.dfm</Transaction>
+    <Transaction>2022/07/08 14:07:13.000.902,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uConsultaPessoa.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas</Transaction>
+    <Transaction>2022/07/08 14:19:11.000.817,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uPai.dfm=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uCadastroPai.dfm</Transaction>
+    <Transaction>2022/07/08 14:19:11.000.817,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uPai.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uCadastroPai.pas</Transaction>
+    <Transaction>2022/07/08 14:27:44.000.019,=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas</Transaction>
+    <Transaction>2022/07/08 14:27:52.000.454,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uPessoaFisica.pas</Transaction>
+    <Transaction>2022/07/08 14:27:59.000.502,=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas</Transaction>
+    <Transaction>2022/07/08 14:28:06.000.209,C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\Unit1.pas=C:\Users\prog27\Desktop\sci\aulas_delphi\aula06\Projeto1\uPessoaJuridica.pas</Transaction>
+  </Transactions>
+</BorlandProject>

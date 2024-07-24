@@ -1,0 +1,14 @@
+continue;
+--> Faz com que o laço pare e parta para o próximo índice;
+--> Serve para for e para while.
+------------------------------------------------------------
+.Write -> Escreve e mantém o cursor na mesma linha;
+.WriteLine -> Escreve e posiciona o cursor na próxima linha.
+------------------------------------------------------------
+Array multidimensional
+
+[2, 1]
+2 -> linha
+1 -> coluna
+
+SEMPRE LINHA ANTES DE COLUNA

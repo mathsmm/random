@@ -1,0 +1,3 @@
+View: Select já criado
+Procedure: Select com parâmetros (é mais perfomático que View)
+Trigger: Ativa-se quando uma ação é executada

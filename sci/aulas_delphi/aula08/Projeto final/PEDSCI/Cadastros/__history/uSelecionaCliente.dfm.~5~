@@ -1,0 +1,6 @@
+inherited frSelecionaCliente: TfrSelecionaCliente
+  Caption = 'Selecionar cliente para lan'#231'amento de nota'
+  Visible = False
+  PixelsPerInch = 96
+  TextHeight = 13
+end

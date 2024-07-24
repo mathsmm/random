@@ -1,0 +1,13 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\obj\Debug\netcoreapp3.1\POO2.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\obj\Debug\netcoreapp3.1\POO2.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\obj\Debug\netcoreapp3.1\POO2.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\obj\Debug\netcoreapp3.1\POO2.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\bin\Debug\netcoreapp3.1\POO2.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\bin\Debug\netcoreapp3.1\POO2.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\bin\Debug\netcoreapp3.1\POO2.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\bin\Debug\netcoreapp3.1\POO2.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\bin\Debug\netcoreapp3.1\POO2.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\bin\Debug\netcoreapp3.1\POO2.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\obj\Debug\netcoreapp3.1\POO2.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\obj\Debug\netcoreapp3.1\POO2.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\POO2\obj\Debug\netcoreapp3.1\POO2.genruntimeconfig.cache

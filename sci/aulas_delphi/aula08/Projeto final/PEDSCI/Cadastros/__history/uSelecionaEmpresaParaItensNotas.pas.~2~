@@ -1,0 +1,46 @@
+unit uSelecionaEmpresaParaItensNotas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFormPadraoConsultaPEDSCI, Data.DB,
+  System.ImageList, Vcl.ImgList, Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls,
+  Vcl.ToolWin, Datasnap.DBClient;
+
+type
+  TfrSelecionaClienteItensNotas = class(TfrFormPadraoConsultaPEDSCI)
+    procedure grConsultaDblClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function setTabela: TClientDataSet; override;
+  end;
+
+var
+  frSelecionaClienteItensNotas: TfrSelecionaClienteItensNotas;
+
+implementation
+
+uses
+  udmDadosPEDSCI, uCadItensNotas;
+
+{$R *.dfm}
+
+{ TfrSelecionaClienteItensNotas }
+
+procedure TfrSelecionaClienteItensNotas.grConsultaDblClick(Sender: TObject);
+begin
+  inherited;
+  TfrCadItensNotas(Owner).edCODCLI.Text  := grConsulta.DataSource.DataSet.FieldByName('BDCODIGO').AsString;
+  TfrCadItensNotas(Owner).edNOMECLI.Text := grConsulta.DataSource.DataSet.FieldByName('BDNOMECLI').AsString;
+  Close;
+end;
+
+function TfrSelecionaClienteItensNotas.setTabela: TClientDataSet;
+begin
+  Result := dmDadosPEDSCI.tbClientes;
+end;
+
+end.

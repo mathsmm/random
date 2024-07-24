@@ -1,0 +1,78 @@
+1) Criar uma classe chamada Loja
+    A classe Loja deve conter os atributos:
+        Produto: string
+        FormaPagamento: string
+        Valor: double
+    A classe deve conter um construtor que preecha o valor dos atributos
+    a classe Loja de conter as funcões:
+    -   CalcularDesconto: double
+        Caso o valor do produto seja maior do que 100 e a forma de pagamento seja "A vista" o desconto é de 10%
+        Caso o valor do produto seja maior do que 200 o desconto será 15%
+        caso o produto seja menor ou igual a 100 o desconto será de 5%
+
+    -   ObterMensagemDesconto: string
+        $"O produto {this.produto} terá um desconto de {desconto} o total será de { total }"
+
+
+        public class Loja
+        {
+            private string Produto { get; set; }
+            private string FormaPagamento { get; set; }
+            private double Valor { get; set; }
+
+            public Loja(string produto, string formaPagamento, double valor)
+            {
+                this.Produto = produto;
+                this.FormaPagamento = formaPagamento;
+                this.Valor = valor;
+            }
+
+            public double CalcularDesconto()
+            {
+                if (this.Valor > 100 && this.FormaPagamento == "A vista")
+                {
+                    return this.Valor * 0.10;
+                }
+                else if (this.Valor > 200)
+                {
+                    return this.Valor * 0.15;
+                }
+                else if (this.Valor <= 100)
+                {
+                    return this.Valor * 0.05;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+
+            public string ObterMensagemDesconto()
+            {
+                double desconto = CalcularDesconto();
+                double total = this.Valor - desconto;
+                return $"O produto {this.Produto} terá um desconto de {desconto} e o total será de {total}";
+            }
+        }
+
+--------------------------------------------------------------------------------
+
+    Na classe Program no metodo Main:
+        1) Solicitar ao usuario produto, forma pagamento e valor
+        2) efetuar a chamada para ObterMensagemDesconto
+        3) Exibir mensagem de desconto na tela
+
+
+        static void Main(string[] args)
+        {
+            Console.Write("Informe o nome do produto: ");
+            string produto = Console.ReadLine();
+            Console.Write("Informe a forma de pagamento ('A vista' ou outra): ");
+            string formaPagamento = Console.ReadLine();
+            Console.Write("Informe o valor do produto: ");
+            double valor = Convert.ToDouble(Console.ReadLine());
+
+            Loja objLoja = new Loja(produto, formaPagamento, valor);
+
+            Console.WriteLine(objLoja.ObterMensagemDesconto());
+        }

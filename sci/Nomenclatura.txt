@@ -1,0 +1,39 @@
+Geral:
+
+Variáveis:                             "w";  ex. "wNome_Variavel"
+Procedimentos:                         "p";  ex. "pNome_Procedimento"
+Funções:                               "f";  ex. "fNome_Funcao"
+Parâmetros de procedimentos e funções: "pr"; ex. "prNome_Parametro"
+
+Arquivo Unit.pas:                      "u"; ex. "uNome_Arquivo"
+Arquivo de projeto:                    "";  ex. "Nome_Arquivo" (sem abreviatura)
+*Arquivo Unit e arquivo de projeto devem estar no mesmo diretório
+
+ClientDataSet: "cds"
+
+Banco de dados:
+Tabela: "T"
+Campo: "BD"
+Procedure do IBExpert: "SP"
+
+
+Objetos Visuais:
+
+Formulário:­       “fr”; ex. "frNome_Formulario"
+Menu:­             “mm”; ex. “mmNome_Campo”
+PopUp:­            “pp”; ex. “ppNome_Campo”
+Edit:­             “ed”; ex. “edNome_Edit”
+Label:­            “lb”; ex. “lbNome_Label”
+Button / BitBnt:­  “bt”; ex. “btNome_Botão”
+SpeedButtons:­     “sp”; ex. “spNome_SpeedButtons”
+Panel:­            “pn”; ex. “pnNome_Panel”
+ListBox:­ “lb” ou "lbx"; ex. “lb_Nome_ListBox”, “lbx_Nome_ListBox”
+Grids:­            “gr”; ex. “grNome_Grid”
+ComboBox:­         “cb”; ex. “cbNome_ComboBox”
+CheckBox:­         “ck”; ex. “ckNome_CheckBox”
+GroupBox:­         “gb”; ex. “gbNome_GroupBox”
+RadioButton:­      “rb”; ex. “rbNome_RadioButton”
+RadioGroup:­       “rg”; ex. “rgNome_RadioGroup”
+Image:­            “im”; ex. “imNome_Image”
+Table:­            “tb”; ex. “tbNome_Tabela”
+DataSource:­       “ds”; ex. “dsNome_DataSource”

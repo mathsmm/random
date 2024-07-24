@@ -1,0 +1,5 @@
+BDBCICMS
+BDALIQICMS
+BDVLRICMS
+
+deixar estes campos de fora do cadastro de Nota

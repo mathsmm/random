@@ -1,0 +1,15 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\bin\Debug\netcoreapp3.1\PrimeiroFormulario.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\bin\Debug\netcoreapp3.1\PrimeiroFormulario.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\bin\Debug\netcoreapp3.1\PrimeiroFormulario.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\bin\Debug\netcoreapp3.1\PrimeiroFormulario.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\bin\Debug\netcoreapp3.1\PrimeiroFormulario.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\bin\Debug\netcoreapp3.1\PrimeiroFormulario.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\obj\Debug\netcoreapp3.1\PrimeiroFormulario.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\obj\Debug\netcoreapp3.1\PrimeiroFormulario.FRMPrimeiroFormulario.resources
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\obj\Debug\netcoreapp3.1\PrimeiroFormulario.csproj.GenerateResource.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\obj\Debug\netcoreapp3.1\PrimeiroFormulario.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\obj\Debug\netcoreapp3.1\PrimeiroFormulario.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\obj\Debug\netcoreapp3.1\PrimeiroFormulario.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\obj\Debug\netcoreapp3.1\PrimeiroFormulario.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\obj\Debug\netcoreapp3.1\PrimeiroFormulario.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\abc\PrimeiroFormulario\PrimeiroFormulario\obj\Debug\netcoreapp3.1\PrimeiroFormulario.genruntimeconfig.cache

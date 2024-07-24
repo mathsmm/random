@@ -1,0 +1,45 @@
+inherited frConsProdutos: TfrConsProdutos
+  Caption = 'Consulta de produtos'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited tbFerramentas: TToolBar
+    inherited btFiltrar: TToolButton
+      OnClick = btFiltrarClick
+    end
+    object ToolButton2: TToolButton
+      Left = 140
+      Top = 0
+      Width = 8
+      Caption = 'ToolButton2'
+      ImageIndex = 4
+      Style = tbsSeparator
+    end
+  end
+  inherited grConsulta: TDBGrid
+    OnDblClick = grConsultaDblClick
+  end
+  object cbFiltro: TComboBox [2]
+    Left = 158
+    Top = 3
+    Width = 128
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 2
+    TextHint = 'Filtrar por...'
+    Visible = False
+    OnSelect = cbFiltroSelect
+    Items.Strings = (
+      'C'#243'digo'
+      'Descri'#231#227'o')
+  end
+  object edFiltro: TEdit [3]
+    Left = 292
+    Top = 3
+    Width = 128
+    Height = 21
+    TabOrder = 3
+    TextHint = 'Tecle Enter para filtrar...'
+    Visible = False
+    OnKeyDown = edFiltroKeyDown
+  end
+end

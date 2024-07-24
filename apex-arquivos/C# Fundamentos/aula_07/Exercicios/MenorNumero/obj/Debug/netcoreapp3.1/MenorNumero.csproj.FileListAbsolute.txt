@@ -1,0 +1,13 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\obj\Debug\netcoreapp3.1\MenorNumero.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\obj\Debug\netcoreapp3.1\MenorNumero.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\obj\Debug\netcoreapp3.1\MenorNumero.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\obj\Debug\netcoreapp3.1\MenorNumero.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\bin\Debug\netcoreapp3.1\MenorNumero.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\bin\Debug\netcoreapp3.1\MenorNumero.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\bin\Debug\netcoreapp3.1\MenorNumero.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\bin\Debug\netcoreapp3.1\MenorNumero.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\bin\Debug\netcoreapp3.1\MenorNumero.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\bin\Debug\netcoreapp3.1\MenorNumero.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\obj\Debug\netcoreapp3.1\MenorNumero.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\obj\Debug\netcoreapp3.1\MenorNumero.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\MenorNumero\obj\Debug\netcoreapp3.1\MenorNumero.genruntimeconfig.cache

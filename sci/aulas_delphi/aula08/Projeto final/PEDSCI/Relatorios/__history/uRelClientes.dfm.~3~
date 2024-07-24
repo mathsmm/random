@@ -1,0 +1,11 @@
+inherited frRelClientes: TfrRelClientes
+  Caption = 'Relat'#243'rio de clientes'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited tbFerramentas: TToolBar
+    ExplicitWidth = 774
+  end
+  inherited frxReportLayout: TfrxReport
+    ScriptText.Strings = ()
+  end
+end

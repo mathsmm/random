@@ -1,0 +1,28 @@
+Criar um script num bloco de notas:
+    1. Criar tabela TCLIENTE
+        CAMPOS: BDCODCLIENTE, BDNOME, BDCNPJCPF (VARCHAR(18)), BDENDERECO, BDTELEFONE
+    2. Preencher a tabela de cliente com no mínimo 5 clientes
+        (UPDATE OR INSERT)
+    3. Adicionar o campo de email
+    4. Atualizar o campo de email dos clientes já cadastrados para um padrão
+
+    BDCNPJCPF: O banco deve guardar: "01.001.001/0001-36" (VARCHAR(18))
+               OU "110.555.666-77"
+
+
+ALT + F --> Identa tudo
+ALT + Flechas --> Letras selecionadas para maiúsculo ou minúsculo
+
+
+/*Subselect dentro de Select. Faz com que a 
+consulta fique mais rápida e eficiente*/
+SELECT *
+FROM (
+    SELECT *
+    FROM TCLIENTE
+    WHERE BDCODIGOCLIENTE BETWEEN 1 AND 3
+) SUBSELECT
+JOIN TUF UF ON (UF.BDCODUF = SUBSELECT.BDCODUF)
+WHERE UF.BDCODIGOUF = 1
+
+DM_NUMERIC_15_2 --> Número de 15 casas inteiras e 2 casas decimais

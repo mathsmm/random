@@ -1,0 +1,69 @@
+OBSERVAÇÃO: .Length é usado para ARRAYS e
+            .length é usado para VARIÁVEIS
+
+------------------------------------------------------------
+
+Resto de divisão:
+
+int numero = 10;
+
+if (numero % 2 == 0)
+{
+    Console.WriteLine("É par!");
+}
+else
+{
+    Console.WriteLine("É ímpar!");
+}
+
+------------------------------------------------------------
+
+Cria-se função (ou método) fora do método Main, dentro da Classe Program:
+
+
+public static double Somar(double numero1, double numero2) 
+{
+    return numero1 + numero2;
+}
+
+------------------------------------------------------------
+
+Array (lista) predefinida:
+
+
+string[] listaNomes = 
+{
+    "Diego", "Daniel", "Marcela", "Alexandre", "Matheus", "Felipe"
+};
+
+
+for (int i = 0; i < listaNomes.Length; i++)
+{
+    Console.WriteLine($"Índice: {i} - Nome: {listaNomes[i]}");
+}
+
+// OU:
+
+foreach (string nome in listaNomes)
+{
+    Console.WriteLine($"Nome: {nome}");
+}
+
+------------------------------------------------------------
+
+Array (lista) com tamanho predefinido:
+
+
+string[] listaNomes = new string[6];
+
+
+for (int i = 0; i < listaNomes.Length; i++)
+{
+    Console.WriteLine($"Informe o {i + 1}º nome: ");
+    listaNomes[i] = Console.ReadLine();
+}
+
+foreach (string nome in listaNomes)
+{
+    Console.WriteLine(nome);
+}

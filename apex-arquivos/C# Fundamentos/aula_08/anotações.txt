@@ -1,0 +1,21 @@
+using System;
+-> Traz somente as classes que estão DENTRO DA PASTA
+(BIBLIOTECA) System. Não traz pastas subsequentes,
+como .Data , .Collections ou .Text. Por isso, usa-se
+"using System.Collections.Generic;" no código, por exemplo.
+
+------------------------------------------------------------
+
+SqlCommand -> caixa de cima do SQL
+SqlDataReader -> caixa de baixo do SQL
+
+------------------------------------------------------------
+
+Comando:
+
+Ctrl + '
+-> SE O CURSOR ESTIVER NO EDITOR DE TEXTO:
+   Passa o cursor para o terminal
+
+-> SE O CURSOR ESTIVER NO TERMINAL:
+   Minimiza o terminal

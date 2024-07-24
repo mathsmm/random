@@ -1,0 +1,63 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": []
+  },
+  "packageFolders": {
+    "C:\\Users\\matmm\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\matmm\\Desktop\\Apex_Matheus-Marchi-Moro\\C# Fundamentos\\aula_03\\Exercicio_pode_continuar_comprando\\Exercicio_pode_continuar_comprando.csproj",
+      "projectName": "Exercicio_pode_continuar_comprando",
+      "projectPath": "C:\\Users\\matmm\\Desktop\\Apex_Matheus-Marchi-Moro\\C# Fundamentos\\aula_03\\Exercicio_pode_continuar_comprando\\Exercicio_pode_continuar_comprando.csproj",
+      "packagesPath": "C:\\Users\\matmm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matmm\\Desktop\\Apex_Matheus-Marchi-Moro\\C# Fundamentos\\aula_03\\Exercicio_pode_continuar_comprando\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\matmm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

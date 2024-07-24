@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="analysis">
+			<Prp name="key" type="S" value="{DA6618E0-D3FA-4FEE-898E-636570B3A4A6}"/>
+		</Node>
+		<Node name="child list">
+			<Node name="item0">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Script\Script.tcScript"/>
+				</Node>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="key" type="S" value="{FA700E5B-4AAB-4ABE-AB7A-4679A2AFDC2A}"/>
+				<Prp name="type" type="S" value="{9252F941-DB23-4FCA-AA50-858B33BB4A19}"/>
+				<Prp name="typename" type="S" value="Script"/>
+			</Node>
+			<Node name="item1">
+				<Node name="item data">
+					<Prp name="storage" type="S" value="Events\Events.tcAX"/>
+				</Node>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="key" type="S" value="{197D749C-6326-402C-88BD-B93FC7C9CA63}"/>
+				<Prp name="type" type="S" value="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}"/>
+				<Prp name="typename" type="S" value="Events"/>
+			</Node>
+			<Node name="item2">
+				<Node name="item data">
+					<Prp name="storage" type="S" value="TestedApps\TestedApps.tcTAs"/>
+				</Node>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="key" type="S" value="{E6C87DDE-C23A-41B1-A3AD-56FB5D5BB1DD}"/>
+				<Prp name="type" type="S" value="{90D101C8-80C7-48D4-9055-2E451B9BCD75}"/>
+				<Prp name="typename" type="S" value="Win32 Tested Applications"/>
+			</Node>
+			<Node name="item3">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Stores\Stores.tcStores"/>
+				</Node>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="key" type="S" value="{4E29337E-25A9-457A-A47A-564965D5EAA9}"/>
+				<Prp name="type" type="S" value="{5238AF17-5FE2-48FF-8BCC-9803A975A4F4}"/>
+				<Prp name="typename" type="S" value="Stores"/>
+			</Node>
+		</Node>
+		<Node name="config">
+			<Prp name="language" type="S" value="{9E432E59-33EF-4EAA-95C6-63FC35AF69EE}"/>
+		</Node>
+		<Node name="scc"/>
+		<Node name="settings">
+			<Node name="{0bd6ae2e-e5d9-4ad0-9bf3-2483d329b22a}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="-1"/>
+			</Node>
+			<Node name="{0be15905-46a9-40d6-9be2-892ec4aabbd4}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="{0def6033-13d4-4335-97e9-cc6f1fc04342}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="-1"/>
+			</Node>
+			<Node name="{18fd096e-e6b8-4d3d-9619-71670fc81d48}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="{2044dc7f-423e-4668-8114-68d23ae97ad6}">
+				<Prp name="type" type="I" value="2"/>
+				<Prp name="value" type="I" value="0"/>
+			</Node>
+			<Node name="{239ae5e0-d898-415d-8ecb-ebeb31d3f66f}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="1"/>
+				<Prp name="col1enabled" type="B" value="-1"/>
+				<Prp name="col1type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="2"/>
+				<Prp name="colindex" type="I" value="1"/>
+				<Prp name="rowcount" type="I" value="1"/>
+				<Prp name="rowindex" type="I" value="0"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="B" value="0"/>
+				<Prp name="val1x0" type="S" value="*"/>
+			</Node>
+			<Node name="{24db98d6-5ef8-47bf-977e-c2fd2c5f5fb3}">
+				<Prp name="type" type="I" value="5"/>
+				<Prp name="value" type="S" value="Log"/>
+			</Node>
+			<Node name="{2971301b-8289-4528-893e-5b7e49c390bb}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="1"/>
+				<Prp name="col1enabled" type="B" value="-1"/>
+				<Prp name="col1type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="2"/>
+				<Prp name="colindex" type="I" value="1"/>
+				<Prp name="rowcount" type="I" value="0"/>
+				<Prp name="rowindex" type="I" value="-1"/>
+				<Prp name="type" type="I" value="6"/>
+			</Node>
+			<Node name="{2fcb2eb2-336e-4fd4-96a3-8710a73addd8}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="{3ae91bbd-f37d-40e6-b49d-d2f1ef68e285}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="{3eadafe2-0cd4-4b1e-a2a9-b184e94fdcc7}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="1"/>
+				<Prp name="colindex" type="I" value="0"/>
+				<Prp name="rowcount" type="I" value="3"/>
+				<Prp name="rowindex" type="I" value="2"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="S" value="UTF-16"/>
+				<Prp name="val0x1" type="S" value="UTF-8"/>
+				<Prp name="val0x2" type="S" value="ANSI"/>
+			</Node>
+			<Node name="{46632085-553c-435a-ba14-02a15f420d8e}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="5"/>
+				<Prp name="col1enabled" type="B" value="-1"/>
+				<Prp name="col1type" type="I" value="1"/>
+				<Prp name="colcount" type="I" value="2"/>
+				<Prp name="colindex" type="I" value="1"/>
+				<Prp name="rowcount" type="I" value="0"/>
+				<Prp name="rowindex" type="I" value="-1"/>
+				<Prp name="type" type="I" value="6"/>
+			</Node>
+			<Node name="{47a56f4f-f2d3-4697-bec8-632b29d5a344}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="1"/>
+				<Prp name="col1enabled" type="B" value="-1"/>
+				<Prp name="col1type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="2"/>
+				<Prp name="colindex" type="I" value="1"/>
+				<Prp name="rowcount" type="I" value="7"/>
+				<Prp name="rowindex" type="I" value="6"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="B" value="0"/>
+				<Prp name="val0x1" type="B" value="-1"/>
+				<Prp name="val0x2" type="B" value="-1"/>
+				<Prp name="val0x3" type="B" value="-1"/>
+				<Prp name="val0x4" type="B" value="-1"/>
+				<Prp name="val0x5" type="B" value="-1"/>
+				<Prp name="val0x6" type="B" value="0"/>
+				<Prp name="val1x0" type="S" value="*"/>
+				<Prp name="val1x1" type="S" value="MsoCommandBar*"/>
+				<Prp name="val1x2" type="S" value="_Ww*"/>
+				<Prp name="val1x3" type="S" value="OpusApp"/>
+				<Prp name="val1x4" type="S" value="Vfp*"/>
+				<Prp name="val1x5" type="S" value="bosa_sdm_Microsoft Word *"/>
+				<Prp name="val1x6" type="S" value="Internet Explorer_Server"/>
+			</Node>
+			<Node name="{6ba39d6a-88c9-49b1-a310-a31f46136dfb}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="{6be019a2-a836-4b31-84d9-f9de78869d51}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="1"/>
+				<Prp name="colindex" type="I" value="0"/>
+				<Prp name="rowcount" type="I" value="2"/>
+				<Prp name="rowindex" type="I" value="0"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="S" value="Tree"/>
+				<Prp name="val0x1" type="S" value="Flat"/>
+			</Node>
+			<Node name="{72988e6f-e45c-46dc-8519-41fc9ba096b9}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="-1"/>
+			</Node>
+			<Node name="{7e5b17aa-9dc0-4fbf-8b73-7fee4c44a315}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="5"/>
+				<Prp name="col1enabled" type="B" value="-1"/>
+				<Prp name="col1type" type="I" value="5"/>
+				<Prp name="col2enabled" type="B" value="-1"/>
+				<Prp name="col2type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="3"/>
+				<Prp name="colindex" type="I" value="2"/>
+				<Prp name="rowcount" type="I" value="24"/>
+				<Prp name="rowindex" type="I" value="-1"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="S" value="Scroll bar"/>
+				<Prp name="val0x1" type="S" value="Track bar"/>
+				<Prp name="val0x10" type="S" value="Tab control"/>
+				<Prp name="val0x11" type="S" value="MDI child window"/>
+				<Prp name="val0x12" type="S" value="Pager"/>
+				<Prp name="val0x13" type="S" value="Treeview"/>
+				<Prp name="val0x14" type="S" value="Month calendar"/>
+				<Prp name="val0x15" type="S" value="Listview"/>
+				<Prp name="val0x16" type="S" value="Button control"/>
+				<Prp name="val0x17" type="S" value="Top-level window"/>
+				<Prp name="val0x18" type="S" value="List box"/>
+				<Prp name="val0x19" type="S" value="Toolbar"/>
+				<Prp name="val0x2" type="S" value="Date-time picker"/>
+				<Prp name="val0x20" type="S" value="Spin button control"/>
+				<Prp name="val0x21" type="S" value="Combo box"/>
+				<Prp name="val0x22" type="S" value="Hot-key control"/>
+				<Prp name="val0x23" type="S" value="Radio button control"/>
+				<Prp name="val0x3" type="S" value="Edit box"/>
+				<Prp name="val0x4" type="S" value="Child window"/>
+				<Prp name="val0x5" type="S" value="Check box"/>
+				<Prp name="val0x6" type="S" value="Header control"/>
+				<Prp name="val0x7" type="S" value="Status bar"/>
+				<Prp name="val0x8" type="S" value="IP address control"/>
+				<Prp name="val0x9" type="S" value="SysLink control"/>
+				<Prp name="val1x0" type="S" value="-1,*ScrollBar*"/>
+				<Prp name="val1x1" type="S" value="-1,*TrackBar*"/>
+				<Prp name="val1x10" type="S" value="-1,*TabControl*,-1,TPageControl,-1,TTabbedNotebook,-1,TPropertySheetControl"/>
+				<Prp name="val1x11" type="S" value=""/>
+				<Prp name="val1x12" type="S" value="-1,*SysPager*,-1,*PageScroller*"/>
+				<Prp name="val1x13" type="S" value="-1,*TreeView*"/>
+				<Prp name="val1x14" type="S" value="-1,*MonthCalendar*,-1,*SysMonthCal*,-1,*MonthView*"/>
+				<Prp name="val1x15" type="S" value="-1,*ListView*"/>
+				<Prp name="val1x16" type="S" value="-1,TBitBtn*,-1,TButton*,-1,Thunder*CommandButton,-1,WindowsForms*BUTTON*"/>
+				<Prp name="val1x17" type="S" value=""/>
+				<Prp name="val1x18" type="S" value="-1,ListBox,-1,TListBox*,-1,TCheckListBox*,-1,TColorListBox*,-1,ThunderRT6ListBox,-1,WFC.LISTBOX,-1,WindowsForms*.LISTBOX.*,-1,ComboLBox"/>
+				<Prp name="val1x19" type="S" value="-1,*ToolBar*"/>
+				<Prp name="val1x2" type="S" value="-1,*DateTimePick*,-1,DTPicker*"/>
+				<Prp name="val1x20" type="S" value="-1,*UpDown*"/>
+				<Prp name="val1x21" type="S" value="-1,*COMBOBOX*,-1,Thunder*DriveListBox,-1,TColorBox*"/>
+				<Prp name="val1x22" type="S" value="-1,*HotKey*"/>
+				<Prp name="val1x23" type="S" value="-1,*RadioButton*,-1,TGroupButton*,-1,Thunder*OptionButton"/>
+				<Prp name="val1x3" type="S" value="-1,EDIT,-1,TEdit,-1,TMemo,-1,TLabeledEdit,-1,*RichEdit*,-1,TseDBEdit,-1,WindowsForms*.EDIT*,-1,Thunder*TextBox,-1,WFC.EDIT"/>
+				<Prp name="val1x4" type="S" value=""/>
+				<Prp name="val1x5" type="S" value="-1,*CHECKBOX*"/>
+				<Prp name="val1x6" type="S" value="-1,*SysHeader*,-1,THeaderControl*"/>
+				<Prp name="val1x7" type="S" value="-1,*StatusBar*"/>
+				<Prp name="val1x8" type="S" value="-1,SysIPAddress32"/>
+				<Prp name="val1x9" type="S" value="-1,SysLink,-1,Link?Window"/>
+				<Prp name="val2x0" type="S" value="{23375892-4DD6-11D5-A0A0-0050DA82B17A}"/>
+				<Prp name="val2x1" type="S" value="{82A06E44-FA22-474C-8913-A5C63854D9F4}"/>
+				<Prp name="val2x10" type="S" value="{2EB3EB61-57B8-11D4-8F40-005004347D8A}"/>
+				<Prp name="val2x11" type="S" value="{D0602DF6-C17C-4C80-A4E5-8AD141AABEDC}"/>
+				<Prp name="val2x12" type="S" value="{574A6D81-63E7-11D5-A0B8-0050DA82B17A}"/>
+				<Prp name="val2x13" type="S" value="{14AAE3C1-2C95-11D4-8EF9-005004347D8A}"/>
+				<Prp name="val2x14" type="S" value="{58572EB1-5FBF-11D5-A0B1-0050DA82B17A}"/>
+				<Prp name="val2x15" type="S" value="{006B78B2-3612-11D4-8F07-005004347D8A}"/>
+				<Prp name="val2x16" type="S" value="{716CF203-263D-11D4-8EF3-005004347D8A}"/>
+				<Prp name="val2x17" type="S" value="{CCBEA5D1-4274-11D4-8F17-005004347D8A}"/>
+				<Prp name="val2x18" type="S" value="{A5B47A61-32CC-11D4-8F05-005004347D8A}"/>
+				<Prp name="val2x19" type="S" value="{B8A32261-5D3E-11D4-8F45-005004347D8A}"/>
+				<Prp name="val2x2" type="S" value="{3A50BFD1-649F-11D5-A0B9-0050DA82B17A}"/>
+				<Prp name="val2x20" type="S" value="{2E138281-4EAB-11D5-A0A2-0050DA82B17A}"/>
+				<Prp name="val2x21" type="S" value="{4ED1CDF0-2C75-11D4-8EF9-005004347D8A}"/>
+				<Prp name="val2x22" type="S" value="{9E687D31-4F7F-11D5-A0A4-0050DA82B17A}"/>
+				<Prp name="val2x23" type="S" value="{BE24E79E-E35C-4B75-834C-F462EE9396A1}"/>
+				<Prp name="val2x3" type="S" value="{3080C640-C91C-11D4-998B-AB0FB1A63070}"/>
+				<Prp name="val2x4" type="S" value="{977F8F40-C8A7-11D4-998B-F35DA5070C70}"/>
+				<Prp name="val2x5" type="S" value="{345FC421-561B-11D4-8F3B-005004347D8A}"/>
+				<Prp name="val2x6" type="S" value="{9F70C780-C783-4339-95F3-503F2E726C90}"/>
+				<Prp name="val2x7" type="S" value="{CC40A511-13AD-11D6-A1B1-0050DA82B17A}"/>
+				<Prp name="val2x8" type="S" value="{5335DB5E-B351-46BD-B6F5-EDC1E53D9F65}"/>
+				<Prp name="val2x9" type="S" value="{06374633-0A16-47EA-BFE5-38CE84C02760}"/>
+			</Node>
+			<Node name="{7e9d3e8b-dff5-4737-a877-e94b6b932bcd}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="-1"/>
+			</Node>
+			<Node name="{90fd1116-f071-44c8-ab72-f1916c2b3a1b}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="{9a7d3139-5f96-4992-8797-53ed99204933}">
+				<Prp name="type" type="I" value="2"/>
+				<Prp name="value" type="I" value="0"/>
+			</Node>
+			<Node name="{9eb8e8e6-d2f2-4a8a-adfb-492e8c0eafef}">
+				<Prp name="type" type="I" value="2"/>
+				<Prp name="value" type="I" value="10000"/>
+			</Node>
+			<Node name="{a2568cc8-7e8e-42c5-a87d-b69684a1e616}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="-1"/>
+			</Node>
+			<Node name="{bf9b6482-cea1-4402-ba61-9702404f1f12}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="-1"/>
+			</Node>
+			<Node name="{c3267834-69e4-4cd8-b16a-b60a9bb8a3b4}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="{c66145d3-15cc-47d3-8cd1-6a5744640405}">
+				<Prp name="type" type="I" value="2"/>
+				<Prp name="value" type="I" value="5"/>
+			</Node>
+			<Node name="{d5773345-4407-4a8a-ace6-0f0a9c8787c8}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="0"/>
+			</Node>
+			<Node name="{e5242a20-9b70-4540-aefd-7012791d3284}">
+				<Prp name="type" type="I" value="1"/>
+				<Prp name="value" type="B" value="-1"/>
+			</Node>
+			<Node name="{ef65967b-5d67-41d0-9e90-1e07d7ece759}">
+				<Prp name="col0enabled" type="B" value="-1"/>
+				<Prp name="col0type" type="I" value="5"/>
+				<Prp name="colcount" type="I" value="1"/>
+				<Prp name="colindex" type="I" value="0"/>
+				<Prp name="rowcount" type="I" value="8"/>
+				<Prp name="rowindex" type="I" value="7"/>
+				<Prp name="type" type="I" value="6"/>
+				<Prp name="val0x0" type="S" value="NativeDelphiObject"/>
+				<Prp name="val0x1" type="S" value="NativeCPPObject"/>
+				<Prp name="val0x2" type="S" value="NativeClrObject"/>
+				<Prp name="val0x3" type="S" value="NativeVBObject"/>
+				<Prp name="val0x4" type="S" value="NativeJavaObject"/>
+				<Prp name="val0x5" type="S" value="NativeUIAObject"/>
+				<Prp name="val0x6" type="S" value="NativeMSAA"/>
+				<Prp name="val0x7" type="S" value="Unknown"/>
+			</Node>
+			<Prp name="key" type="S" value="{2266731B-BD92-4CED-9151-D5150F02AE9D}"/>
+		</Node>
+		<Node name="test data">
+			<Node name="child list">
+				<Node name="item0">
+					<Node name="child list">
+						<Node name="item0">
+							<Node name="child list"/>
+							<Node name="test parameters"/>
+							<Prp name="count" type="I" value="1"/>
+							<Prp name="description" type="S" value=""/>
+							<Prp name="enabled" type="B" value="-1"/>
+							<Prp name="index" type="I" value="0"/>
+							<Prp name="key" type="S" value="{4E99CE4C-CA01-4FB9-AEAD-77B6614012EA}"/>
+							<Prp name="name" type="S" value="Abrir aplicação (OnStart)"/>
+							<Prp name="stoponerror" type="B" value="0"/>
+							<Prp name="stoponexception" type="B" value="0"/>
+							<Prp name="test moniker" type="S" value=""/>
+							<Prp name="timeout" type="I" value="0"/>
+						</Node>
+						<Node name="item1">
+							<Node name="child list"/>
+							<Node name="test parameters"/>
+							<Prp name="count" type="I" value="1"/>
+							<Prp name="description" type="S" value=""/>
+							<Prp name="enabled" type="B" value="-1"/>
+							<Prp name="index" type="I" value="1"/>
+							<Prp name="key" type="S" value="{DE6E7F21-7FED-4A97-B4FC-76E1FE21D5F8}"/>
+							<Prp name="name" type="S" value="Fechar tela inicial"/>
+							<Prp name="stoponerror" type="B" value="0"/>
+							<Prp name="stoponexception" type="B" value="0"/>
+							<Prp name="test moniker" type="S" value="{45D31855-7D9F-4260-BE2A-4F0F76F99FE7}pTestarFechamentoTelaInicial"/>
+							<Prp name="timeout" type="I" value="0"/>
+						</Node>
+					</Node>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="key" type="S" value="{BE1DCD29-A65C-438F-BE4F-573216A935E0}"/>
+					<Prp name="name" type="S" value="Abertura"/>
+					<Prp name="stoponerror" type="B" value="0"/>
+					<Prp name="stoponexception" type="B" value="0"/>
+					<Prp name="test moniker" type="S" value=""/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item1">
+					<Node name="child list">
+						<Node name="item0">
+							<Node name="child list"/>
+							<Node name="test parameters"/>
+							<Prp name="count" type="I" value="1"/>
+							<Prp name="description" type="S" value=""/>
+							<Prp name="enabled" type="B" value="-1"/>
+							<Prp name="index" type="I" value="0"/>
+							<Prp name="key" type="S" value="{0B5A2E3A-D925-44DB-86C3-A388A4CE6FE7}"/>
+							<Prp name="name" type="S" value="Cadastrar cliente"/>
+							<Prp name="stoponerror" type="B" value="0"/>
+							<Prp name="stoponexception" type="B" value="0"/>
+							<Prp name="test moniker" type="S" value="{5B3D8577-1AEC-4863-B17C-4248319BBBB3}pTestarCadastroCliente"/>
+							<Prp name="timeout" type="I" value="0"/>
+						</Node>
+						<Node name="item1">
+							<Node name="child list"/>
+							<Node name="test parameters"/>
+							<Prp name="count" type="I" value="1"/>
+							<Prp name="description" type="S" value=""/>
+							<Prp name="enabled" type="B" value="-1"/>
+							<Prp name="index" type="I" value="1"/>
+							<Prp name="key" type="S" value="{CE04BB6F-82D9-4AFC-93C8-D4E97C713F74}"/>
+							<Prp name="name" type="S" value="Trazer cliente"/>
+							<Prp name="stoponerror" type="B" value="0"/>
+							<Prp name="stoponexception" type="B" value="0"/>
+							<Prp name="test moniker" type="S" value="{5B3D8577-1AEC-4863-B17C-4248319BBBB3}pTestarTrazerCliente"/>
+							<Prp name="timeout" type="I" value="0"/>
+						</Node>
+					</Node>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="index" type="I" value="1"/>
+					<Prp name="key" type="S" value="{552357F3-2EFA-40C8-B9C1-6B890799CF97}"/>
+					<Prp name="name" type="S" value="Cadastro"/>
+					<Prp name="stoponerror" type="B" value="0"/>
+					<Prp name="stoponexception" type="B" value="0"/>
+					<Prp name="test moniker" type="S" value=""/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item2">
+					<Node name="child list">
+						<Node name="item0">
+							<Node name="child list"/>
+							<Node name="test parameters"/>
+							<Prp name="count" type="I" value="1"/>
+							<Prp name="description" type="S" value=""/>
+							<Prp name="enabled" type="B" value="-1"/>
+							<Prp name="index" type="I" value="0"/>
+							<Prp name="key" type="S" value="{99170E68-C8D8-4C70-B6F0-A2911727F6F5}"/>
+							<Prp name="name" type="S" value="Consultar cliente"/>
+							<Prp name="stoponerror" type="B" value="0"/>
+							<Prp name="stoponexception" type="B" value="0"/>
+							<Prp name="test moniker" type="S" value="{F5F08D8B-ED68-4164-9C47-6D651CE8905A}pTestarConsultaCliente"/>
+							<Prp name="timeout" type="I" value="0"/>
+						</Node>
+						<Node name="item1">
+							<Node name="child list"/>
+							<Node name="test parameters"/>
+							<Prp name="count" type="I" value="1"/>
+							<Prp name="description" type="S" value=""/>
+							<Prp name="enabled" type="B" value="-1"/>
+							<Prp name="index" type="I" value="1"/>
+							<Prp name="key" type="S" value="{0213B9F8-9F49-461B-B896-01B2B9FAF84E}"/>
+							<Prp name="name" type="S" value="Consultar lanc. nota"/>
+							<Prp name="stoponerror" type="B" value="0"/>
+							<Prp name="stoponexception" type="B" value="0"/>
+							<Prp name="test moniker" type="S" value="{B8C2D822-9605-4605-8FC1-A0478766EFAA}pConsultarLancNota"/>
+							<Prp name="timeout" type="I" value="0"/>
+						</Node>
+						<Node name="item2">
+							<Node name="child list"/>
+							<Node name="test parameters"/>
+							<Prp name="count" type="I" value="1"/>
+							<Prp name="description" type="S" value=""/>
+							<Prp name="enabled" type="B" value="-1"/>
+							<Prp name="index" type="I" value="2"/>
+							<Prp name="key" type="S" value="{6A33A37A-0452-4350-B8FF-BF97E6A6F080}"/>
+							<Prp name="name" type="S" value="Consultar empresa"/>
+							<Prp name="stoponerror" type="B" value="0"/>
+							<Prp name="stoponexception" type="B" value="0"/>
+							<Prp name="test moniker" type="S" value="{B8C2D822-9605-4605-8FC1-A0478766EFAA}pConsultarEmpresa"/>
+							<Prp name="timeout" type="I" value="0"/>
+						</Node>
+					</Node>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="index" type="I" value="2"/>
+					<Prp name="key" type="S" value="{BC66609E-CACC-4A22-A0FF-4F8BBA544092}"/>
+					<Prp name="name" type="S" value="Consulta"/>
+					<Prp name="stoponerror" type="B" value="0"/>
+					<Prp name="stoponexception" type="B" value="0"/>
+					<Prp name="test moniker" type="S" value=""/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item3">
+					<Node name="child list">
+						<Node name="item0">
+							<Node name="child list"/>
+							<Node name="test parameters"/>
+							<Prp name="count" type="I" value="1"/>
+							<Prp name="description" type="S" value=""/>
+							<Prp name="enabled" type="B" value="-1"/>
+							<Prp name="index" type="I" value="0"/>
+							<Prp name="key" type="S" value="{EF595C77-A752-4143-BC3F-CA3A275E31DE}"/>
+							<Prp name="name" type="S" value="Abrir Rel. Empresas"/>
+							<Prp name="stoponerror" type="B" value="0"/>
+							<Prp name="stoponexception" type="B" value="0"/>
+							<Prp name="test moniker" type="S" value="{E035DE3E-C130-4421-A514-F95B14B20655}pTestarRelatorioEmpresa"/>
+							<Prp name="timeout" type="I" value="0"/>
+						</Node>
+						<Node name="item1">
+							<Node name="child list"/>
+							<Node name="test parameters"/>
+							<Prp name="count" type="I" value="1"/>
+							<Prp name="description" type="S" value=""/>
+							<Prp name="enabled" type="B" value="-1"/>
+							<Prp name="index" type="I" value="1"/>
+							<Prp name="key" type="S" value="{90D17A31-0A82-4C3B-B3EA-6BABCB6EF5D0}"/>
+							<Prp name="name" type="S" value="Abrir rel. lanc. notas"/>
+							<Prp name="stoponerror" type="B" value="0"/>
+							<Prp name="stoponexception" type="B" value="0"/>
+							<Prp name="test moniker" type="S" value="{E035DE3E-C130-4421-A514-F95B14B20655}pTestarRelatorioLancNotas"/>
+							<Prp name="timeout" type="I" value="0"/>
+						</Node>
+					</Node>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="index" type="I" value="3"/>
+					<Prp name="key" type="S" value="{44A56368-9613-4598-BD77-8EB3880CC352}"/>
+					<Prp name="name" type="S" value="Relatório"/>
+					<Prp name="stoponerror" type="B" value="0"/>
+					<Prp name="stoponexception" type="B" value="0"/>
+					<Prp name="test moniker" type="S" value=""/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+				<Node name="item4">
+					<Node name="child list">
+						<Node name="item0">
+							<Node name="child list"/>
+							<Node name="test parameters"/>
+							<Prp name="count" type="I" value="1"/>
+							<Prp name="description" type="S" value=""/>
+							<Prp name="enabled" type="B" value="-1"/>
+							<Prp name="index" type="I" value="0"/>
+							<Prp name="key" type="S" value="{6DBF2A87-BB6C-44A8-9C1E-B5F6C0CAFE04}"/>
+							<Prp name="name" type="S" value="Fechar aplicação"/>
+							<Prp name="stoponerror" type="B" value="0"/>
+							<Prp name="stoponexception" type="B" value="0"/>
+							<Prp name="test moniker" type="S" value="{45D31855-7D9F-4260-BE2A-4F0F76F99FE7}pTestarFechamentoAplicacao"/>
+							<Prp name="timeout" type="I" value="0"/>
+						</Node>
+					</Node>
+					<Node name="test parameters"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="index" type="I" value="4"/>
+					<Prp name="key" type="S" value="{5D07D616-7028-41E5-AB9F-E80D51CCD0B4}"/>
+					<Prp name="name" type="S" value="Fechamento"/>
+					<Prp name="stoponerror" type="B" value="0"/>
+					<Prp name="stoponexception" type="B" value="0"/>
+					<Prp name="test moniker" type="S" value=""/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+			</Node>
+			<Prp name="key" type="S" value="{A4288F18-A17C-4450-8171-6851F5434177}"/>
+		</Node>
+		<Node name="variables">
+			<Node name="datav2"/>
+			<Prp name="key" type="S" value="{5BF9EF28-EB53-4EEE-A2A9-B8CA15EBFA25}"/>
+		</Node>
+		<Prp name="signature" type="S" value="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}"/>
+		<Prp name="version" type="S" value="5.0"/>
+	</Node>
+</Nodes>

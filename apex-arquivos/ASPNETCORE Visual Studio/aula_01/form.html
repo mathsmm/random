@@ -1,0 +1,112 @@
+<!--
+    MACETES
+
+    ul>li*5
+
+    table>thead>tr>th*3
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- <link rel="stylesheet" href="meu-estilo.css"> -->
+
+        <!-- OU: -->
+
+        <style>
+            @import url('meu-estilo.css');
+        </style>
+
+    </head>
+
+    <body>
+        <fieldset class="fieldSetContainer">
+            <legend>Dados Pessoais</legend>
+            <label>Nome</label>
+            <input type="text">
+            <br>
+            <label>E-mail</label>
+            <input type="text">
+            <br>
+            <label>Telefone</label>
+            <input type="tel">
+            <br>
+            <label>Idade</label>
+            <input type="number">
+        </fieldset>
+
+        <fieldset class="fieldSetContainer">
+            <legend>Benefícios</legend>
+            <label>
+                <input type="checkbox">
+                Unimed
+            </label>
+            <br>
+            <label>
+                <input type="checkbox">
+                Uniodonto
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Alimentação</legend>
+            <label>
+                <input type="radio" name="grupoAL">
+                Cartão refeição
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="grupoAL">
+                Cartão Alimentação
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="grupoAL">
+                Outros
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Botões</legend>
+            <button type="button" onclick="alert('Bem vindo!')">
+                Clique
+            </button>
+
+            <button type="submit">
+                Enviar
+            </button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cidades</legend>
+            <select>
+                <optgroup label="Santa Catarina">
+                    <option value="Blumenau" label="Blumenau"></option>
+                    <option value="Florianópolis" label="Florianópolis"></option>
+                    <option value="Criciuma" label="Criciuma"></option>
+                    <option value="Lages" label="Lages"></option>
+                </optgroup>
+                <optgroup label="Rio Grande do Sul">
+                    <option value="Porto Alegre" label="Porto Alegre"></option>
+                    <option value="Canoas" label="Canoas"></option>
+                    <option value="Guaíba" label="Guaíba"></option>
+                    <option value="Santana do Livramento" label="Santana do Livramento"></option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Observaçoes</legend>
+            <label>Comnetário</label> <br>
+            <textarea cols="80" rows="5"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informação</legend>
+            <label>Andamento</label>
+            <progress value="70" max="100">70%</progress>
+        </fieldset>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+1) Criar base de dados chamada EXERCICIOS
+........
+CREATE DATABASE EXERCICIOS
+================================================================================
+2) Criar tabela PESSOA com os campos 
+    ID, NOME, DATA_NASCIMENTO, SEXO
+    ID PRIMARY KEY IDENTITY(1, 1)
+........
+CREATE TABLE PESSOA (
+    ID INT PRIMARY KEY IDENTITY(1, 1),
+    NOME VARCHAR(100) NOT NULL,
+    DATA_NASCIMENTO DATE,
+    SEXO CHAR(1) NOT NULL
+)
+================================================================================
+3) Inserir um registro que contenha o 
+    NOME = 'Diego', DATA_NASCIMENTO = '1986-11-21', SEXO = 'M'
+........
+INSERT INTO PESSOA(NOME, DATA_NASCIMENTO, SEXO)
+VALUES ('Diego', '1986-11-21', 'M')
+================================================================================
+4) Inserir um registro que contenha a mesma data de 
+    nascimento do Diego
+........
+INSERT INTO PESSOA(NOME, DATA_NASCIMENTO, SEXO)
+VALUES ('Manuela', '1986-11-21', 'F')
+================================================================================
+5) Inserir mais 4 registros de pessoas na tabela PESSOA, 
+    sendo que as informações não podem ser iguais
+........
+INSERT INTO PESSOA(NOME, DATA_NASCIMENTO, SEXO)
+VALUES ('João', '2000-03-22', 'M'),
+       ('Thomas', '1999-07-02', 'M'),
+       ('Lucas', '1998-12-24', 'M'),
+       ('Marcos', '1950-02-08', 'M')
+================================================================================
+6) Executar o comando SELECT para retornar todos os registros da 
+    tabela PESSOA
+........
+SELECT *
+  FROM PESSOA
+================================================================================
+7) Executar o comando SELECT para retornar apenas 
+    a DATA_NASCIMENTO e NOME das pessoas
+........
+SELECT DATA_NASCIMENTO, NOME 
+  FROM PESSOA
+================================================================================
+8) Executar o comando UPDATE para modificar o nome 
+    do Diego para 'Diego Cugiki'
+........
+UPDATE PESSOA
+   SET NOME = 'Diego Cugiki'
+ WHERE ID = 1
+================================================================================
+9) Executar o comando UPDATE para modificar a data de 
+    nascimento da pessoa que nasceu no mesmo dia do Diego Cugiki
+........
+UPDATE PESSOA
+   SET DATA_NASCIMENTO = '2003-04-21'
+ WHERE ID = 2
+================================================================================
+10) Executar o comando DELETE para excluir o registro do Diego Cugiki
+........
+DELETE PESSOA
+ WHERE NOME = 'Diego Cugiki'

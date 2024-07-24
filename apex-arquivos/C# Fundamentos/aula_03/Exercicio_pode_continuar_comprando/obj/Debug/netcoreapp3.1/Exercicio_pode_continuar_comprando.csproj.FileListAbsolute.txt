@@ -1,0 +1,13 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\bin\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\bin\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\bin\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\bin\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\bin\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\bin\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\obj\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\obj\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\obj\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\obj\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\obj\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\obj\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_03\Exercicio_pode_continuar_comprando\obj\Debug\netcoreapp3.1\Exercicio_pode_continuar_comprando.genruntimeconfig.cache

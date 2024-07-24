@@ -1,0 +1,13 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\obj\Debug\netcoreapp3.1\projetoDescontoLoja.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\obj\Debug\netcoreapp3.1\projetoDescontoLoja.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\obj\Debug\netcoreapp3.1\projetoDescontoLoja.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\obj\Debug\netcoreapp3.1\projetoDescontoLoja.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\bin\Debug\netcoreapp3.1\projetoDescontoLoja.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\bin\Debug\netcoreapp3.1\projetoDescontoLoja.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\bin\Debug\netcoreapp3.1\projetoDescontoLoja.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\bin\Debug\netcoreapp3.1\projetoDescontoLoja.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\bin\Debug\netcoreapp3.1\projetoDescontoLoja.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\bin\Debug\netcoreapp3.1\projetoDescontoLoja.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\obj\Debug\netcoreapp3.1\projetoDescontoLoja.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\obj\Debug\netcoreapp3.1\projetoDescontoLoja.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoDescontoLoja\obj\Debug\netcoreapp3.1\projetoDescontoLoja.genruntimeconfig.cache

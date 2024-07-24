@@ -1,0 +1,24 @@
+procedure pAbrirAplicacao;
+begin
+  if TestedApps.PEDSCI.Exists then
+     exit;
+  TestedApps.PEDSCI.Run();
+end;
+
+procedure pFecharTelaInicial;
+  var p1 : OleVariant; 
+  var w1 : OleVariant;
+begin
+  if not (Sys.Process('PEDSCI').WaitWindow('#32770', 'Devart dbExpress Driver for InterBase', 1, 2000).Exists) then
+     exit;
+  
+  p1 := Sys.Process('PEDSCI');
+  w1 := p1.Window('#32770', 'Devart dbExpress Driver for InterBase', 1).Window('Button', 'OK', 1);
+  w1.ClickButton;
+end;
+
+procedure pFechar;
+  var w1 : OleVariant;
+begin
+  Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor').Close;
+end;

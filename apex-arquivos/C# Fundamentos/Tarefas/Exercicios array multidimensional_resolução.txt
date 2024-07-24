@@ -1,0 +1,143 @@
+Exercicios array multidimensional:
+
+1)  Com o array e variaveis definidos abaixo:
+    int[,] listaNumeros = new int[4, 4] { { 1, 2, 3, 40 }, { 3, 4, 10, 30 }, { 5, 6, 35, 67 }, { 7, 8, 90, 91 } };
+    int maiorDaLinha = 0;
+    double mediaColuna = 0;
+
+    Faça um programa que calcule:
+     a) O Maior numero de cada linha
+     b) A média de valor de cada coluna
+
+
+        static void Main(string[] args)
+        {
+            int[,] listaNumeros = new int[4, 4]
+            {
+                { 1, 2, 3, 40 },
+                { 3, 4, 10, 30 },
+                { 5, 6, 35, 67 },
+                { 7, 8, 90, 91 }
+            };
+            EscreverMaiorNumeroDeCadaLinha(listaNumeros);
+            EscreverMediaNumeroDeCadaColuna(listaNumeros);
+        }
+
+        public static void EscreverMaiorNumeroDeCadaLinha(int[,] listaDeNumeros)
+        {
+            int maiorDaLinha = 0;
+
+            for (int iL = 0; iL < listaDeNumeros.GetLength(0); iL++)
+            {
+                for (int iC = 0; iC < listaDeNumeros.GetLength(1); iC++)
+                {
+                    if (listaDeNumeros[iL, iC] > maiorDaLinha)
+                    {
+                        maiorDaLinha = listaDeNumeros[iL, iC];
+                    }
+                }
+                Console.WriteLine($"Maior número da linha {iL + 1}: {maiorDaLinha}");
+                maiorDaLinha = 0;
+            }
+        }
+
+        public static void EscreverMediaNumeroDeCadaColuna(int[,] listaDeNumeros)
+        {
+            double somaColuna = 0;
+            double mediaColuna = 0;
+
+            for (int iC = 0; iC < listaDeNumeros.GetLength(1); iC++)
+            {
+                for (int iL = 0; iL < listaDeNumeros.GetLength(0); iL++)
+                {
+                    somaColuna += listaDeNumeros[iL, iC];
+                }
+                mediaColuna = somaColuna / listaDeNumeros.GetLength(0);
+                Console.WriteLine($"Média da coluna {iC + 1}: {mediaColuna}");
+                somaColuna = 0;
+                mediaColuna = 0;
+            }
+        }
+
+
+
+2)  Escreva um programa que solicite ao usuário 10 valores do tipo double e armazene-os em uma matriz de dimensões 2x5.
+    Ao final exibiba:
+        $"Valor: {valorQueEstaNoArray} está na linha {linhaOndeEstaOValor} e na coluna {colunaOndeEstaOValor}"
+
+
+        static void Main(string[] args)
+        {
+            double[,] listaNumeros = new double[2, 5];
+            ObterListaPreenchidaPeloUsuario(listaNumeros);
+            EscreverListaPreenchidaPeloUsuario(listaNumeros);
+        }
+
+        public static double[,] ObterListaPreenchidaPeloUsuario (double[,] listaDeNumeros)
+        {
+            for (int l = 0; l < listaDeNumeros.GetLength(0); l++)
+            {
+                for (int c = 0; c < listaDeNumeros.GetLength(1); c++)
+                {
+                    Console.Write($"Informe o número da linha {l + 1} e da coluna {c + 1}: ");
+                    listaDeNumeros[l, c] = Convert.ToDouble(Console.ReadLine());
+                }
+            }
+            return listaDeNumeros;
+        }
+
+        public static void EscreverListaPreenchidaPeloUsuario(double[,] listaDeNumeros)
+        {
+            for (int l = 0; l < listaDeNumeros.GetLength(0); l++)
+            {
+                for (int c = 0; c < listaDeNumeros.GetLength(1); c++)
+                {
+                    Console.WriteLine($"Valor: {listaDeNumeros[l, c]} está na linha {l + 1} e na coluna {c + 1}");
+                }
+            }
+        }
+
+
+
+3)  Escreva um programa que solicite ao usuario 8 valores do tipo int e armazene-os em uma matriz de dimensões 2, 4.
+    Ao final exiba a média destes valores.
+
+
+        static void Main(string[] args)
+        {
+            int [,] listaNumeros = new int [2, 4];
+            ObterListaDeNumerosPreenchidaPeloUsuario(listaNumeros);
+            EscreverMediaDaListaDeNumeros(ObterMediaDaListaDeNumeros(listaNumeros));
+        }
+
+        public static int[,] ObterListaDeNumerosPreenchidaPeloUsuario(int [,] listaDeNumeros)
+        {
+            for (int l = 0; l < listaDeNumeros.GetLength(0); l++)
+            {
+                for (int c = 0; c < listaDeNumeros.GetLength(1); c++)
+                {
+                    Console.Write($"Informe o número da linha {l + 1} e coluna {c + 1}: ");
+                    listaDeNumeros[l, c] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            return listaDeNumeros;
+        }
+
+        public static double ObterMediaDaListaDeNumeros(int[,] listaDeNumeros)
+        {
+            double somaDosNumeros = 0;
+
+            for (int l = 0; l < listaDeNumeros.GetLength(0); l++)
+            {
+                for (int c = 0; c < listaDeNumeros.GetLength(1); c++)
+                {
+                    somaDosNumeros += listaDeNumeros[l, c];
+                }
+            }
+            return somaDosNumeros / (listaDeNumeros.GetLength(0) + 1 + listaDeNumeros.GetLength(1) + 1);
+        }
+
+        public static void EscreverMediaDaListaDeNumeros(double media)
+        {
+            Console.WriteLine($"A média dos números da lista é: {media}");
+        }

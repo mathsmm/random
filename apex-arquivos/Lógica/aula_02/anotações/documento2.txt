@@ -1,0 +1,212 @@
+{} -> Bloco de código
+
+============================================================
+
+SIMBOLOGIA:
+
+&& -> Porta lógica AND (E)
+|| -> Porta lógica OR (OU)
+
+? -> Então,
+: -> Se não,
+
+> Maior que
+< Menor que
+>= Maior ou igual a
+<= Menor ou igual a
+!= Diferente de
+== Igual a
+=== Idêntico a
+
+*Exemplos:
+20 == 20 -> VERDADEIRO
+"20" == 20 ->VERDADEIRO
+
+20 === 20 -> VERDADEIRO
+"20" === 20 -> FALSO (a string "20" não é idêntica ao número 20)
+
+2 < 10 = true
+219 < 10 = false
+10 > 2 = true
+5 != 10 = true
+5 === 5 = true
+
+2 == "2" = true
+10 > "2" = false
+
+10 === "10" = false
+
+
+
+
+
+
+========================================================================
+
+let numero = window.prompt("Informe um número")
+// let restoDivisao = numero % 2
+// document.write('<p>O resto da divisão é igual a: ' + restoDivisao + '</p>')
+
+numero = parseInt(numero)
+
+// Para incrementar 1:
+numero++
+
+document.write('<h1>Valor do número: ' + numero + '</h1>')
+
+// Para incrementar 1:
+++numero
+
+document.write('<h1>Valor do número: ' + numero + '</h1>')
+
+// Para decrementar 1:
+numero--
+
+document.write('<h1>Valor do número: ' + numero + '</h1>')
+
+// Para decrementar 1:
+--numero
+
+document.write('<h1>Valor do número: ' + numero + '</h1>')
+
+// Ele recebeu um número, incrementou 1, incrementou 1, decrementou 1 e decrementou 1
+// Assim, se eu digitar "100", ele faz a seguinte operação: +1 +1 -1 -1, o que dá "100" como resultado
+
+==========================================================================
+
+let numero = window.prompt("Informe um número")
+
+let restoDivisao = numero % 2
+
+if (restoDivisao === 0) 
+{
+    document.write('<h1>PAR</h1>')
+}
+
+else 
+{
+    document.write('<h1>ÍMPAR</h1>')
+}
+
+->C# se escreve assim
+
+============================================================================
+
+let numero = window.prompt("Informe um número")
+
+let restoDivisao = numero % 2
+
+if (restoDivisao === 0) {
+    document.write('<h1>PAR</h1>')
+} else {
+    document.write('<h1>ÍMPAR</h1>')
+}
+
+-> Javascript e Java se escreve assim
+
+===========================================================================
+
+VERSÃO SIMPLIFICADA DOS DOIS ACIMA:
+
+let numero = window.prompt("Informe um número")
+
+if (numero % 2 === 0) {
+    document.write('<h1>PAR</h1>')
+} else {
+    document.write('<h1>ÍMPAR</h1>')
+}
+
+============================================================================
+
+EXERCÍCIO
+
+let numero = window.prompt("Informe um número. Será dito se é um número múltiplo de cinco")
+
+/*
+if (numero >= 5 && numero % 5 === 0) {
+    document.write('É MÚLTIPLO DE CINCO')
+} else {
+    document.write('NÃO É MÚLTIPLO DE CINCO')
+}
+*/
+
+if (numero < 5){
+    document.write('Informe um número MAIOR que cinco')
+} else if (numero % 5 === 0) {
+    document.write('É MÚLTIPLO DE CINCO')
+} else {
+    document.write('NÃO É MÚLTIPLO DE CINCO')
+}
+
+==============================================================================
+
+let dia = window.prompt('Digite um número entre 1 e 7')
+dia = parseInt(dia)
+
+switch(dia) {
+    case 1:
+        document.write('<h2>Domingo</h2>'); 
+        break;
+    case 2:
+        document.write('<h2>Segunda</h2>'); 
+        break;
+    case 3:
+        document.write('<h2>Terça</h2>'); 
+        break;
+    case 4:
+        document.write('<h2>Quarta</h2>'); 
+        break;
+    case 5:
+        document.write('<h2>Quinta</h2>'); 
+        break;
+    case 6:
+        document.write('<h2>Sexta</h2>'); 
+        break;
+    case 7:
+        document.write('<h2>Sábado</h2>'); 
+        break;
+    default:
+        document.write('<h2>Dia inválido</h2>');
+        break;
+}
+
+
+OU:
+
+
+let dia = window.prompt('Digite um número entre 1 e 7')
+dia = parseInt(dia)
+
+switch(dia) {
+    case 1: document.write('<h2>Domingo</h2>'); break;
+    case 2: document.write('<h2>Segunda</h2>'); break;
+    case 3: document.write('<h2>Terça</h2>'); break;
+    case 4: document.write('<h2>Quarta</h2>'); break;
+    case 5: document.write('<h2>Quinta</h2>'); break;
+    case 6: document.write('<h2>Sexta</h2>'); break;
+    case 7: document.write('<h2>Sábado</h2>'); break;
+    default: document.write('<h2>Dia inválido</h2>'); break;
+}
+
+=========================================================================
+
+let idade = window.prompt('Informe tua idade')
+parseInt(idade)
+
+if (idade >= 18) {
+    document.write("Maior de idade")
+} else {
+    document.write("Menor de idade")
+}
+
+
+OU:
+
+
+let idade = window.prompt('Informe tua idade')
+parseInt(idade)
+
+let mensagem = idade >= 18 ? "Maior de idade" : "Menor de idade"
+document.write(mensagem)
+
+===============================================================================

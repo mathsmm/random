@@ -1,0 +1,13 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\obj\Debug\netcoreapp3.1\projetoFuncionarioSalario.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\obj\Debug\netcoreapp3.1\projetoFuncionarioSalario.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\obj\Debug\netcoreapp3.1\projetoFuncionarioSalario.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\obj\Debug\netcoreapp3.1\projetoFuncionarioSalario.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\bin\Debug\netcoreapp3.1\projetoFuncionarioSalario.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\bin\Debug\netcoreapp3.1\projetoFuncionarioSalario.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\bin\Debug\netcoreapp3.1\projetoFuncionarioSalario.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\bin\Debug\netcoreapp3.1\projetoFuncionarioSalario.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\bin\Debug\netcoreapp3.1\projetoFuncionarioSalario.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\bin\Debug\netcoreapp3.1\projetoFuncionarioSalario.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\obj\Debug\netcoreapp3.1\projetoFuncionarioSalario.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\obj\Debug\netcoreapp3.1\projetoFuncionarioSalario.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoFuncionarioSalario\obj\Debug\netcoreapp3.1\projetoFuncionarioSalario.genruntimeconfig.cache

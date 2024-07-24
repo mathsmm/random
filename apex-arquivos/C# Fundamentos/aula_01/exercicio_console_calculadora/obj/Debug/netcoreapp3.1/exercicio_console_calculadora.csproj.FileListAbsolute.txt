@@ -1,0 +1,26 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.genruntimeconfig.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\bin\Debug\netcoreapp3.1\exercicio_console_calculadora.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_01\exercicio_console_calculadora\obj\Debug\netcoreapp3.1\exercicio_console_calculadora.genruntimeconfig.cache

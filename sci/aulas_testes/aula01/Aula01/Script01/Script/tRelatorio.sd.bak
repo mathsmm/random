@@ -1,0 +1,7 @@
+uses
+  uTeste,
+  uCadastro,
+  uConsulta,
+  uRelatorio,
+  tCadastro,
+  tConsulta;

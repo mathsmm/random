@@ -1,0 +1,22 @@
+uses
+  uTeste; 
+  
+procedure GeneralEvents_OnStartTest(Sender);
+begin
+  uTeste.pAbrirAplicacao;
+end;
+  
+//procedure pTestarAberturaAplicacao;
+//begin
+//  uTeste.pAbrirAplicacao;
+//end;
+
+procedure pTestarFechamentoTelaInicial;
+begin
+  uTeste.pFecharTelaInicial;
+end; 
+
+procedure pTestarFechamentoAplicacao;
+begin
+  uTeste.pFechar;
+end;

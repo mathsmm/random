@@ -1,0 +1,43 @@
+*É importante digitar comando por comando
+
+COMANDOS:
+
+clear
+*Limpa o bloco de comandos do git
+
+git status
+*Verifica o status do git
+
+git init
+*Inicializa um Repositório Local e cria uma pasta oculta .git dentro da pasta principal
+
+git remote add origin https://github.com/MarchiMM/primeiroRepositorio.git
+*Faz o vínculo do Repositório Local com o Repositório Remoto. É possível achar esse endereço web no GitHub ao criar um repositório
+
+git add .
+*Adiciona todos os arquivos que estão na pasta ao Repositório Remoto. Estar dentro da pasta NÃO significa que está no repositório
+
+git commit -m "Adicionado arquivo de dicas git"
+*Salva o que foi adicionado ao Repositório Local. Necessita-se colocar uma mensagem para se ter um controle de versão
+
+git push -u origin master
+*Empurra tudo o que tem no Repositório Local ao master da nuvem. -u serve para adicionar TUDO que tem no Repositório Local
+
+
+*Para atualizar o arquivo no Repositório Remoto:
+salva o arquivo na pasta
+git add .
+(para atualizar os arquivos da pasta no Repositório Local)
+git commit -m "Comentário"
+(para adicionar o comentário da nova versão)
+git push -u origin master
+(para upar ao Repositório Remoto a nova versão dos arquivos)
+
+
+*Para acessar o Repositório Local pelo Repositório Remoto (pelo GitHub)
+-Abre o repositório no GitHub
+-Clica no botão verde "Code"
+-Copia o endereço
+-Digitar "git clone "endereço copiado sem as aspas""
+*"git clone" adiciona o Repositório Remoto à outra máquina. Só é preciso digitar tal comando UMA vez
+-Digitar "git pull" toda vez que quiser atualizar os arquivos na outra máquina

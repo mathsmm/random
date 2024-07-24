@@ -1,0 +1,4 @@
+\n -> Quebra a linha
+
+Math.Round(-número flutuante-, -número de casas decimais-) -> 
+Arrendonda  para a quantidade casas decimais que informou à função

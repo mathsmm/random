@@ -1,0 +1,93 @@
+let primeiraNota = parseFloat(
+    window.prompt('Informe a primeira nota: ')
+)
+
+OU
+
+let primeiraNota = window.prompt('Informe a primeira nota: ')
+primeiraNota = parseFloat(primeiraNota)
+
+==================================================================================
+
+let nota1 = window.prompt("Informe a primeira nota de três")
+nota1 = parseFloat(nota1)
+
+let nota2 = window.prompt("Informe a primeira nota de três")
+nota2 = parseFloat(nota2)
+
+let nota3 = window.prompt("Informe a primeira nota de três")
+nota3 = parseFloat(nota3)
+
+let media = (nota1 + nota2 + nota3) / 3
+
+if (media >= 9) {
+    document.write('<h2>Conceito A</h2>')
+} else if (media >= 7 && media < 9) {
+    document.write('<h2>Conceito B</h2>')
+} else if (media >= 5 && media < 7) {
+    document.write('<h2>Conceito C</h2>')
+} else {
+    document.write('<h2>Conceito Insuficiente</h2>')
+}
+
+
+FORMA MELHOR E MAIS BONITA:
+
+
+let nota1 = window.prompt("Informe a primeira nota de três")
+nota1 = parseFloat(nota1)
+
+let nota2 = window.prompt("Informe a primeira nota de três")
+nota2 = parseFloat(nota2)
+
+let nota3 = window.prompt("Informe a primeira nota de três")
+nota3 = parseFloat(nota3)
+
+let media = (nota1 + nota2 + nota3) / 3
+
+let mensagemRetorno = '<h2>Conceito Insuficiente</h2>'
+
+if (media >= 9) {
+    mensagemRetorno = '<h2>Conceito A</h2>'
+} else if (media >= 7 && media < 9) {
+    mensagemRetorno = '<h2>Conceito B</h2>'
+} else if (media >= 5 && media < 7) {
+    mensagemRetorno = '<h2>Conceito C</h2>'
+}
+
+document.write(mensagemRetorno)
+
+=====================================================================
+
+let contador = 1;
+
+while (contador <= 10) {
+    document.write('<h3>' + contador + '</h3>');
+    contador++
+}
+
+=====================================================================
+
+let numeroSolicitadoPeloUsuario = parseInt(window.prompt('Informe um número: '))
+let n = 1
+
+while (n <= numeroSolicitadoPeloUsuario) {
+    document.write('<h3>Escrevendo ' + n + ' de ' + numeroSolicitadoPeloUsuario + '</h3>')
+    n++
+}
+
+
+// OU:
+
+
+let numeroSolicitadoPeloUsuario = parseInt(window.prompt('Informe um número: '))
+let n = 1
+let continuar = true
+
+while (continuar) {
+    document.write('<h3>Escrevendo ' + n + ' de ' + numeroSolicitadoPeloUsuario + '</h3>')
+    n++
+    continuar = contador <= numeroSolicitadoPeloUsuario
+}
+
+========================================================================

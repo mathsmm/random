@@ -1,0 +1,26 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.genruntimeconfig.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\bin\Debug\netcoreapp3.1\projetoCalculadora.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_06\projetoCalculadora\obj\Debug\netcoreapp3.1\projetoCalculadora.genruntimeconfig.cache

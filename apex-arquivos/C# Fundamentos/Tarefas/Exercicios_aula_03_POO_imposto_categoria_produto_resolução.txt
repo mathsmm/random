@@ -1,0 +1,83 @@
+
+----------------------------------------------------------------------------------------------------------------
+    EXERCÍCIOS
+----------------------------------------------------------------------------------------------------------------
+1)  Calcular imposto de produto pela categoria
+
+    a)  Criar uma classe chamada Produto
+    b)  A classe Produto deve conter os atributos Nome, Categoria e Valor
+    c)  A classe Produto deve conter um construtor que alimente as propriedades com valor.
+    d)  A classe Produto deve conter a função CalcularImpostoPorCategoria, nesta função teremos apenas 2 tipos de categorias
+        "Eletrônico" e "Vestuário". Caso a categoria do produto seja "Eletrônico" o imposto será de 20%, caso a categoria
+        seja Vestuário será 10%, e se não for nenhuma das anteriores será 5%.
+        Esta função deve retornar o valor de imposto calculado.
+    e)  A classe Produto deve ter uma função chamada CalcularValorTotalComImposto, que recebe por parametro o valor do imposto.
+        Esta função deve retornar a soma do valor do produto com o valor de imposto.
+    f)  A classe Produto deve ter uma função chamada ObterMensagemDoProduto que irá retornar:
+        $"O produto {nome} terá um imposto de R${valorImposto}.\n Valor do produto com os impostos R$ {valorTotalComImpostos}"
+
+
+    public class Produto
+    {
+        private string Nome { get; set; }
+        private string Categoria { get; set; }
+        private double Valor { get; set; }
+
+        public Produto(string nome, string categoria, double valor)
+        {
+            this.Nome = nome;
+            this.Categoria = categoria;
+            this.Valor = valor;
+        }
+
+        public double CalcularImpostoPorCategoria()
+        {
+            if (this.Categoria == "Eletrônico")
+            {
+                return this.Valor * 0.20;
+            }
+            else if (this.Categoria == "Vestuário")
+            {
+                return this.Valor * 0.10;
+            }
+            else
+            {
+                return this.Valor * 0.05;
+            }
+        }
+
+        public double CalcularValorTotalComImposto(double imposto)
+        {
+            return this.Valor + imposto;
+        }
+
+        public string ObterMensagemDoProduto()
+        {
+            double valorImposto = CalcularImpostoPorCategoria();
+            double valorTotalComImpostos = CalcularValorTotalComImposto(valorImposto);
+            // Criei variáveis para chamar as funções somente uma vez
+            return 
+                $"O produto {this.Nome} terá um imposto de R$ {valorImposto}.\n" + 
+                $"Valor do produto com os impostos: R$ {valorTotalComImpostos}";
+        }
+    }
+
+--------------------------------------------------------------------------------
+
+    g)  Na classe program no metodo Main, instanciar o objeto Produto e setar as informaçoes de nome, categoria e valor
+    h)  Na classe program no metodo Main, mostrar no console o retorno do método ObterMensagemDoProduto
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Produto objProduto1 = new Produto("Headset", "Eletrônico", 110);
+            Produto objProduto2 = new Produto("Camiseta", "Vestuário", 35.90);
+            Produto objProduto3 = new Produto("Caneta", "Material Escolar", 1.75);
+
+            Console.WriteLine(objProduto1.ObterMensagemDoProduto());
+            Console.WriteLine(objProduto2.ObterMensagemDoProduto());
+            Console.WriteLine(objProduto3.ObterMensagemDoProduto());
+        }
+    }

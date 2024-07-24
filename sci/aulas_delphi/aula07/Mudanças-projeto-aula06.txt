@@ -1,0 +1,15 @@
+Classes novas:
+    Pessoa Física
+    Pessoa Jurídica
+    *Herdadas de Pessoa
+
+    Criar procedure abstrata em pessoa (pAtribuirTipoPessoa)
+    que será implementada de maneira diferente em cada classe herdada
+
+Verificação de campos:
+    Campo código só pode conter números
+    Campo CPF/CNPJ só pode conter números, ponto e hífen
+
+Tela pai para Cadastro (com campo código somente)
+
+Tela pai para Consulta (com nada?)

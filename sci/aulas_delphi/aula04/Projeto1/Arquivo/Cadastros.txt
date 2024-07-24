@@ -1,0 +1,2 @@
+Código: 1 | Pessoa: Física | CPF/CNPJ: 1 | Nome: a | Endereço: a | Isento: Não
+Código: 2 | Pessoa: Física | CPF/CNPJ: 1 | Nome: b | Endereço: b | Isento: Não

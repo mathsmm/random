@@ -1,0 +1,230 @@
+CREATE DATABASE NOME_DA_BASE (cria determinada base de dados)
+==========
+DROP DATABASE NOME_DA_BASE (exclui determinada base de dados)
+==========
+USE NOME_DA_BASE (edita determinada base de dados)
+==========
+Chave Primária SINTÉTICA = O programador cria o campo específico para a chave primária. Ex: ID;
+Chave Primária NATURAL = CPF, placa de carro. Naturalmente já são identificações únicas.
+==========
+CREATE TABLE PESSOA (
+    ID INT PRIMARY KEY,
+    NOME VARCHAR(100) NOT NULL,
+    IDADE INT,
+    DATA_NASCIMENTO DATE,
+    CPF VARCHAR(11) NOT NULL
+)
+----------
+(cria uma tabela com as colunas "ID", "NOME", "IDADE", "D_N" e "CPF")
+ID -> Nome do campo
+INT -> Tipo de dado
+PRIMARY KEY -> Restrição/Restrições
+no caso do PRIMARY KEY em específico, é o identificador único de cada item;
+não pode ser nulo; é incrementado automaticamente.
+==========
+DROP TABLE NOME_DA_TABELA
+==========
+INSERT INTO PESSOA(ID, NOME, CPF)
+VALUES(1, MATHEUS, 11111111111)
+(insere informações à tabela)
+==========
+INSERT INTO PESSOA(ID, NOME, CPF, IDADE, DATA_NASCIMENTO)
+VALUES(3 , 'DANI' , '11111222111', 40, '1980-02-18'),
+      (4, 'PEDREGUNDA', '11456711111', 40, '1980-02-18')
+==========
+SELECT * FROM PESSOA (seleciona tudo da tabela "PESSOA")
+----------
+*  ->  significa "tudo"
+==========
+ID INT PRIMARY KEY IDENTITY(1, 1)
+----------
+IDENTITY -> É uma função que faz com que o ID seja incrementado automaticamente.
+(1, 1) -> Começa no número 1 e incrementa 1 por item, respectivamente.
+==========
+CREATE TABLE PESSOA (
+    ID INT PRIMARY KEY IDENTITY(1, 1),
+    NOME VARCHAR(100) NOT NULL,
+    DATA_NASCIMENTO DATE,
+    CPF VARCHAR(11) NOT NULL,
+    SEXO CHAR(1) NOT NULL
+)
+==========
+INSERT INTO PESSOA(NOME, DATA_NASCIMENTO, CPF, SEXO)
+VALUES('Diego', '1986-11-21', '09876543212', 'M'),
+('Douglas', '1982-11-21', '09876543221', 'M'),
+('Marcela', '1992-11-21', '09876543233', 'F')
+==========
+SELECT *
+FROM PESSOA
+WHERE ID = 6
+ou
+WHERE NOME = 'Diego'
+
+(seleciona o item da tabela com a chave 6,
+ou
+seleciona os itens da tabela que têm nome 'Diego' ou 'DIEGO')
+==========
+SELECT *
+FROM PESSOA
+WHERE NOME LIKE '%Diego%'
+----------
+LIKE -> Função que seleciona algo como o que informá-lo
+%Diego -> Pega os nomes que COMEÇAM com 'Diego'
+Diego% -> Pega os nomes que TERMINAM com 'Diego'
+%Diego% -> Pega os nomes que CONTENHAM 'Diego'
+==========
+SELECT *
+FROM PESSOA
+WHERE NOME LIKE '%Diego%'
+AND DATA_NASCIMENTO = '1986-11-21'
+
+(seleciona o item que contenha 'Diego' E que contenha tal data de nascimento)
+==========
+SELECT *
+FROM PESSOA
+WHERE NOME LIKE '%Diego%'
+OR DATA_NASCIMENTO = '1986-11-21'
+
+(seleciona o item que contenha 'Diego' OU que contenha tal data de nascimento)
+==========
+SELECT *
+FROM PESSOA
+WHERE ID > 3
+==========
+SELECT *
+FROM PESSOA
+WHERE DATA_NASCIMENTO BETWEEN '1986-01-01' AND '1989-12-31'
+
+(seleciona o que estiver ENTRE tais datas de nascimento)
+==========
+SELECT *
+FROM PESSOA
+WHERE ID BETWEEN 2 AND 5
+==========
+UPDATE PESSOA SET NOME = 'Humberto' WHERE ID = 6
+
+(edita o item com o ID = 6)
+----------
+////UPDATE PESSOA SET NOME = 'Humberto'////
+////(NUNCA EXECUTAR UM UPDATE OU DELETE SEM WHERE!)////
+==========
+UPDATE PESSOA 
+   SET NOME = 'Joice', 
+   SEXO = 'F' ,
+   DATA_NASCIMENTO = '2000-06-11'
+WHERE ID = 6
+==========
+DELETE FROM PESSOA
+(deleta tudo da tabela PESSOA)
+----------
+DELETE FROM PESSOA WHERE ID = 2
+(deleta o item com o ID = 2 da tabela PESSOA)
+==========
+SELECT SUBSTRING(NOME, 2, 3)
+FROM PESSOA
+
+(seleciona, da coluna NOME, 3 caracteres a partir do caractere 2)
+==========
+SELECT LEN(NOME)
+FROM PESSOA
+
+(mostra o tamanho de cada nome da tabela)
+==========
+SELECT *
+FROM PESSOA
+WHERE LEN(NOME) > 7
+
+(seleciona somente os nomes que têm mais de 7 caracteres)
+==========
+SELECT NOME, LEN(NOME), SEXO
+FROM PESSOA
+
+(seleciona somente as colunas NOME e SEXO, além de informar o tamanho de cada nome)
+==========
+SELECT LOWER(NOME),
+       DATA_NASCIMENTO
+  FROM PESSOA
+
+(mostra os nomes trocando todas as letras por minúsculas, além das datas de nascimento)
+==========
+SELECT UPPER(NOME),
+       DATA_NASCIMENTO
+  FROM PESSOA
+
+(mostra os nomes trocando todas as letras por maiúsculas, além das datas de nascimento)
+==========
+SELECT CONCAT(NOME, ' - ', CPF),
+       DATA_NASCIMENTO
+  FROM PESSOA
+
+(mostra os nomes e os CPF concatenados, com um traço entre eles, além das datas)
+==========
+ALTER TABLE PESSOA ADD ALTURA FLOAT
+
+(adiciona uma coluna chamada ALTURA à tabela PESSOA)
+==========
+UPDATE PESSOA SET ALTURA = 1.88 WHERE ID = 7
+
+(altera a altura do item com ID = 7 para 1.88)
+==========
+SELECT COUNT(*)
+  FROM PESSOA
+
+(conta quantos regristros tem na tabela (quantas linhas))
+==========
+SELECT MAX(ALTURA)
+  FROM PESSOA
+
+(informa a maior altura da tabela)
+==========
+SELECT MIN(ALTURA)
+  FROM PESSOA
+
+(informa a menor altura da tabela)
+==========
+SELECT AVG(ALTURA)
+  FROM PESSOA
+
+(informa a média das alturas da tabela)
+==========
+SELECT SUM(ALTURA)
+  FROM PESSOA
+
+(retorna a soma de tudo que tem na coluna ALTURA)
+==========
+SELECT *
+  FROM PESSOA
+ ORDER BY NOME
+
+(ordena a coluna NOME em ordem alfabética, de forma ascendente)
+==========
+SELECT *
+  FROM PESSOA
+ORDER BY DATA_NASCIMENTO DESC
+
+(ordena a coluna DATA_NASCIMENTO de forma descendente)
+==========
+SELECT TOP 1 *
+  FROM PESSOA
+
+TOP -> Limita a quantidade de registros que vai aparecer
+==========
+SELECT NOME,
+       CONVERT(VARCHAR, DATA_NASCIMENTO, 103) AS DAT_NASC,
+       SEXO
+  FROM PESSOA
+
+(converte a coluna DATA_NASCIMENTO para outro estilo (formato), e a nomeia
+como DAT_NASC nessa consulta)
+==========
+SELECT GETDATE()
+
+(trás a data e hora atuais)
+==========
+SELECT CONVERT(CHAR, GETDATE(), 104) DATA
+
+(trás a data e hora atuais convertidas para outro estilo, e
+nomeia como DATA a coluna dessa consulta)
+==========
+
+

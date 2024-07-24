@@ -1,0 +1,64 @@
+procedure pConsultarCliente(prCodigoCliente : Integer);
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+begin
+  w1 := Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor');
+  w1.MainMenu.Click('Consultas|Clientes');
+  w2 := w1.Window('MDIClient').Window('TfrConsClientes', 'Consulta de clientes');
+  w2.Window('TToolBar').ClickItem(3, false);
+  w2.Window('TComboBox').ClickItem('Código');
+  w1 := w2.Window('TEdit');
+  w1.Click(33, 17);
+  //Parâmetro adicionado à próxima linha 
+  w1.Keys(IntToStr(prCodigoCliente));
+  w1 := w2.Window('TDBGrid');
+  w1.HScroll.Pos := 0;
+  w1.Click(141, 30);
+  w2.Close;
+end;
+
+procedure pConsultarLancNota;
+  var p1 : OleVariant;
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+  var w3 : OleVariant;
+begin
+  p1 := Sys.Process('PEDSCI');
+  w1 := p1.Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor');
+  w1.MainMenu.Click('Consultas|Lançamentos de Notas');
+  w2 := w1.Window('MDIClient').Window('TfrConsLancNotas', 'Consulta de lançamentos de notas');
+  w2.Window('TToolBar').ClickItem(3, false);
+  w2.Window('TComboBox').ClickItem('Data de emissão');
+  w1 := w2.Window('TDatePicker', '', 2);
+  w1.Click(105, 17);
+  w3 := p1.Window('TPickerPopupControl');
+  w3.Click(36, 155);
+  w1.Click(104, 17);
+  w3.Click(28, 153);
+  w2.Window('TButton').ClickButton;
+  w2.Close;
+end;
+
+procedure pConsultarEmpresa;
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+begin
+  w1 := Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor');
+  w1.MainMenu.Click('Consultas|Empresas');
+  w2 := w1.Window('MDIClient').Window('TfrConsEmpresas', 'Consulta de empresas');
+  w1 := w2.Window('TDBGrid');
+  w1.HScroll.Pos := 0;
+  w1.VScroll.Pos := 1;
+  w1.Click(60, 13);
+  w1.Click(118, 9);
+  w1.Click(209, 9);
+  w1.VScroll.Pos := 14;
+  w1.Click(60, 6);
+  w1.VScroll.Pos := 1;
+  w1.Click(232, 6);
+  w1.VScroll.Pos := 14;
+  w1.Click(42, 10);
+  w1.VScroll.Pos := 1;
+  w1.Click(210, 10);
+  w2.Close;
+end;

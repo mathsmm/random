@@ -1,0 +1,26 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.genruntimeconfig.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\bin\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_04\exercicios\array_multi_dimensional_exercicio\obj\Debug\netcoreapp3.1\array_multi_dimensional_exercicio.genruntimeconfig.cache

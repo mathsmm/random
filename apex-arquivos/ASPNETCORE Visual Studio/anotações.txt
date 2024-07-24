@@ -1,0 +1,43 @@
+AspNet Core
+
+1) Criar um novo projeto ASP.NET Core Web Application
+    1.1 - Selecionar Web Application (Model-View-Controller)
+2) Instalar o EntityFrameworkCore
+    2.1 - EntityFrameworkCore.sqlServer
+    2.2 - EntityFrameworkCore.tools
+3) Adicionar a classe Context
+    3.1 - Adicionar o construtor que recebe o parametro DbContextOptions<ClasseContext> Options e que herda da base
+4) Startup adicioanar o context na configure
+5) no appsettings adicioanar a string de conexão:
+    "ConnectionStrings" : {
+        "NomeDaStringDeConexao" : "String de conexao com a base"
+    }
+6) no context na configure adicionar as options
+
+7) Adicionar o DbSet na classe de contexto
+
+8) Console de gerenciados de pacotes:
+    Add-Migration "CriacaoInicial"
+    Update-Database
+
+9) No controller adicionar o Controlador MVC com exibiçoes, usando o EntityFramework
+
+
+
+Criar classes Models
+
+Criar o contexto (ContextoDB)
+
+Adicionar string de conexão no app settings
+
+Adicionar string de conexao no Startup
+    services.AddDbContext<ContextoDB>(
+        op => op.UseSqlServer(
+            Configuration.GetConnectionString("AppConexao")
+        )
+    );
+
+Add-Migration "Criacao Inicial"
+--> Ferramentas
+--> Gerenciador de pacotes do NuGet
+--> Console do gerenciador de pacotes

@@ -1,0 +1,13 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\obj\Debug\netcoreapp3.1\projetoInterface.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\obj\Debug\netcoreapp3.1\projetoInterface.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\obj\Debug\netcoreapp3.1\projetoInterface.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\obj\Debug\netcoreapp3.1\projetoInterface.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\bin\Debug\netcoreapp3.1\projetoInterface.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\bin\Debug\netcoreapp3.1\projetoInterface.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\bin\Debug\netcoreapp3.1\projetoInterface.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\bin\Debug\netcoreapp3.1\projetoInterface.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\bin\Debug\netcoreapp3.1\projetoInterface.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\bin\Debug\netcoreapp3.1\projetoInterface.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\obj\Debug\netcoreapp3.1\projetoInterface.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\obj\Debug\netcoreapp3.1\projetoInterface.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoInterface\obj\Debug\netcoreapp3.1\projetoInterface.genruntimeconfig.cache

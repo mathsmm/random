@@ -1,0 +1,140 @@
+1 - Escreva um algoritmo que receba o ano atual, ano de
+nascimento de uma pessoa e mostre a sua idade.
+
+....................
+
+using System;
+
+namespace exercicios_web
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Informe o ano atual: ");
+            int anoAtual = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Informe o ano de nascimento: ");
+            int anoNascimento = Convert.ToInt32(Console.ReadLine());
+
+            int idade = anoAtual - anoNascimento;
+
+            Console.WriteLine($"A idade é: {idade}");
+        }
+    }
+}
+
+------------------------------------------------------------
+
+2 - O Sr. João necessita saber o consumo médio de um automóvel, e solicitou para você
+desenvolver um algoritmo que sendo fornecido a distancia total percorrida pelo automóvel e o
+total de combustível gasto, mostrar o consumo do automóvel.
+
+....................
+
+using System;
+
+namespace exercicios_web
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Informe a distância total percorrida pelo automóvel em quilômetros: ");
+            double distanciaPercorrida = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Informe o total de combustível gasto pelo automóvel em litros: ");
+            double gastoDeCombustivel = Convert.ToDouble(Console.ReadLine());
+
+            double consumo = gastoDeCombustivel / distanciaPercorrida;
+            double kmPorL = distanciaPercorrida / gastoDeCombustivel;
+
+            Console.WriteLine($"O consumo do automóvel é de {consumo} L/km, o que faz {kmPorL} km/L");
+        }
+    }
+}
+
+------------------------------------------------------------
+
+3 - Escreva um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de vendas
+efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão
+sobre suas vendas efetuadas, informar o seu nome, o salário fixo e o salário no final do mês.
+
+....................
+
+using System;
+
+namespace exercicios_web
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Informe o nome do vendedor: ");
+            string nomeVendedor = Console.ReadLine();
+
+            Console.WriteLine("Informe o salário fixo do vendedor: ");
+            double salarioFixo = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Informe o total de vendas efetuadas pelo vendedor (em dinheiro, reais): ");
+            double vendasEfetuadas = Convert.ToDouble(Console.ReadLine());
+
+            double comissaoTotal = vendasEfetuadas * 0.15;
+            double salarioFinal = salarioFixo + comissaoTotal;
+
+            Console.WriteLine($"Nome do vendedor: {nomeVendedor};");
+            Console.WriteLine($"Salário fixo: {salarioFixo} reais;");
+            Console.WriteLine($"Salário final: {salarioFinal} reais.");
+        }
+    }
+}
+
+------------------------------------------------------------
+
+4 - Ler uma temperatura em graus Celsius e apresenta-la em Fahrenheit. A fórmula de conversão
+é: F=(9*C+160)/5, sendo F Fahrenheit e C Celsius.
+
+....................
+
+using System;
+
+namespace exercicios_web
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Informe a temperatura em graus Celsius. Ela será convertida para Fahrenheit: ");
+            double temperaturaCelsius = Convert.ToDouble(Console.ReadLine());
+
+            double temperaturaFahrenheit = (9 * temperaturaCelsius + 160) / 5;
+
+            Console.WriteLine(temperaturaFahrenheit + " F");
+        }
+    }
+}
+
+------------------------------------------------------------
+
+5 - A loja ELETROMOVEIS esta vendendo os seus produtos no cartão em 5 vezes sem juros, Faça
+um algoritmo que receba o valor da compra e mostre o valor das parcelas.
+
+....................
+
+using System;
+
+namespace exercicios_web
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Informe o valor da compra, em reais: ");
+            double valorCompra = Convert.ToDouble(Console.ReadLine());
+
+            double valorParcela = valorCompra / 5;
+
+            Console.WriteLine($"5 parcelas de {valorParcela} reais.");
+        }
+    }
+}

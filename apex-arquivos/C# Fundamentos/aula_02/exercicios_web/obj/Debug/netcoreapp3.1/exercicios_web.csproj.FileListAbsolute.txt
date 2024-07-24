@@ -1,0 +1,13 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\bin\Debug\netcoreapp3.1\exercicios_web.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\bin\Debug\netcoreapp3.1\exercicios_web.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\bin\Debug\netcoreapp3.1\exercicios_web.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\bin\Debug\netcoreapp3.1\exercicios_web.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\bin\Debug\netcoreapp3.1\exercicios_web.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\bin\Debug\netcoreapp3.1\exercicios_web.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\obj\Debug\netcoreapp3.1\exercicios_web.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\obj\Debug\netcoreapp3.1\exercicios_web.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\obj\Debug\netcoreapp3.1\exercicios_web.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\obj\Debug\netcoreapp3.1\exercicios_web.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\obj\Debug\netcoreapp3.1\exercicios_web.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\obj\Debug\netcoreapp3.1\exercicios_web.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_02\exercicios_web\obj\Debug\netcoreapp3.1\exercicios_web.genruntimeconfig.cache

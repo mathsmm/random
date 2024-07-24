@@ -1,0 +1,128 @@
+a)  Criar uma classe chamada CalculoServico que irá conter as propriedades:
+        Numero1     double
+        Numero2     double
+    b)  Criar um construtor que recebe por parâmetro os valores para 
+        os atributos da classe
+    c)  Criar as seguintes funções:
+        -   Somar() : double
+        -   Subtrair() : double
+        -   Multiplicar() : double
+        -   Dividir() : double
+
+
+namespace projetoCalculadora.Servicos
+{
+    public class CalculoServico
+    {
+        private double Numero1 { get; set; }
+        private double Numero2 { get; set; }
+
+        public CalculoServico(double numero1, double numero2)
+        {
+            this.Numero1 = numero1;
+            this.Numero2 = numero2;
+        }
+
+        public double Somar()
+        {
+            return this.Numero1 + this.Numero2;
+        }
+
+        public double Subtrair()
+        {
+            return this.Numero1 - this.Numero2;
+        }
+
+        public double Multiplicar()
+        {
+            return this.Numero1 * this.Numero2;
+        }
+
+        public double Dividir()
+        {
+            return this.Numero1 / this.Numero2;
+        }
+    }
+}
+
+--------------------------------------------------------------------------------
+
+    d)  Criar uma classe chamada Calculadora que contenha as propriedades:
+        Numero1     double
+        Numero2     double
+        Operacao    string
+    e)  Na classe Calculadora criar a função:
+        -   EfetuarCalculo(): double
+        1)  A funcão EfetuarCalculo deve instanciar um objeto 
+            CalculoServico(this.Numero1, this.Numero2)
+        2)  A funcão EfetuarCalculo deve ter um switch(Operação) que retorne a 
+            funcao correspondente do CalculoServico
+
+
+using projetoCalculadora.Servicos;
+
+namespace projetoCalculadora.Servicos
+{
+    public class Calculadora
+    {
+        private double Numero1 { get; set; }
+        private double Numero2 { get; set; }
+        private string Operacao { get; set; }
+
+        public Calculadora(double numero1, double numero2, string operacao)
+        {
+            this.Numero1 = numero1;
+            this.Numero2 = numero2;
+            this.Operacao = operacao;
+        }
+
+        public double EfetuarCalculo()
+        {
+            CalculoServico objCalculo = new CalculoServico(this.Numero1, this.Numero2);
+            double resultado = 0;
+            switch (this.Operacao)
+            {
+                case "+": resultado = objCalculo.Somar(); break;
+                case "-": resultado = objCalculo.Subtrair(); break;
+                case "*": resultado = objCalculo.Multiplicar(); break;
+                case "/": resultado = objCalculo.Dividir(); break;
+                default: break;
+            }
+            return resultado;
+        }
+    }
+}
+
+--------------------------------------------------------------------------------
+
+    f)  Na classe Program no método Main:
+        Solicitar ao usuario 2 numeros e a operação
+        Instanciar um objeto da classe Calculadora
+        Chamar a funcão EfetuarCalculo
+        Apresentar o resultado no console
+
+
+using System;
+using projetoCalculadora.Servicos;
+
+namespace projetoCalculadora
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Informe o primeiro número: ");
+            double n1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Informe o segundo número: ");
+            double n2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Informe a operação (+, -, *, /): ");
+            string operacao = Console.ReadLine();
+
+            Calculadora objCalculadora = new Calculadora(n1, n2, operacao);
+
+            Console.WriteLine($"O resultado é: {objCalculadora.EfetuarCalculo()}");
+        }
+    }
+}

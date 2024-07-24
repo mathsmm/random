@@ -1,0 +1,43 @@
+/** ======================================================== 
+ * Solicitar ao usuario 3 notas, convertendo para float
+ * Criar uma funcão que retorne a media das tres notas informadas pelo usuario
+ * Criar uma funcão que retorno a mensagem de conceito, verificando a media
+ * Criar um metodo que escreva na tela a mensagem de conceito
+ * Chamar o método que escreve na tela
+*/
+function calcularMediaDeTresNotas(n1, n2, n3) {
+    return (n1 + n2 + n3) / 3;
+}
+
+function obterMensagemDeConceito(media) {
+    let mensageDeConceito = '<h1>Conceito Insuficiente</h1>'
+
+    if (media >= 9) {
+        mensageDeConceito = '<h1>Conceito A</h1>';
+    } else if (media < 9 && media >= 7) {
+        mensageDeConceito = '<h1>Conceito B</h1>';
+    } else if (media < 7 && media >= 5) {
+        mensageDeConceito = '<h1>Conceito C</h1>';
+    }
+    return mensageDeConceito
+}
+
+function escreverMensagemConceito(nota1, nota2, nota3) {
+    document.write(
+        obterMensagemDeConceito(
+            calcularMediaDeTresNotas(
+                nota1, 
+                nota2, 
+                nota3
+            )
+        )
+    );
+}
+
+let primeiraNota = parseFloat(window.prompt('Informe a primeira nota: '));
+let segundaNota = parseFloat(window.prompt('Informe a segunda nota: '));
+let terceiraNota = parseFloat(window.prompt('Informe a terceira nota: '));
+
+escreverMensagemConceito(primeiraNota, segundaNota, terceiraNota);
+
+/** ======================================================== 

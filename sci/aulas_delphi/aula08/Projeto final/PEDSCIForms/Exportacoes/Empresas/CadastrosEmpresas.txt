@@ -1,0 +1,3 @@
+Código: 1 | CPF/CNPJ: 11111111111 | Nome: Primeira Empresa | Código UF: 26 | Telefone: 1
+Código: 2 | CPF/CNPJ: 11111111111 | Nome: ZZZZ | Código UF: 1 | Telefone: 1
+Código: 3 | CPF/CNPJ: 11111111111 | Nome: Ltda Ltda | Código UF: 1 | Telefone: 1

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>
+                Estrutura básica
+        </title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <script src="js/arquivo.js"></script>
+    </body>
+</html>

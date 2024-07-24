@@ -1,0 +1,43 @@
+https://nodejs.org/en/
+->  baixar versão "Recommended for most users"
+
+https://angular.io/guide/setup-local
+->  pesquisar os comandos para instalar no Node
+
+->  Digitar os comandos no cmd ou no powershell, se o
+    terminal do VSCode não ter permissão para instalar
+    o Angular:
+        npm --version
+        npm install -g @angular/cli (instalar Angular)
+        ng --version (verificar se o Angular está instalado)
+
+->  Criar um novo projeto do angular:
+    ng new NomeDoProjeto
+        yes
+        yes
+        CSS
+
+  -> Ao baixar o projeto pelo github, digitar o comando:
+        npm update
+
+  -> Para executar o projeto:
+        npm start
+
+  -> Para criar um novo componente
+        ng generate component nomedocomponente
+        ng g c nomedocomponente
+
+https://getbootstrap.com/
+  -> Para instalar o bootstrap:
+        npm install bootstrap
+
+https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
+  -> Para instalar o bootstrap desenvolvido para angular:
+        npm install ngx-bootstrap --save
+	ng add ngx-bootstrap  --component dropdowns
+
+ctrl shif p
+	reident lines
+
+ng add @ng-bootstrap/ng-bootstrap
+  -> Pacote para o componente dialog

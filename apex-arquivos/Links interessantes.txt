@@ -1,0 +1,16 @@
+http://dontpad.com/cugiki-september
+
+https://medium.com/beelabacademy/princ%C3%ADpios-de-s-o-l-i-d-em-c-guia-pr%C3%A1tico-cbb1e6584284
+
+https://sourcemaking.com/refactoring/smells
+
+https://getbootstrap.com/
+
+https://valor-software.com/ngx-bootstrap/#/
+
+https://github.com/ColorlibHQ/AdminLTE/releases
+https://colorlib.com/wp/html-admin-templates/
+
+https://www.cod3r.com.br/
+
+https://github.com/diegocugiki/angularComAdminLTE

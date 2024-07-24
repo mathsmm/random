@@ -1,0 +1,137 @@
+unit uRelLancNotas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFormPadraoRelatorioPEDSCI, Data.FMTBcd,
+  Data.DB, Data.SqlExpr, frxClass, frxDBSet, frxExportCSV, frxExportDOCX,
+  frxExportXLSX, frxExportBaseDialog, frxExportPDF, frxDesgn, System.ImageList,
+  Vcl.ImgList, Vcl.ComCtrls, Vcl.ToolWin, Vcl.StdCtrls, Vcl.WinXPickers;
+
+type
+  TfrRelLancNotas = class(TfrFormPadraoRelatorioPEDSCI)
+    lbDATAINICIAL: TLabel;
+    lbCODNOTAINICIAL: TLabel;
+    lbEMP: TLabel;
+    lbCLI: TLabel;
+    edNOMEEMPNOTA: TEdit;
+    edNOMECLINOTA: TEdit;
+    edCODCLINOTA: TEdit;
+    edCODEMPNOTA: TEdit;
+    btCODCLINOTA: TButton;
+    btCODEMPNOTA: TButton;
+    edDataInicial: TDatePicker;
+    lbDATAFINAL: TLabel;
+    edDataFinal: TDatePicker;
+    edNotaInicial: TEdit;
+    lbCODNOTAFINAL: TLabel;
+    edNotaFinal: TEdit;
+    imBotoesDiversos: TImageList;
+    procedure btVisualizarClick(Sender: TObject);
+    procedure btCODCLINOTAClick(Sender: TObject);
+    procedure btCODEMPNOTAClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frRelLancNotas: TfrRelLancNotas;
+
+implementation
+
+uses
+  uSelecionaClienteRelLancNotas, uSelecionaEmpresaRelLancNotas;
+
+{$R *.dfm}
+
+procedure TfrRelLancNotas.btCODCLINOTAClick(Sender: TObject);
+begin
+  inherited;
+  TfrSelecionaClienteParaRelLancNotas.Create(Self);
+end;
+
+procedure TfrRelLancNotas.btCODEMPNOTAClick(Sender: TObject);
+begin
+  inherited;
+  TfrSelecionaEmpresaParaRelLancNotas.Create(Self);
+end;
+
+procedure TfrRelLancNotas.btVisualizarClick(Sender: TObject);
+var
+  wSQLScriptPrimeiraParte : String;
+  wSQLScriptSegundaParte : String;
+begin
+  inherited;
+  wSQLScriptPrimeiraParte :=
+    'SELECT NOTA.BDCODNOTA     CODNOTA,'     +
+    '       NOTA.BDCODCLI      CODCLI,'      +
+    '       NOTA.BDCODEMP      CODEMP,'      +
+    '       NOTA.BDDATAEMISSAO DATAEMISSAO,' +
+    '       NOTA.BDVLRNOTA     VLR,'         +
+    '       ITENS.BDCODPROD    CODPROD,'     +
+    '       PROD.BDDESCRICAO   DESCPROD,'    +
+    '       ITENS.BDQTD        QTD,'         +
+    '       ITENS.BDVALORUNI   VLRUNIT,'     +
+    '       ITENS.BDVALORTOTAL VLRTOTAL,'    +
+    '       ITENS.BDBCICMS     BASEICMS,'    +
+    '       ITENS.BDALIQICMS   ALIQUOTAICMS,'+
+    '       ITENS.BDVLRICMS    VLRICMS,'     +
+    '       CLI.BDCNPJCPF      CPFCNPJCLI,'  +
+    '       CLI.BDNOMECLI      NOMECLI,'     +
+    '       CLI.BDTELEFONE     TELEFONECLI,' +
+    '       UFCLI.BDSIGLAUF    UFCLI,'       +
+    '       EMP.BDCNPJCPF      CPFCNPJEMP,'  +
+    '       EMP.BDNOMEEMP      NOMEEMP,'     +
+    '       EMP.BDTELEFONE     TELEFONEEMP,' +
+    '       UFEMP.BDSIGLAUF    UFEMP'        +
+    '       FROM ('                          +
+    '             SELECT *'                  +
+    '             FROM TLANCNOTA NOTA';
+
+  wSQLScriptSegundaParte :=
+    '     ) NOTA'                                                       +
+    'INNER JOIN TCLIENTE CLI ON (NOTA.BDCODCLI = CLI.BDCODIGO)'         +
+    'INNER JOIN TUF UFCLI ON (CLI.BDCODUF = UFCLI.BDCODUF)'             +
+    'INNER JOIN TEMPRESA EMP ON (NOTA.BDCODEMP = EMP.BDCODEMP)'         +
+    'INNER JOIN TUF UFEMP ON (EMP.BDCODUF = UFEMP.BDCODUF)'             +
+    'INNER JOIN TITENSNOTA ITENS ON (NOTA.BDCODNOTA = ITENS.BDCODNOTA)' +
+    'INNER JOIN TCADPRODUTO PROD ON (ITENS.BDCODPROD = PROD.BDCODPROD)' +
+    'ORDER BY NOTA.BDCODNOTA';
+
+  SQLQueryPadrao.Close;
+  SQLQueryPadrao.SQL.Clear;
+
+  //Adição da primeira parte do script
+  SQLQueryPadrao.SQL.Add(wSQLScriptPrimeiraParte);
+
+  //Adição do filtro
+  SQLQueryPadrao.SQL.Add(
+    'WHERE ' +
+    'NOTA.BDDATAEMISSAO >= ' +
+    QuotedStr(FormatDateTime('dd.mm.yyyy', edDataInicial.Date)) +
+    ' AND NOTA.BDDATAEMISSAO <= ' +
+    QuotedStr(FormatDateTime('dd.mm.yyyy', edDataFinal.Date))
+  );
+
+  if Trim(edCODEMPNOTA.Text) <> EmptyStr then
+       SQLQueryPadrao.SQL.Add(' AND NOTA.BDCODEMP = ' + edCODEMPNOTA.Text);
+
+  if Trim(edCODCLINOTA.Text) <> EmptyStr then
+       SQLQueryPadrao.SQL.Add(' AND NOTA.BDCODCLI = ' + edCODCLINOTA.Text);
+
+  if Trim(edNotaInicial.Text) <> EmptyStr then
+       SQLQueryPadrao.SQL.Add(' AND NOTA.BDCODNOTA >= ' + edNotaInicial.Text);
+
+  if Trim(edNotaFinal.Text) <> EmptyStr then
+       SQLQueryPadrao.SQL.Add(' AND NOTA.BDCODNOTA <= ' + edNotaFinal.Text);
+
+  //Adição da segunda parte do script
+  SQLQueryPadrao.SQL.Add(wSQLScriptSegundaParte);
+
+  SQLQueryPadrao.Open;
+end;
+
+end.

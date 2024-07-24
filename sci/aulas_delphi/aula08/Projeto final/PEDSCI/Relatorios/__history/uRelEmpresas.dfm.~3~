@@ -1,0 +1,14 @@
+inherited frRelEmpresas: TfrRelEmpresas
+  Caption = 'Relat'#243'rio de empresas'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited tbFerramentas: TToolBar
+    ExplicitWidth = 774
+  end
+  inherited frxReportLayout: TfrxReport
+    ScriptText.Strings = ()
+  end
+  inherited frxDBDatasetPadrao: TfrxDBDataset
+    DataSet = SQLQueryPadrao
+  end
+end

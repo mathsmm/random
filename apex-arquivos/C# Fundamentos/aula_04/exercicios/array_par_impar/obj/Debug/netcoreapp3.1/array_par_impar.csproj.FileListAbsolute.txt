@@ -1,0 +1,13 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\obj\Debug\netcoreapp3.1\array_par_impar.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\obj\Debug\netcoreapp3.1\array_par_impar.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\obj\Debug\netcoreapp3.1\array_par_impar.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\obj\Debug\netcoreapp3.1\array_par_impar.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\bin\Debug\netcoreapp3.1\array_par_impar.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\bin\Debug\netcoreapp3.1\array_par_impar.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\bin\Debug\netcoreapp3.1\array_par_impar.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\bin\Debug\netcoreapp3.1\array_par_impar.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\bin\Debug\netcoreapp3.1\array_par_impar.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\bin\Debug\netcoreapp3.1\array_par_impar.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\obj\Debug\netcoreapp3.1\array_par_impar.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\obj\Debug\netcoreapp3.1\array_par_impar.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_04\exercicios\array_par_impar\obj\Debug\netcoreapp3.1\array_par_impar.genruntimeconfig.cache

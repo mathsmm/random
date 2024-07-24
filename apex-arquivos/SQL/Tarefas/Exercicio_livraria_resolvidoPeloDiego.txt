@@ -1,0 +1,265 @@
+Para dar continuidade aos nossos estudos, vamos realizar a definição de um sistema para livraria. 
+Para esse sistema foram levantados os seguintes requisitos:
+R1 – Um livro pode possuir mais de um autor.
+R2 – Um livro deve possuir uma categoria e podem existir vários livros com a mesma categoria.
+R3 – Podem ser atribuídas várias tags para um determinado livro e uma tag pode estar associada a vários livros.
+R4 – A livraria deve possuir um cadastro de seus associados.
+R5 – Cada associado pode alugar um ou mais livros durante uma única locação.
+R6 – O valor de cada locação será definido pela quantidade de livros retirados, e todos os livros possuem o mesmo valor de locação, entretanto o valor de colação de um livro pode mudar em períodos distintos.
+R7 – Livros de mesmo isbn devem possuir um código sequencial para diferenciá-los.
+
+Exercicios:
+
+1)  Criar a base de dados chamada livraria
+2)  Utilizar a base de dados livraria
+3)  Criar a tabela autor
+    CREATE TABLE autor(
+        id int not null primary key identity(1,1),
+        nome varchar(50) not null,
+        sobrenome varchar(100) not null,
+        data_nascimento date not null
+    );
+
+4)  Criar a tabela categoria
+    create table categoria(
+        id int not null primary key identity(1,1),
+        nome varchar(100) not null
+    );
+
+5)  Criar a tabela tag
+    create table tag(
+        id int not null primary key identity(1,1),
+        nome varchar(100) not null
+    );
+
+6)  Criar a tabela livro
+    create table livro(
+        id int not null primary key identity(1,1),
+        titulo varchar(200) not null,
+        data_publicacao date not null,
+        edicao int not null,
+        codigo_sequencial int not null,
+        id_categoria int not null
+    );
+
+    alter table livro
+    add constraint fk_categoria foreign key(id_categoria)
+    references categoria(id);
+
+7)  Criar a tabela livro_autor
+    create table livro_autor(
+        id int not null primary key identity(1,1),
+        id_livro int not null ,
+        id_autor int not null
+    );
+
+    alter table livro_autor
+    add constraint fk_livro foreign key(id_livro)
+    references livro(id);
+
+    alter table livro_autor
+    add constraint fk_autor foreign key(id_autor)
+    references autor(id);
+
+8)  Criar a tabela livro_tag
+    create table livro_tag(
+        id int not null primary key identity(1,1),
+        id_livro int not null ,
+        id_tag int not null
+    );  
+
+    alter table livro_tag
+    add constraint fk_book foreign key(id_livro)
+    references livro(id);
+
+    alter table livro_tag
+    add constraint fk_tag foreign key(id_tag)
+    references tag(id);
+
+9)  Criar a tabela socio
+    CREATE TABLE socio(
+        id int not null primary key identity(1,1),
+        nome varchar(50) not null,
+        sobrenome varchar(100) not null,
+        data_nascimento date not null,
+        profissao varchar(200),
+        sexo varchar(1) not null
+    );
+
+10) Criar a tabela locacao
+    create table locacao(
+        id int not null primary key identity(1,1),
+        data_retirada date not null,
+        data_previsao_devolucao date not null,
+        data_devolucao date,
+        id_socio int not null
+    );
+
+    alter table locacao
+    add constraint fk_socio foreign key(id_socio)
+    references socio(id);
+
+11) Criar a tabela locacao_livro
+    create table locacao_livro(
+        id int not null primary key identity(1,1),
+        id_livro int not null ,
+        id_locacao int not null
+    );
+
+    alter table locacao_livro
+    add constraint fk_livro_locacao_livro foreign key(id_livro)
+    references livro(id);
+
+    alter table locacao_livro
+    add constraint fk_locacao_locacao_livro foreign key(id_locacao)
+    references locacao(id);
+
+12) Inserir 10 registros na tabela autor
+    Deve possuir um autor com nome de "José da Silva" e outro "Garry Kasparov"
+INSERT INTO AUTOR(NOME, SOBRENOME, DATA_NASCIMENTO)
+VALUES('José ', 'da Silva', '1967-08-08'),
+	  ('Garry ', 'Kasparov', '1957-12-08'),
+	  ('Atonio ', 'Da silva', '1999-12-08'),
+	  ('Larissa ', 'De Souza', '1998-12-08'),
+	  ('Manuela ', ' Alves', '1987-12-08'),
+	  ('Jorge ', ' Amado', '1977-12-08'),
+	  ('Felipe ', ' Antonio', '1985-12-08'),
+	  ('Pedro ', ' De Souza', '1991-12-08'),
+	  ('Mariela ', ' Franco', '1995-12-08'),
+	  ('William ', ' Da silva', '1987-12-08')
+
+13) Inserir 10 registros na tabela categoria
+    Deve conter categoria Esportes
+INSERT INTO categoria(nome)
+VALUES('Esportes'),
+('Ciências'),
+('História'),
+('Comédia'),
+('Ficção'),
+('Ficção científica'),
+('Romance'),
+('Musical'),
+('Biografia'),
+('Filosofia')
+
+14) Inserir 10 registros na tabela socio
+insert into socio(nome, sobrenome, data_nascimento, profissao, sexo)
+VALUES('Matheus', 'Marchi Moro', '2003-04-21', 'Jornalista', 'M'),
+('Diego', 'Cugiki', '1990-03-20', 'Analista de Sistemas', 'M'),
+('Jonathas', 'da Silva', '1993-08-12', 'Trader', 'M'),
+('Daniel', 'de Souza', '1985-09-24', 'Empresário', 'M'),
+('Marcela', 'da Rocha', '1996-06-26', 'Professora', 'F'),
+('Alexandre', 'Cruz', '1999-07-05', 'Engenheiro', 'M'),
+('Felipe', 'da Silva de Souza Cruz', '2004-02-10', 'Advogado', 'M'),
+('Cristina', 'Priester', '2003-08-04', 'Desenvolvedora de sistemas', 'F'),
+('Eduardo', 'Elias Poli', '2004-08-10', 'Veterinário', 'M'),
+('Guilherme', 'Engelmann Moro', '2002-07-15', 'Promotor', 'M')
+
+
+
+15) Inserir 6 registros na tabela tag
+insert into tag(nome)
+values('TAG001'),
+('TAG002'),
+('TAG004'),
+('TAG003'),
+('TAG005'),
+('TAG006')
+
+16) Inserir 8 registros na tabela livro
+    Deve conter um livro com titulo: "Garry Kasparov: Meus grandes predecessores", a categoria deste livro deve ser Esportes
+INSERT INTO livro(titulo, data_publicacao, edicao, codigo_sequencial, id_categoria)
+VALUES('Garry Kasparov: Meus grandes predecessores', '2010-02-08', 1, 100, 1),
+('Adolf Hitler: Minha Luta', '1925-07-18', 2, 101, 3),
+('John Flanagan: Ruínas de Gorlan', '2005-04-03', 2, 103, 6),
+('Paulo Coelho: O Alquimista', '1988-01-02', 1, 104, 10),
+('John Connor: O Alicerce das Máquinas', '1990-09-25', 2, 105, 2),
+('André Valazardes: Somente Amiga', '2003-02-18', 1, 106, 4),
+('William Shakespeare: Romeu e Julieta', '1597-04-25', 12, 107, 7),
+('Ray Bradbury: Fahrenheit 451', '1953-10-19', 3, 108, 6)
+
+
+17) Inserir 8 registros na tabela livro_autor
+    o Livro "Garry Kasparov: Meus grandes predecessores" deve ser do autor "Garry Kasparov"
+INSERT INTO LIVRO_AUTOR(ID_LIVRO, ID_AUTOR)
+VALUES(1, 2),
+(2, 8),
+(3, 7),
+(4, 6),
+(5, 5),
+(6, 4),
+(7, 3),
+(8, 1)
+
+18) Inserir 5 registros na tabela livro_tag
+INSERT INTO LIVRO_TAG(ID_LIVRO, ID_TAG)
+VALUES(1, 2),
+(2, 6),
+(3, 4),
+(4, 3),
+(5, 1)
+
+19) Inserir 10 registros na tabela locacao.
+    Deve possuir registros sem data de devoluçao e com data de devoluçao.
+    Deve possuir datas de retirada diferenciadas, sendo meses e até ano diferentes
+    Os registro que possuerem data de devoluçao, a mesma deve ser maior do que a data de retirada
+INSERT INTO locacao(data_retirada, data_previsao_devolucao, data_devolucao, id_socio)
+VALUES('2003-04-21', '2003-05-03', '2003-05-02', 1),
+('2007-08-05', '2003-08-19', '2007-08-22', 2),
+('2009-12-02', '2009-12-16', '2009-12-13', 3),
+('2011-11-20', '2011-12-04', '2011-11-29', 4),
+('2012-12-21', '2012-12-28', NULL, 5),
+('2015-09-04', '2015-09-18', '2016-01-28', 6),
+('2016-02-09', '2016-02-23', '2016-02-22', 7),
+('2017-10-10', '2017-10-24', '2017-10-25', 8),
+('2019-07-21', '2019-08-05', NULL, 9),
+('2020-10-09', '2020-10-23', NULL, 10)
+
+
+
+20) Inserir 10 registros na tabela locacao_livro
+INSERT INTO LOCACAO_LIVRO(ID_LIVRO, ID_LOCACAO)
+VALUES(1, 10),
+(2, 9),
+(3, 8),
+(4, 7),
+(5, 6),
+(6, 5),
+(7, 4),
+(8, 3),
+(5, 2),
+(1, 1)
+
+
+21) Selecionar todos os registros que estão com a locação em aberto
+SELECT * FROM LOCACAO WHERE DATA_DEVOLUCAO IS NULL
+
+22) Selecionar todos os registros que o livro já foi devolvido
+SELECT * FROM LOCACAO WHERE DATA_DEVOLUCAO IS NOT NULL
+
+23) Selecionar o nome do livro, nome do sócio, data de retirada, data de previão de devoluçao, data de devoluçao dos livros que foram locados e já devolvidos
+SELECT L.data_devolucao,
+	   L.data_previsao_devolucao,
+	   L.data_retirada,
+	   S.nome AS NOME_DO_SOCIO,
+	   LV.titulo 
+  FROM LOCACAO AS L
+  	   INNER JOIN SOCIO AS S ON S.id = L.id_socio
+  	   INNER JOIN LOCACAO_LIVRO AS LL ON LL.id_locacao = L.id 
+  	   INNER JOIN LIVRO AS LV ON LV.id = LL.id_livro 
+ WHERE L.DATA_DEVOLUCAO IS NOT NULL
+
+
+24) Selecionar o nome do autor, nome da categoria, nome da tag, nome do livro onde o autor é o "Garry Kasparov"
+SELECT CONCAT(A.nome, A.sobrenome) AS NOME_AUTOR,
+	   C.nome AS NOME_CATEGORIA,
+	   T.nome AS NOME_TAG
+  FROM LIVRO AS L
+       INNER JOIN LIVRO_AUTOR AS LA ON LA.id_livro = L.id 
+       INNER JOIN AUTOR AS A ON A.ID = LA.id_autor 
+       INNER JOIN CATEGORIA AS C ON C.ID = L.id_categoria 
+       INNER JOIN LIVRO_TAG AS LT ON LT.id_livro = L.id 
+       INNER JOIN TAG AS T ON T.ID = LT.id_tag
+ WHERE A.NOME LIKE '%Garry%'
+   AND A.sobrenome LIKE '%Kasparov%'
+

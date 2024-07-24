@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log0">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="0"/>
+			<Prp name="key" type="S" value="{F920A582-7F21-4396-BECD-F452121B9924}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_16_52_39_894\RootLog.tcLog"/>
+		</Node>
+		<Node name="log1">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="1"/>
+			<Prp name="key" type="S" value="{396E0516-8332-44F2-931B-517BFFB99CA1}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_01_41_921\RootLog.tcLog"/>
+		</Node>
+		<Node name="log10">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="10"/>
+			<Prp name="key" type="S" value="{5715B6F7-F60E-4963-8463-76537E31986A}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_36_43_894\RootLog.tcLog"/>
+		</Node>
+		<Node name="log11">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="11"/>
+			<Prp name="key" type="S" value="{151445BE-84F4-4A0E-8EB2-5D782C0350CC}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_38_06_463\RootLog.tcLog"/>
+		</Node>
+		<Node name="log12">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="12"/>
+			<Prp name="key" type="S" value="{14241AAD-279A-4C08-98D6-91A7ACD038FD}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_41_33_129\RootLog.tcLog"/>
+		</Node>
+		<Node name="log13">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="13"/>
+			<Prp name="key" type="S" value="{E6FC3AB1-BBEB-41FA-8880-3B6485B09BA7}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_44_33_776\RootLog.tcLog"/>
+		</Node>
+		<Node name="log2">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="2"/>
+			<Prp name="key" type="S" value="{3676AF87-8561-4B94-A789-9ECB0748BA60}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_02_14_120\RootLog.tcLog"/>
+		</Node>
+		<Node name="log3">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="3"/>
+			<Prp name="key" type="S" value="{D6A7363D-9310-430A-9A60-143F2ECFFC2C}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_02_35_832\RootLog.tcLog"/>
+		</Node>
+		<Node name="log4">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="4"/>
+			<Prp name="key" type="S" value="{8743419E-2D9F-438A-A52D-33A5B5C93ADD}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_05_32_945\RootLog.tcLog"/>
+		</Node>
+		<Node name="log5">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="5"/>
+			<Prp name="key" type="S" value="{6521343B-145B-4134-99E7-405D7252ED99}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_15_48_728\RootLog.tcLog"/>
+		</Node>
+		<Node name="log6">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="6"/>
+			<Prp name="key" type="S" value="{1CD7510D-1117-4EA2-AF64-0F7041ACB122}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_20_17_590\RootLog.tcLog"/>
+		</Node>
+		<Node name="log7">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="7"/>
+			<Prp name="key" type="S" value="{1289D8E8-42B6-4FFE-8C10-F3EC7B69BDBA}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_30_13_769\RootLog.tcLog"/>
+		</Node>
+		<Node name="log8">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="8"/>
+			<Prp name="key" type="S" value="{F19950DC-9934-4496-AED3-CF5345624E44}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_34_25_560\RootLog.tcLog"/>
+		</Node>
+		<Node name="log9">
+			<Prp name="caption" type="S" value=""/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="index" type="I" value="9"/>
+			<Prp name="key" type="S" value="{3AB3E2E5-B493-45A5-985D-78FF0A4674A1}"/>
+			<Prp name="relpath" type="S" value="03_08_2022_17_35_29_765\RootLog.tcLog"/>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="4.0"/>
+	</Node>
+</Nodes>

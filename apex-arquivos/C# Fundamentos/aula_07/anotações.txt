@@ -1,0 +1,40 @@
+Criar um txt
+Salvar como um arquivo .udl
+Ir em propriedades no nome da máquina no SQL
+Copiar o nome da máquina
+Colar no nome do servidor (1)
+Usar a segurança integrada do Windows NT (2)
+Selecionar o banco de dados que quiser utilizar (3)
+
+------------------------------------------------------------
+
+Herança:
+
+Classe Pessoa
+-Nome
+-Idade
+
+Classe Funcionario: Pessoa
+this.Nome
+this.Idade
+
+------------------------------------------------------------
+
+Polimorfismo
+
+Cria uma função com o mesmo nome e os mesmos tipos de parâmetros
+de uma outra classe e atribui a ela diferentes regras
+
+------------------------------------------------------------
+
+Interface:
+
+As classes PessoaFisica e PessoaJuridica contêm a interface IPessoa
+
+------------------------------------------------------------
+
+" : base()" escrito depois do construtor
+
+--> Faz com que ao instanciar um objeto da classe Funcionario,
+    também seja instanciado um objeto da classe Pessoa
+    (Executa o construtor da classe Pessoa)

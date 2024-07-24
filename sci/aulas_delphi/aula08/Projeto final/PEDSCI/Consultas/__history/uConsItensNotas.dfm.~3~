@@ -1,0 +1,8 @@
+inherited frConsItensNotas: TfrConsItensNotas
+  Caption = 'Consulta de itens-notas'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited grConsulta: TDBGrid
+    OnDblClick = grConsultaDblClick
+  end
+end

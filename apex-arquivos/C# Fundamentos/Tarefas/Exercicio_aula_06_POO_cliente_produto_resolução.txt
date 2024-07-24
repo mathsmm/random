@@ -1,0 +1,241 @@
+1) O usuário irá informar três números, exiba qual o menor dos três.
+
+
+    public class Numero
+    {
+        protected double Numero1 { get; set; }
+        protected double Numero2 { get; set; }
+        protected double Numero3 { get; set; }
+
+        public Numero(double numero1, double numero2, double numero3)
+        {
+            this.Numero1 = numero1;
+            this.Numero2 = numero2;
+            this.Numero3 = numero3;
+        }
+
+        private double [] ObterListaDosNumeros()
+        {
+            double[] listaNumeros =
+            {
+                this.Numero1,
+                this.Numero2,
+                this.Numero3
+            };
+            return listaNumeros;
+        }
+
+        private double ObterMenorNumero(double[] listaNumeros)
+        {
+            double menor = listaNumeros[0];
+            for (int i = 0; i < listaNumeros.Length; i++)
+            {
+                if (listaNumeros[i] < menor)
+                {
+                    menor = listaNumeros[i];
+                }
+            }
+            return menor;
+        }
+
+        public string ObterMensagemMenorNumero()
+        {
+            return $"O menor número é: {ObterMenorNumero(ObterListaDosNumeros())}";
+        }
+    }
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Informe o primeiro número: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Informe o segundo número: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Informe o terceiro número: ");
+            double num3 = Convert.ToDouble(Console.ReadLine());
+
+            Numero objNumero = new Numero(num1, num2, num3);
+            Console.WriteLine(objNumero.ObterMensagemMenorNumero());
+        }
+    }
+
+--------------------------------------------------------------------------------
+
+2) Será pedida a quantidade de cada moeda, em seguida exiba o total.
+    R$ 0,01 - 1
+    R$ 0,05 - 2
+    R$ 0,10 - 3
+    R$ 0,25 - 1
+    R$ 0,50 - 1
+    R$ 1,00 - 1
+    R$ 2,16 (Resultado)
+
+
+    public class QuantidadeMoeda
+    {
+        private int QtdMoeda1Centavo { get; set; }
+        private int QtdMoeda5Centavos { get; set; }
+        private int QtdMoeda10Centavos { get; set; }
+        private int QtdMoeda25Centavos { get; set; }
+        private int QtdMoeda50Centavos { get; set; }
+        private int QtdMoeda1Real { get; set; }
+
+        public QuantidadeMoeda(int qtdMoeda1Centavo, int qtdMoeda5Centavos, int qtdMoeda10Centavos, int qtdMoeda25Centavos, int qtdMoeda50Centavos, int qtdMoeda1Real)
+        {
+            this.QtdMoeda1Centavo = qtdMoeda1Centavo;
+            this.QtdMoeda5Centavos = qtdMoeda5Centavos;
+            this.QtdMoeda10Centavos = qtdMoeda10Centavos;
+            this.QtdMoeda25Centavos = qtdMoeda25Centavos;
+            this.QtdMoeda50Centavos = qtdMoeda50Centavos;
+            this.QtdMoeda1Real = qtdMoeda1Real;
+        }
+
+        private double ObterValorTotalDeMoedas()
+        {
+            return
+                this.QtdMoeda1Centavo * 0.01 +
+                this.QtdMoeda5Centavos * 0.05 +
+                this.QtdMoeda10Centavos * 0.10 +
+                this.QtdMoeda25Centavos * 0.25 +
+                this.QtdMoeda50Centavos * 0.50 +
+                this.QtdMoeda1Real * 1;
+        }
+
+        public string ObterMensagemDeValorTotal()
+        {
+            return $"O valor total de moedas é: R$ {ObterValorTotalDeMoedas()}";
+        }
+    }
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Informe a quantidade de moedas de 1 centavo: ");
+            int qtdCent1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Informe a quantidade de moedas de 5 centavos: ");
+            int qtdCent5 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Informe a quantidade de moedas de 10 centavos: ");
+            int qtdCent10 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Informe a quantidade de moedas de 25 centavos: ");
+            int qtdCent25 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Informe a quantidade de moedas de 50 centavos: ");
+            int qtdCent50 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Informe a quantidade de moedas de 1 real: ");
+            int qtdReal1 = Convert.ToInt32(Console.ReadLine());
+
+            QuantidadeMoeda objQtdMoeda = new QuantidadeMoeda(
+                qtdCent1,
+                qtdCent5,
+                qtdCent10,
+                qtdCent25,
+                qtdCent50,
+                qtdReal1
+            );
+
+            Console.WriteLine(objQtdMoeda.ObterMensagemDeValorTotal());
+        }
+    }
+
+--------------------------------------------------------------------------------
+
+3)  Criar a classe Cliente
+    A classe Cliente deve conter as propriedades Nome e Idade
+    A classe Cliente deve conter um construtor que alimente as propriedades da classe
+    A classe Cliente deve conter uma funcão:
+        Apresentacao() : string
+            $"{this.Nome} com a idade de {this.Idade}";
+
+
+    public class Cliente
+    {
+        private string Nome { get; set; }
+        private int Idade { get; set; }
+
+        public Cliente(string nome, int idade)
+        {
+            this.Nome = nome;
+            this.Idade = idade;
+        }
+
+        public string Apresentacao()
+        {
+            return $"{this.Nome} com a idade de {this.Idade}";
+        }
+    }
+
+
+
+    Criar a classe Produto
+    A classe Produto deve conter as propriedades Descricao, Valor, Quantidade e Cliente (que será do tipo Cliente)
+    A classe Produto deve conter um construtor que alimente as propriedades da classe
+    A classe Produto deve ter as funcões:
+        CalcularValorTotal(): double
+        ObterMensagem() : string
+            $"O Cliente {this.Cliente.Apresentacao()} comprou {this.Quantidade}, com valor total de {valorTotal}!"
+
+
+    public class Produto
+    {
+        private string Descricao { get; set; }
+        private double Valor { get; set; }
+        private double Quantidade { get; set; }
+        private Cliente Cliente { get; set; }
+
+        public Produto(string descricao, double valor, double quantidade, Cliente cliente)
+        {
+            this.Descricao = descricao;
+            this.Valor = valor;
+            this.Quantidade = quantidade;
+            this.Cliente = cliente;
+        }
+
+        private double CalcularValorTotal()
+        {
+            return this.Valor * this.Quantidade;
+        }
+
+        public string ObterMensagem()
+        {
+            return $"O Cliente {this.Cliente.Apresentacao()} comprou {this.Quantidade} produtos " + 
+            $"com a descrição {this.Descricao}, e o valor total foi de R$ {CalcularValorTotal()} !";
+        }
+    }
+
+
+
+    Na classe Program no metodo Main solicitar o Nome e Idade de um Cliente
+    Instanciar a classe Cliente
+    Solicitar ao usuário Descricao, Valor e quantidade de um Produto
+    Instanciar a classe Produto
+    Efetuar a chamada para o ObterMensagem()
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Informe o nome do cliente: ");
+            string nome = Console.ReadLine();
+            Console.Write("Informe a idade do cliente: ");
+            int idade = Convert.ToInt32(Console.ReadLine());
+
+            Cliente objCliente = new Cliente(nome, idade);
+
+            Console.Write("Informe a descrição do produto: ");
+            string descricao = Console.ReadLine();
+            Console.Write("Informe o valor do produto: ");
+            double valor = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Informe a quantidade do produto: ");
+            double quantidade = Convert.ToDouble(Console.ReadLine());
+
+            Produto objProduto = new Produto(descricao, valor, quantidade, objCliente);
+
+            Console.WriteLine(objProduto.ObterMensagem());
+        }
+    }
+
+

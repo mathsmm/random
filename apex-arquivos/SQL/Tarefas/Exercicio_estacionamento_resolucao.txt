@@ -1,0 +1,303 @@
+Definição de sistema para a empresa "Estacione Aqui"
+
+Para esse sistema foram levantados os seguintes requisitos:
+
+R1: A empresa estacione aqui possui vários patios
+R2: Cada pátio irá conter vários estacionamentos
+R3: Cada estacionamento pode ter vários veículos, porém com entrada e saída diferentes
+R4: Cada veículo possui um cliente, um modelo e uma cor
+
+Para criar a base de dados, tabelas e campos, utilizar CAIXA ALTA.
+
+1)  Criar a base de dados DB_ESTACIONE_AQUI
+..........
+CREATE DATABASE DB_ESTACIONE_AQUI
+
+
+2)  Utilizar a base de dados DB_ESTACIONE_AQUI
+..........
+USE DB_ESTACIONE_AQUI
+
+
+3)  Criar a tabela CLIENTE com os campos ID, NOME, CPF, DATA_NASCIMENTO.
+    O CPF deve ter tamanho 11.
+    O ID deve ser a chave primária da tabela e ser auto incrementada
+    O NOME deve ter o tamanho 70
+..........
+CREATE TABLE CLIENTE(
+	ID INT PRIMARY KEY IDENTITY(1, 1),
+	NOME VARCHAR(70) NOT NULL,
+	CPF VARCHAR(11) NOT NULL,
+	DATA_NASCIMENTO DATE NOT NULL
+)
+
+
+4)  Criar a tabela MODELO com os campos ID e DESCRICAO
+    ID deve ser a chave primária e ser auto incrementada
+    DESCRICAO deve ter o tamanho 100
+..........
+CREATE TABLE MODELO(
+	ID INT PRIMARY KEY IDENTITY(1, 1),
+	DESCRICAO VARCHAR(100) NOT NULL
+)
+
+
+5)  Criar a tabela VEICULO com os campos ID, PLACA, MODELOID, CLIENTEID, COR, ANO
+    PLACA deve ter o tamanho 9
+    ID deve ser a chave primária e ser auto incrementada
+    MODELOID deve ser a chave estrangeira para a tabela MODELO
+    CLIENTEID deve ser a chave estrangeira para a tabela CLIENTE
+    COR deve ter o tamanho 40
+    ANO deve ser do tipo INT
+..........
+CREATE TABLE VEICULO(
+	ID INT PRIMARY KEY IDENTITY(1, 1),
+	PLACA VARCHAR(9) NOT NULL,
+	MODELOID INT,
+	CLIENTEID INT, 
+	COR VARCHAR(40) NOT NULL,
+	ANO INT NOT NULL
+)
+
+ALTER TABLE VEICULO
+ADD CONSTRAINT FK_VEICULO_MODELO
+FOREIGN KEY(MODELOID)
+REFERENCES MODELO(ID)
+
+ALTER TABLE VEICULO
+ADD CONSTRAINT FK_VEICULO_CLIENTE
+FOREIGN KEY(CLIENTEID)
+REFERENCES CLIENTE(ID)
+
+
+6)  Criar a tabela PATIO com os campos ID, ENDERECO e CAPACIDADE
+    ID deve ser a chave primária e ser auto incrementada
+    ENDERECO de ter o tamanho 80
+    CAPACIDADE deve ser INT
+..........
+CREATE TABLE PATIO(
+	ID INT PRIMARY KEY IDENTITY(1, 1),
+	ENDERECO VARCHAR(80) NOT NULL,
+	CAPACIDADE INT NOT NULL
+)
+
+
+7)  Criar a tabela ESTACIONAMENTO com os campos ID, PATIOID, VEICULOID, DATA_ENTRADA, DATA_SAIDA
+    ID deve ser a chave primária e ser auto incrementada
+    PATIOID deve ser a chave estrangeira para a tabela PATIO
+    VEICULOUD deve ser a chave estrangeira para a tabela VEICULO
+    DATA_ENTRADA e DATA_SAIDA devem ser do tipo DATETIME
+..........
+CREATE TABLE ESTACIONAMENTO(
+	ID INT PRIMARY KEY IDENTITY(1, 1),
+	PATIOID INT,
+	VEICULOID INT,
+	DATA_ENTRADA DATETIME NOT NULL,
+	DATA_SAIDA DATETIME NOT NULL
+)
+
+ALTER TABLE ESTACIONAMENTO
+ADD CONSTRAINT FK_ESTACIONAMENTO_PATIO
+FOREIGN KEY(PATIOID)
+REFERENCES PATIO(ID)
+
+ALTER TABLE ESTACIONAMENTO
+ADD CONSTRAINT FK_ESTACIONAMENTO_VEICULO
+FOREIGN KEY(VEICULOID)
+REFERENCES VEICULO(ID)
+
+
+8)  Inserir 10 registros na tabela CLIENTE
+..........
+INSERT INTO CLIENTE(NOME, CPF, DATA_NASCIMENTO)
+VALUES ('Matheus Marchi Moro', '11111111111', '2003-04-21'),
+       ('Diego Cugiki', '11111111112', '1987-02-05'),
+       ('Daniel da Silva', '11111111113', '1982-05-13'),
+       ('Jonathas de Souza', '11111111114', '1989-12-02'),
+       ('Marcela Santos', '11111111115', '1992-07-20'),
+       ('Alexandre Goes', '11111111116', '1999-01-28'),
+       ('Felipe Pinheiros', '11111111117', '2004-07-14'),
+       ('Edson Moraes', '11111111118', '1972-09-01'),
+       ('Eduardo Elias', '11111111119', '1990-11-23'),
+       ('Cristina Priester', '11111111120', '2003-08-04')
+
+
+9)  Inserir 5 registros na tabela MODELO
+..........
+INSERT INTO MODELO(DESCRICAO)
+VALUES ('Volkswagen Gol'),
+       ('Fiat Uno'),
+       ('Fiat Palio'),
+       ('General Motors Celta'),
+       ('Renault Sandero')
+
+
+10) Inserir 5 registros na tabela PATIO
+..........
+INSERT INTO PATIO(ENDERECO, CAPACIDADE)
+VALUES ('Rua Pedro Benjamino de Oliveira', 10),
+       ('Rua das Palmeiras', 15),
+       ('Rua XV de Novembro', 20),
+       ('Rua Dr. Pedro Zimmermann', 40),
+       ('Rua Dois de Setembro', 30)
+
+
+11) Inserir 10 registros na tabela VEICULO
+    Um veiculo deve ter a PLACA JEG-1010
+    Um veiculo deve ter a PLACA JJJ-2020
+    Um veículo deve ter a COR verde
+..........
+INSERT INTO VEICULO(PLACA, MODELOID, CLIENTEID, COR, ANO)
+VALUES ('JEG-1010', 1, 1, 'PRATEADO', '2008'),
+       ('JJJ-2020', 2, 2, 'PRETO', '2005'),
+       ('ABC-1234', 3, 3, 'VERDE', '2014'),
+       ('DEF-5678', 4, 4, 'VERMELHO', '2010'),
+       ('GHI-9012', 5, 5, 'BRANCO', '2018'),
+       ('JKL-3456', 1, 6, 'CINZA ESCURO', '2010'),
+       ('MNO-7890', 2, 7, 'CINZA CLARO', '2016'),
+       ('PQR-1000', 3, 8, 'PRETO', '2013'),
+       ('STU-2000', 4, 9, 'PRATEADO', '2011'),
+       ('VWX-3000', 5, 10, 'PRATEADO', '2017')
+
+
+12) Inserir 10 registros na tabela ESTACIONAMENTO
+    Deve possuir 3 registros de estacionamento para o VEICULO de PLACA JEG-1010
+..........
+INSERT INTO ESTACIONAMENTO(PATIOID, VEICULOID, DATA_ENTRADA, DATA_SAIDA)
+VALUES (1, 1, '20180512 18:10:00.000', '20180512 23:00:00.000'),
+       (2, 1, '20190825 20:00:00.000', '20190826 02:50:00.000'),
+       (3, 1, '20200422 15:35:00.000', '20200422 20:15:00.000'),
+       (4, 4, '20150801 23:45:00.000', '20150803 00:10:00.000'),
+       (5, 5, '20160225 08:40:00.000', '20160225 10:12:00.000'),
+       (1, 6, '20170605 12:00:00.000', '20170606 06:25:00.000'),
+       (2, 7, '20180910 18:00:00.000', '20180912 19:05:00.000'),
+       (3, 8, '20190105 22:50:00.000', '20190106 04:15:00.000'),
+       (4, 9, '20200314 10:30:00.000', '20200314 12:50:00.000'),
+       (5, 10, '20200708 03:25:00.000', '20200708 14:30:00.000')
+
+
+13) Selecionar a placa e o nome dos donos de todos os veículos.
+..........
+SELECT V.PLACA,
+       C.NOME
+  FROM VEICULO AS V
+       INNER JOIN CLIENTE AS C ON C.ID = V.CLIENTEID
+
+
+14) Selecionar o CPF e o nome do cliente que possui o veiculo de placa JJJ-2020.
+..........
+SELECT C.CPF,
+       C.NOME,
+       V.PLACA
+  FROM CLIENTE AS C
+       INNER JOIN VEICULO AS V ON V.CLIENTEID = C.ID
+ WHERE PLACA = 'JJJ-2020'
+
+
+15) Selecionar a placa e a cor do veículo que possui o ID de estacionamento 1.
+..........
+SELECT V.PLACA,
+       V.COR
+  FROM VEICULO AS V
+ WHERE ID = 1
+
+
+16) Selecionar a placa e o ano do veículo que possui cor verde.
+..........
+SELECT V.PLACA,
+       V.ANO
+  FROM VEICULO AS V
+ WHERE COR = 'VERDE'
+
+
+17) Selecionar a placa, o ano do veículo e a descrição de seu modelo, se ele possuir ano a partir de 2000.
+..........
+SELECT V.PLACA,
+       V.ANO,
+       M.DESCRICAO
+  FROM VEICULO AS V
+       INNER JOIN MODELO AS M ON M.ID = V.MODELOID
+ WHERE ANO >= '2000'
+
+
+18) Selecionar o endereço, a data de entrada e de saída dos estacionamentos do veículo de placa JEG-1010.
+..........
+SELECT P.ENDERECO,
+       E.DATA_ENTRADA,
+       E.DATA_SAIDA
+  FROM PATIO AS P
+       INNER JOIN ESTACIONAMENTO AS E ON E.PATIOID = P.ID
+       INNER JOIN VEICULO AS V ON V.ID = E.VEICULOID
+ WHERE PLACA = 'JEG-1010'
+
+
+19) Selecionar a quantidade de vezes que os veículos de cor verde estacionaram.
+..........
+SELECT COUNT(*) AS QUANTIDADE_VEZES
+  FROM ESTACIONAMENTO AS E
+       INNER JOIN VEICULO AS V ON V.ID = E.VEICULOID
+ WHERE V.COR = 'VERDE'
+
+
+20) Selecionar todos os clientes que possuem carro de modelo 1.
+..........
+SELECT C.NOME
+  FROM CLIENTE AS C
+       INNER JOIN VEICULO AS V ON V.CLIENTEID = C.ID
+       INNER JOIN MODELO AS M ON M.ID = V.MODELOID
+ WHERE M.ID = 1
+
+
+21) Selecionar as placas, os horários de entrada e saída dos veículos de cor verde.
+..........
+SELECT V.PLACA,
+       E.DATA_ENTRADA,
+       E.DATA_SAIDA
+  FROM VEICULO AS V
+       INNER JOIN ESTACIONAMENTO AS E ON E.VEICULOID = V.ID
+ WHERE V.COR = 'VERDE'
+
+
+22) Selecionar todos os estacionamentos do veículo de placa JJJ-2020.
+..........
+SELECT *
+  FROM ESTACIONAMENTO AS E
+       INNER JOIN VEICULO AS V ON V.ID = E.VEICULOID
+ WHERE V.PLACA = 'JJJ-2020'
+
+
+23) Selecionar o nome do cliente que possui o veículo cujo ID do estacionamento é 2.
+..........
+SELECT C.NOME
+  FROM CLIENTE AS C
+       INNER JOIN VEICULO AS V ON V.CLIENTEID = C.ID
+       INNER JOIN ESTACIONAMENTO AS E ON E.VEICULOID = V.ID
+ WHERE E.ID = 2
+
+
+24) Selecionar o CPF do cliente que possui o veículo cujo ID do estacionamento é 3.
+..........
+SELECT C.CPF
+  FROM CLIENTE AS C
+       INNER JOIN VEICULO AS V ON V.CLIENTEID = C.ID
+       INNER JOIN ESTACIONAMENTO AS E ON E.VEICULOID = V.ID
+ WHERE E.ID = 3
+
+
+25) Selecionar a descrição do modelo do veículo cujo ID do estacionamento é 2.
+..........
+SELECT M.DESCRICAO
+  FROM MODELO AS M
+       INNER JOIN VEICULO AS V ON V.MODELOID = M.ID
+       INNER JOIN ESTACIONAMENTO AS E ON E.VEICULOID = V.ID
+ WHERE E.ID = 2
+
+
+26) Selecionar a placa, o nome dos donos e a descrição dos modelos de todos os veículos
+..........
+SELECT V.PLACA,
+       C.NOME,
+       M.DESCRICAO
+  FROM VEICULO AS V
+       INNER JOIN CLIENTE AS C ON C.ID = V.CLIENTEID
+       INNER JOIN MODELO AS M ON M.ID = V.MODELOID

@@ -1,0 +1,68 @@
+unit uSelecionaCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFormPadraoConsultaPEDSCI, Data.DB,
+  System.ImageList, Vcl.ImgList, Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls,
+  Vcl.ToolWin, Datasnap.DBClient, Vcl.ExtCtrls;
+
+type
+  TfrSelecionaCliente = class(TfrFormPadraoConsultaPEDSCI)
+    procedure grConsultaCellClick(Column: TColumn);
+    procedure grConsultaDblClick(Sender: TObject);
+  private
+    { Private declarations }
+    wCodCliSelecionado : Integer;
+    wNomeCliSelecionado : String;
+  public
+    { Public declarations }
+    function setTabela: TClientDataSet; override;
+    function fRetornarCodCliSelecionado : Integer;
+    function fRetornarNomeCliSelecionado : String;
+  end;
+
+var
+  frSelecionaCliente: TfrSelecionaCliente;
+
+implementation
+
+uses
+  udmDadosPEDSCI, uCadLancNotas;
+
+{$R *.dfm}
+
+{ TfrSelecionaCLiente }
+
+function TfrSelecionaCliente.fRetornarCodCliSelecionado: Integer;
+begin
+
+end;
+
+function TfrSelecionaCliente.fRetornarNomeCliSelecionado: String;
+begin
+
+end;
+
+procedure TfrSelecionaCliente.grConsultaCellClick(Column: TColumn);
+begin
+  inherited;
+  wCodCliSelecionado  := grConsulta.Fields[1].AsInteger;
+  wNomeCliSelecionado := grConsulta.Fields[3].AsString;
+end;
+
+procedure TfrSelecionaCliente.grConsultaDblClick(Sender: TObject);
+begin
+  inherited;
+  frCadLancNotas.edCODCLINOTA.Text := grConsulta.DataSource.DataSet.FieldByName('BDCODIGO').AsString;
+  frCadLancNotas.edNOMECLINOTA.Text := grConsulta.DataSource.DataSet.FieldByName('BDNOMECLI').AsString;
+  Close;
+end;
+
+function TfrSelecionaCliente.setTabela: TClientDataSet;
+begin
+  Result := dmDadosPEDSCI.tbClientes;
+end;
+
+end.

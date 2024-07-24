@@ -1,0 +1,40 @@
+Tipo primitivo -> Começa com letra minúscula;
+Nome de variável -> Começa com letra minúscula;
+Classe -> Começa com letra maiúscula;
+Método e Função -> Começa com letra maiúscula;
+Palavras diferentes -> Começam com letra maiúscula (Camel Case -> 
+(Ex de Função: CalcularImpostosDocumento
+ Ex de variável: nomeDoCandidato));
+
+Toda função, método ou qualquer outra coisa que exija uma 
+identação, ABRE-SE E FECHA-SE PARÊNTESES OU CHAVES;
+
+
+| Terminal     |
+| New Terminal |
+
+Comandos do console:
+------------------------------------------------------------
+cd (APERTAR TAB)
+==> Navega entre as pastas
+
+cd '.\C# Fundamentos\'
+cd aula_01
+------------------------------------------------------------
+dir
+==> Mostra as pastas que há dentro daquele diretório
+------------------------------------------------------------
+mkdir
+==> Cria um diretório
+
+mkdir projeto01
+------------------------------------------------------------
+dotnet new console
+==> Cria um projeto de console
+(Importante ter o DOTNET FRAMEWORK (.NET FRAMEWORK) e o 
+DOTNET SDK (.NET CORE SDK) instalados! 
+-> https://dotnet.microsoft.com/download)
+------------------------------------------------------------
+dotnet run
+--> Executa o programa
+------------------------------------------------------------

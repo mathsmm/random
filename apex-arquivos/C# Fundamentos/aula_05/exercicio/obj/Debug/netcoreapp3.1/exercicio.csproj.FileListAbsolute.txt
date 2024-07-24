@@ -1,0 +1,13 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\obj\Debug\netcoreapp3.1\exercicio.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\obj\Debug\netcoreapp3.1\exercicio.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\obj\Debug\netcoreapp3.1\exercicio.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\obj\Debug\netcoreapp3.1\exercicio.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\bin\Debug\netcoreapp3.1\exercicio.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\bin\Debug\netcoreapp3.1\exercicio.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\bin\Debug\netcoreapp3.1\exercicio.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\bin\Debug\netcoreapp3.1\exercicio.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\bin\Debug\netcoreapp3.1\exercicio.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\bin\Debug\netcoreapp3.1\exercicio.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\obj\Debug\netcoreapp3.1\exercicio.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\obj\Debug\netcoreapp3.1\exercicio.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_05\exercicio\obj\Debug\netcoreapp3.1\exercicio.genruntimeconfig.cache

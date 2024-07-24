@@ -1,0 +1,13 @@
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\obj\Debug\netcoreapp3.1\projetoHeranca.csprojAssemblyReference.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\obj\Debug\netcoreapp3.1\projetoHeranca.AssemblyInfoInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\obj\Debug\netcoreapp3.1\projetoHeranca.AssemblyInfo.cs
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\obj\Debug\netcoreapp3.1\projetoHeranca.csproj.CoreCompileInputs.cache
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\bin\Debug\netcoreapp3.1\projetoHeranca.exe
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\bin\Debug\netcoreapp3.1\projetoHeranca.deps.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\bin\Debug\netcoreapp3.1\projetoHeranca.runtimeconfig.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\bin\Debug\netcoreapp3.1\projetoHeranca.runtimeconfig.dev.json
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\bin\Debug\netcoreapp3.1\projetoHeranca.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\bin\Debug\netcoreapp3.1\projetoHeranca.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\obj\Debug\netcoreapp3.1\projetoHeranca.dll
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\obj\Debug\netcoreapp3.1\projetoHeranca.pdb
+C:\Users\Apex02\Desktop\Matheus MMoro\Apex\C# Fundamentos\aula_07\projetoHeranca\obj\Debug\netcoreapp3.1\projetoHeranca.genruntimeconfig.cache

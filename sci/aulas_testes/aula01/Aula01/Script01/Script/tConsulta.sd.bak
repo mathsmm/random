@@ -1,0 +1,10 @@
+uses
+  uConsulta;
+
+procedure pTestarConsultaCliente;
+var
+  wCodigoCliente : Integer;
+begin
+  wCodigoCliente := 30;
+  uConsulta.pConsultarCliente(wCodigoCliente);
+end;

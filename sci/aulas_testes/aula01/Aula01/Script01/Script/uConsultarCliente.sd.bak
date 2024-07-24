@@ -1,0 +1,24 @@
+uses
+  uTeste,
+  uNovoCadastro;
+
+procedure pConsultarCliente;
+  var w1 : OleVariant;
+  var w2 : OleVariant;
+begin
+  w1 := Sys.Process('PEDSCI').Window('TfrPEDSCI', 'PED-Projeto Estagio Desenvolvedor');
+  w1.MainMenu.Click('Consultas|Clientes');
+  w2 := w1.Window('MDIClient').Window('TfrConsClientes', 'Consulta de clientes');
+  w2.Window('TToolBar').ClickItem(3, false);
+  w2.Window('TComboBox').ClickItem('Código');
+  w1 := w2.Window('TEdit');
+  w1.Click(18, 17);
+  w1.Keys('20');
+  w1 := w2.Window('TDBGrid');
+  w1.HScroll.Pos := 0;
+  w1.Click(253, 28);
+  w2.Window('TButton').ClickButton;
+  w1.HScroll.Pos := 42;
+  w1.VScroll.Pos := 1;
+  w1.Click(188, 153);
+end;

@@ -1,0 +1,309 @@
+1)  Pergunte ao usuário do sistema qual time ganhou a 
+    última copa do mundo de futebol. 
+    Dê a ele 3 opções, dentro dessas uma deve ser a verdadeira. 
+    Caso o usuário acerte, escreva “Acertou” caso contrário, 
+    “Errou - tente novamente”. 
+    Não pare o programa até que ele acerte a resposta.
+    1 - Argentina | 2 - Brasil | 3 - França
+
+....................
+
+using System;
+
+namespace exercicios_lacos_de_repeticao
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Qual time ganhou a última copa do mundo de futebol?");
+            Console.WriteLine("Opção 1 - Argentina;");
+            Console.WriteLine("Opção 2 - Brasil;");
+            Console.WriteLine("Opção 3 - França.");
+
+            int opcaoDoUsuario = 0;
+
+            do
+            {
+                opcaoDoUsuario = Convert.ToInt32(Console.ReadLine());
+
+                if (opcaoDoUsuario != 3)
+                {
+                    Console.WriteLine("Errou! Tente novamente.");
+                }
+            }
+            while (opcaoDoUsuario != 3);
+
+            Console.WriteLine("Acertou!");
+        }
+    }
+}
+
+// RESOLUÇÃO DO PROFESSOR:
+
+            Console.WriteLine("Quem ganhou a ultima copa do mundo? ");
+            Console.WriteLine("1 - Argentina | 2 - Brasil | 3 - França");
+            bool errou = true;
+
+            while (errou)
+            {
+                int resposta = Convert.ToInt32(Console.ReadLine());
+
+                if (resposta == 3)
+                {
+                    Console.WriteLine("Acertou!!!!");
+                    errou = false;
+                    continue;
+                }
+                Console.WriteLine("Errou - tente novamente!");
+            }
+
+------------------------------------------------------
+
+2)  Faça um programa que escreva a tabuada de 5, utilizando o laço for.
+
+....................
+
+using System;
+
+namespace exercicios_lacos_de_repeticao
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"5 * {i} = {5 * i}");
+            }
+        }
+    }
+}
+
+// RESOLUÇÃO DO PROFESSOR:
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"5 x {i} = {5 * i}");
+            }
+
+------------------------------------------------------
+
+3)  Faça um programa que escreva a tabuada de 3, utilizando o laço while.
+
+....................
+
+using System;
+
+namespace exercicios_lacos_de_repeticao
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int contador = 1;
+
+            while (contador <= 10)
+            {
+                Console.WriteLine("3 * " + contador + " = " + (3 * contador));
+                contador++;
+            }
+        }
+    }
+}
+
+// RESOLUÇÃO DO PROFESSOR:
+
+            int contador = 1;
+
+            while (contador <= 10)
+            {
+                Console.WriteLine($"{3} x {contador} = {3 * contador}");
+                contador++;
+            }
+
+
+------------------------------------------------------
+
+4)  Solicite ao usuário qual tabuada ele deseja calcular.
+    Escreva a tabuada com o laço for.
+
+....................
+
+using System;
+
+namespace exercicios_lacos_de_repeticao
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Informe o número de qual tabuada desejas calcular: ");
+            int numeroInformadoPeloUsuario = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"{numeroInformadoPeloUsuario} * {i} = {numeroInformadoPeloUsuario * i}");
+            }
+        }
+    }
+}
+
+// RESOLUÇÃO DO PROFESSOR:
+
+            (Supondo que o usuário tenha informado um numero);
+
+            int numeroInformadoPeloUsuario = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= 10 ; i++)
+            {
+                Console.WriteLine($"{numeroInformadoPeloUsuario} x {i} = {numeroInformadoPeloUsuario * i}");
+                
+            }
+
+------------------------------------------------------
+
+5)  Escreva a tabuada de 1 até 10 utilizando laço for
+
+....................
+
+using System;
+
+namespace exercicios_lacos_de_repeticao
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int iA = 1; iA <= 10; iA++)
+            {
+                for (int iB = 1; iB <= 10 ; iB++)
+                {
+                    Console.WriteLine($"{iA} * {iB} = {iA * iB}");
+                }
+            }
+        }
+    }
+}
+
+// RESOLUÇÃO DO PROFESSOR:
+
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 1; j <= 10; j++)
+                {
+                    Console.WriteLine($"{i} x {j} = {i*j}");
+                }
+                Console.WriteLine("-----------------");
+            }
+
+------------------------------------------------------
+
+6)  A empresa ABC possui 5 funcionários.
+    Ela quer saber entre os funcionários qual é o que possui 
+    maior peso e qual é o que possui maior altura.
+
+    Faça um programa que leia o nome do funcionario, seu peso e sua altura.
+
+    Para ler estas informações utilize o laço de repetiçao "for".
+    
+    for (int indice = 1; indice <= 5; indice++)
+    {
+    }
+
+    Durante a execução do laço, faça as verificaçoes necessárias para maior 
+    peso e maior altura. 
+    Com isso pode ser armazenado o nome do funcionario.
+
+    Ao final do laço, mostre a mensagem:
+
+    $"Funcionário {nomeDoFuncionarioComMaiorPeso} possui o maior peso {maiorPeso}"
+    $"Funcionário {nomeDoFuncionarioComMaiorAltura} possui a maior altura {maiorAltura}"
+
+....................
+
+using System;
+
+namespace exercicios_lacos_de_repeticao
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nomeDoFuncionarioComMaiorPeso = "";
+            string nomeDoFuncionarioComMaiorAltura = "";
+
+            double maiorPeso = 0;
+            double maiorAltura = 0;
+
+            for (int indice = 1; indice <= 5; indice++)
+            {
+                Console.WriteLine($"Informe o nome do funcionário {indice}: ");
+                string nomeDoFuncionario = Console.ReadLine();
+
+                Console.WriteLine($"Informe o peso do funcionário {indice} em quilogramas: ");
+                double pesoDoFuncionario = Convert.ToDouble(Console.ReadLine());
+
+                if (pesoDoFuncionario > maiorPeso)
+                {
+                    maiorPeso = pesoDoFuncionario;
+                }
+
+                Console.WriteLine($"Informe a altura do funcionário {indice} em metros: ");
+                double alturaDoFuncionario = Convert.ToDouble(Console.ReadLine());
+
+                if (alturaDoFuncionario > maiorAltura)
+                {
+                    maiorAltura = alturaDoFuncionario;
+                }
+
+                if (maiorPeso == pesoDoFuncionario)
+                {
+                    nomeDoFuncionarioComMaiorPeso = nomeDoFuncionario;
+                }
+
+                if (maiorAltura == alturaDoFuncionario)
+                {
+                    nomeDoFuncionarioComMaiorAltura = nomeDoFuncionario;
+                }
+            }
+
+            Console.WriteLine($"Funcionário(a) {nomeDoFuncionarioComMaiorPeso} possui o maior peso: {maiorPeso} kg");
+            Console.WriteLine($"Funcionário(a) {nomeDoFuncionarioComMaiorAltura} possui a maior altura: {maiorAltura} m");
+        }
+    }
+}
+
+// RESOLUÇÃO DO PROFESSOR:
+
+            string nomeDoFuncionarioComMaiorPeso = "";
+            string nomeDoFuncionarioComMaiorAltura = "";
+
+            double maiorPeso = 0;
+            double maiorAltura = 0;
+
+            for (int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine($"Informe o nome do funcionário {i}: ");
+                string nome = Console.ReadLine();
+
+                Console.WriteLine($"Informe o peso do funcionário {i} em quilogramas: ");
+                double peso = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine($"Informe a altura do funcionário {i} em metros: ");
+                double altura = Convert.ToDouble(Console.ReadLine());
+
+                if (peso > maiorPeso)
+                {
+                    maiorPeso = peso;
+                    nomeDoFuncionarioComMaiorPeso = nome;
+                }
+
+                if (altura > maiorAltura)
+                {
+                    maiorAltura = altura;
+                    nomeDoFuncionarioComMaiorAltura = nome;
+                }
+            }
+
+            Console.WriteLine($"Funcionário(a) {nomeDoFuncionarioComMaiorPeso} possui o maior peso: {maiorPeso} kg");
+            Console.WriteLine($"Funcionário(a) {nomeDoFuncionarioComMaiorAltura} possui a maior altura: {maiorAltura} m");

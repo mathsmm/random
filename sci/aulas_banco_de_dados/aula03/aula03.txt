@@ -1,0 +1,24 @@
+/*Copia todos os dados de uma
+coluna e cola em outra*/
+UPDATE TGENERO G SET
+G.BDDESCO02 = G.BDDESC
+
+UNION ALL --> Utiliza-se entre SELECTs
+e serve para os unir. É preciso ter a 
+mesma quantidade de campos nos dois
+SELECTs para funcionar
+
+EXTRACT(YEAR FROM VL.BDDATA)
+
+"TMP" na frente do nome da tabela e 
+"TEMP" no final do nome da tabela: 
+tabela temporária que a própria SCI
+utiliza para mais de um funcionário
+editar a tabela ao mesmo tempo
+
+"TMP" na frente do nome da tabela: 
+tabela temporária do Firebird. 
+Permite a edição de somente quem
+a criou
+
+SUBSTRING(VL.BDDATA FROM 6 FOR 2) || '/' || SUBSTRING(VL.BDDATA FROM 1 FOR 4)

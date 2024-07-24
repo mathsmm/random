@@ -1,0 +1,13 @@
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\obj\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.csprojAssemblyReference.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\obj\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.AssemblyInfoInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\obj\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.AssemblyInfo.cs
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\obj\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.csproj.CoreCompileInputs.cache
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\bin\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.exe
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\bin\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.deps.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\bin\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.runtimeconfig.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\bin\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.runtimeconfig.dev.json
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\bin\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\bin\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\obj\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.dll
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\obj\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.pdb
+C:\Users\matmm\Desktop\Apex_Matheus-Marchi-Moro\C# Fundamentos\aula_07\Exercicios\projetoImpostoCategoriaProduto\obj\Debug\netcoreapp3.1\projetoImpostoCategoriaProduto.genruntimeconfig.cache

@@ -1,0 +1,10 @@
+uses
+  uCadastro;
+
+procedure pTestarCadastroCliente;
+var
+  wCodigoCliente : Integer;
+begin
+  wCodigoCliente := 30;
+  uCadastro.pCadastrarCliente(wCodigoCliente);
+end;

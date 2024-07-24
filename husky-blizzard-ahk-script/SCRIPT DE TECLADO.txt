@@ -1,0 +1,6 @@
+Para o script ser executado na iniciação do Windows:
+
+Windows + R
+shell:startup
+*Colar um atalho para o script
+

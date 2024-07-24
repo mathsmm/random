@@ -1,0 +1,133 @@
+Exercicio Complementar de C#
+
+1)  Criar um projeto console
+        dotnet new console
+2)  Dentro deste projeto adicionar as seguintes pastas e subpastas:
+        - Modelos
+        - Repositorio
+        - Servicos
+            - ClienteRepositorio
+            - ProdutoRepositorio
+3)  Dentro da pasta Modelos criar as seguintes Classes
+        - Produto
+        - Cliente
+4)  A classe Produto deve conter os seguintes atributos:
+        - Id : int
+        - Descricao : string
+        - Valor: double
+        - IdCliente : int
+5)  A classe Produto deve conter um construtor que ficará responsavel por atribuir valores aos atributos
+6)  A classe Cliente deve conter os seguintes atributos:
+        - Id : int
+        - Nome: string
+7)  A classe Cliente deve conter um construtor que ficará responsavel por atribuir valores aos atributos
+8)  Dentro da pasta Repositorio criar as interfaces
+        - IRepositorioProduto
+        - IRepositorioCliente
+9)  A interface IRepositorioProduto deve conter a assinatura dos seguintes métodos:
+        - void Incluir();
+        - void Exlcuir(int id);
+        - List<Produto> ObterTodos();
+        - Produto ObterPeloId(int id);
+        - List<Produto> ObterPeloIdDoCliente(int idCliente);
+10) A interface IRepositorioCliente deve conter a assinatura dos seguintes métodos:
+        - void Incluir(Cliente cliente);
+        - void Exlcuir(int id);
+        - List<Cliente> ObterTodos();
+        - Cliente ObterPeloId(int id);
+        - string ObterClienteEListaDeProdutos(int idCliente, ProdutoRepositorioServico produtoServico);
+11)  Dentro da pasta ClienteRepositorio criar a classe:
+        - ClienteRepositorioServico
+12)  Dentro da pasta ProdutoRepositorio criar a classe:
+        - ProdutoRepositorioServico
+13) A classe ClienteRepositorioServico devera implementar a interface IRepositorioCliente
+14) A classe ProdutoRepositorioServico devera implementar a interface IRepositorioProduto
+15) A classe ProdutoRepositorioServico deve conter a propriedade:
+        - ListaDeProdutos : List<Produto>
+16) A classe ProdutoRepositorioServico deve conter um construtor que irá instanciar a propriedade ListaDeProdutos (this.ListaDeProdutos = new List<Produto>();)
+17) A classe ClienteRepositorioServico deve conter a propriedade:
+        - ListaDeClientes : List<Cliente> 
+18)  A classe ClienteRepositorioServico deve conter um construtor que irá instanciar a propriedade ListaDeClientes (this.ListaDeClientes = new List<Cliente>();)
+19) Na classe Program no método Main, colar as seguintes linhas:
+            
+            Cliente clienteDiego = new Cliente(1, "Diego Cugiki");
+            Cliente clientePedro = new Cliente(2, "Pedro");
+
+            ClienteRepositorioServico clienteRepositorio = new ClienteRepositorioServico();
+            clienteRepositorio.Incluir(clienteDiego);
+            clienteRepositorio.Incluir(clientePedro);
+            
+            Produto produtoArroz = new Produto(1, "Arroz", 5, clienteDiego.Id);
+            Produto produtoFeijao = new Produto(2, "Feijão", 8, clienteDiego.Id);
+            Produto produtoAcucar = new Produto(3, "Açucar", 6, clienteDiego.Id);
+            Produto produtoMacarrao = new Produto(4, "Macarrão", 4, clienteDiego.Id);
+            Produto produtoLeite = new Produto(5, "Leite", 3, clienteDiego.Id);
+            Produto produtoDesodorante = new Produto(6, "Desodorante", 5, clientePedro.Id);
+            Produto produtoOmo = new Produto(7, "Omo", 17, clientePedro.Id);
+            Produto produtoPao = new Produto(8, "Pão", 5, clientePedro.Id);
+            Produto produtoBatata = new Produto(9, "Batata", 9, clientePedro.Id);
+            Produto pordutoCenoura = new Produto(10, "Cenoura", 4.5, clientePedro.Id);
+
+            ProdutoRepositorioServico produtoRepositorio = new ProdutoRepositorioServico();
+            produtoRepositorio.Incluir(produtoArroz);
+            produtoRepositorio.Incluir(produtoFeijao);
+            produtoRepositorio.Incluir(produtoAcucar);
+            produtoRepositorio.Incluir(produtoMacarrao);
+            produtoRepositorio.Incluir(produtoLeite);
+            produtoRepositorio.Incluir(produtoDesodorante);
+            produtoRepositorio.Incluir(produtoOmo);
+            produtoRepositorio.Incluir(produtoPao);
+            produtoRepositorio.Incluir(produtoBatata);
+            produtoRepositorio.Incluir(pordutoCenoura);
+
+            string produtosDoClienteDiego = clienteRepositorio.ObterClienteEListaDeProdutos(clienteDiego.Id, produtoRepositorio);
+            string produtosDoClientePedro = clienteRepositorio.ObterClienteEListaDeProdutos(clientePedro.Id, produtoRepositorio);
+
+            Console.WriteLine(produtosDoClienteDiego);
+            Console.WriteLine(produtosDoClientePedro);
+
+            produtoRepositorio.Exlcuir(produtoPao.Id);
+            produtoRepositorio.Exlcuir(produtoArroz.Id);
+            produtoRepositorio.Exlcuir(produtoLeite.Id);
+            produtoRepositorio.Exlcuir(produtoAcucar.Id);
+
+            produtosDoClienteDiego = clienteRepositorio.ObterClienteEListaDeProdutos(clienteDiego.Id, produtoRepositorio);
+            produtosDoClientePedro = clienteRepositorio.ObterClienteEListaDeProdutos(clientePedro.Id, produtoRepositorio);
+
+            Console.WriteLine(produtosDoClienteDiego);
+            Console.WriteLine(produtosDoClientePedro);
+    
+20) Rodar o sistema e verificar se os produtos foram incluidos e excluidos com sucesso.
+
+OBSERVAÇÕES: 
+    1) Os métodos para inclusão irão alimentar a lista da propria classe
+    2) Os métodos de exlusão irão remover o determinado item
+    3) Os metodos que obtem todos apenas retornam a lista
+    
+    DICA: para exclusão e obter por id utilizem "link", exemplo
+        // Aqui estou removendo tudo que contenha aquele determinado ID
+        public void Exlcuir(int id)
+        {
+            this.Lista.RemoveAll(c => c.Id == id);
+        }
+
+        // Aqui estou obtendo o primeiro ou default (null) pelo ID
+        public Cliente ObterPeloId(int id)
+        {
+            return this.Lista.Where(c => c.Id == id).FirstOrDefault();
+        }
+    
+    4) A funcão que retorna uma String com o Cliente e seus produtos deve retornar algo parecido com isso:
+
+        -------------------------------------------------------
+        CLIENTE
+        -------------------------------------------------------
+        **** ID: 1 - Nome: Diego
+        -------------------------------------------------------
+        PRODUTOS
+        -------------------------------------------------------
+        **** ID: 1 - Descrição: Arroz - Valor: R$ 5,00
+        **** ID: 2 - Descrição: Açucar - Valor: R$ 3,00
+        **** ID: 3 - Descrição: Feijão - Valor: R$ 8,00
+        **** ID: 4 - Descrição: Macarrão - Valor: R$ 4,00
+        -------------------------------------------------------

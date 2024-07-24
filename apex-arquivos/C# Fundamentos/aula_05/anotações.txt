@@ -1,0 +1,75 @@
+namespace -> local em que está o código;
+
+this. -> pega o que estiver dentro da classe;
+
+public, private, protected -> modificadores de acesso;
+
+instância -> dar um "new" em algo, criar um objeto;
+
+static -> não há necessidade da instância da classe para
+acessar métodos, funções e propriedades.
+
+MÉTODO ESTÁTICO: Classe.Método
+MÉTODO NÃO-ESTÁTICO: objInstanciado.Método
+
+------------------------------------------------------------
+
+O que são classes e objetos?
+
+Imagine que você comprou um carro recentemente e decide modelar esse carro 
+usando programação orientada a objetos. O seu carro tem as características 
+que você estava procurando: um motor 2.0 híbrido, azul escuro, quatro portas, 
+câmbio automático etc. Ele também possui comportamentos que, provavelmente, 
+foram o motivo de sua compra, como acelerar, desacelerar, acender os faróis, 
+buzinar e tocar música. Podemos dizer que o carro novo é um objeto, onde 
+suas características são seus atributos (dados atrelados ao objeto) e seus 
+comportamentos são ações ou métodos.
+
+Seu carro é um objeto seu mas na loja onde você o comprou existiam vários 
+outros, muito similares, com quatro rodas, volante, câmbio, retrovisores, 
+faróis, dentre outras partes. Observe que, apesar do seu carro ser único 
+(por exemplo, possui um registro único no Departamento de Trânsito), podem 
+existir outros com exatamente os mesmos atributos, ou parecidos, ou mesmo 
+totalmente diferentes, mas que ainda são considerados carros. Podemos 
+dizer então que seu objeto pode ser classificado (isto é, seu objeto 
+pertence à uma classe) como um carro, e que seu carro nada mais é que 
+uma instância dessa classe chamada "carro".
+
+------------------------------------------------------------
+
+Abstração:
+
+Abstrair coisas do mundo. Por exemplo criar uma classe chamada
+mesa e adicionar objetos a ela que tenham tipos diferentes de 
+madeira usada, cor, tamanho, etc. Objetos esses que são, na 
+vida real, MESAS.
+
+------------------------------------------------------------
+
+Encapsulamento:
+
+Não é possível ver o código utilizado num controle para o botão
+de ligar funcionar. Só é possível ver o botão.
+
+public -> método que pode ser chamado de fora da classe aonde foi criado;
+
+private -> método que NÃO pode ser chamado de fora da classe aonde foi criado.
+
+------------------------------------------------------------
+
+Polimorfismo:
+
+Algo em comum, porém o modo de se fazer é diferente.
+Uma máquina de lavar roupa e uma televisão ligam, porém
+cada uma liga de uma forma diferente.
+
+------------------------------------------------------------
+
+Herança
+
+------------------------------------------------------------
+
+Atalhos interessantes:
+
+Escrever "prop" (para propriedade da classe) e apertar TAB várias vezes
+Escrever "ctor" (para construtor) e apertar TAB várias vezes

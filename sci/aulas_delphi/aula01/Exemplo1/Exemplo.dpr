@@ -1,0 +1,14 @@
+program Exemplo;
+
+uses
+  Vcl.Forms,
+  uExemplo in 'uExemplo.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

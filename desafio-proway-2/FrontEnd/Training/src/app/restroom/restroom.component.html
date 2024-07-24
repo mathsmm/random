@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="row">
+    <div *ngIf="selectedRestRoom.id != 0" class="col-sm-6">
+      <app-title [title]="(selectedRestRoom.id === -1 ? 'New Rest_Room': 'Code: ' + selectedRestRoom.id)">
+        <button class="btn btn-sm btn-outline-danger" (click)="goBack()">Go Back</button>
+      </app-title>
+      <form [formGroup]="restRoomForm" (submit)="onSubmit()">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" formControlName="name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label >Capacity</label>
+          <input type="number" formControlName="capacity" class="form-control">
+        </div>
+        <div class="row form-group">
+          <button class="btn btn-success" [disabled]="!restRoomForm.valid">Save</button>
+        </div>
+      </form>
+      <table class="table table-hover">
+        <thead class="thead-light">
+          <tr>
+              <th style="width:8%" scope="col">#</th>
+              <th style="width:42%" scope="col">Person_Name</th>
+              <th style="width:42%" scope="col">Person_Surname</th>
+              <th style="width:8%" scope="col">RestTime_Id</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let restRoomPerson of restRoomPeople">
+            <th scope="row">{{restRoomPerson.id}}</th>
+            <td>{{restRoomPerson.person.name}}</td>
+            <td>{{restRoomPerson.person.surname}}</td>
+            <td>{{restRoomPerson.restTimeId}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div [ngClass]="{'col-sm-6': selectedRestRoom.id != 0, 'col-sm-12': selectedRestRoom.id == 0}">
+      <app-title [title]="restRoomTitle">
+        <button class="btn btn-sm btn-success" (click)="newRestRoom()">Register Rest-Room</button>
+      </app-title>
+      <table class="table table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th style="width:12%" scope="col">Options</th>
+            <th style="width:8%" scope="col">#</th>
+            <th style="width:40%" scope="col">Name</th>
+            <th style="width:40%" scope="col">Capacity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let restRoom of restRooms">
+            <td>
+              <div class="btn-group">
+                <button (click)="selectRestRoom(restRoom)" class="text-dark btn btn-sm btn-outline-warning mr-2">
+                  Select
+                </button>
+                <button (click)="deleteRestRoom(restRoom)" class="text-dark btn btn-sm btn-outline-danger">
+                  Delete
+                </button>
+              </div>
+            </td>
+            <th scope="row">{{restRoom.id}}</th>
+            <td>{{restRoom.name}}</td>
+            <td>{{restRoom.capacity}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

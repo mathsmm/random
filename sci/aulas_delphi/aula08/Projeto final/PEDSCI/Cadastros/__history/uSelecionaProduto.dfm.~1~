@@ -1,0 +1,5 @@
+inherited frSelecionaProduto: TfrSelecionaProduto
+  Caption = 'Selecionar produto'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

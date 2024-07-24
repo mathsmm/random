@@ -1,0 +1,190 @@
+CLASSE Cliente:
+
+public class Cliente
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+
+        public Cliente(int id, string nome)
+        {
+            this.Id = id;
+            this.Nome = nome;
+        }
+    }
+}
+
+------------------------------------------------------------
+CLASSE Produto:
+
+public class Produto
+    {
+        public int Id { get; set; }
+        public string Descricao { get; set; }
+        public double Valor { get; set; }
+        public int IdCliente { get; set; }
+
+        public Produto(int id, string descricao, double valor, int idCliente)
+        {
+            this.Id = id;
+            this.Descricao = descricao;
+            this.Valor = valor;
+            this.IdCliente = idCliente;
+        }
+    }
+------------------------------------------------------------
+INTERFACE IRepositorioCliente:
+
+public interface IRepositorioCliente
+    {
+        void Incluir(Cliente cliente);
+        void Excluir(int id);
+        List<Cliente> ObterTodos();
+        Cliente ObterPeloId(int id);
+        string ObterClienteEListaDeProdutos(int idCliente, ProdutoRepositorioServico produtoServico);
+    }
+------------------------------------------------------------
+INTERFACE IRepositorioProduto:
+
+public interface IRepositorioProduto
+    {
+        void Incluir(Produto produto);
+        void Excluir(int id);
+        List<Produto> ObterTodos();
+        Produto ObterPeloId(int id);
+        List<Produto> ObterPeloIdDoCliente(int idCliente);
+    }
+------------------------------------------------------------
+CLASSE ClienteRepositorioServico:
+
+public class ClienteRepositorioServico : IRepositorioCliente
+    {
+        public List<Cliente> ListaDeClientes { get; set; }
+
+        public ClienteRepositorioServico()
+        {
+            this.ListaDeClientes = new List<Cliente>();
+        }
+
+        public void Incluir(Cliente cliente)
+        {
+            this.ListaDeClientes.Add(cliente);
+        }
+        public void Excluir(int id)
+        {
+            this.ListaDeClientes.RemoveAll(c => c.Id == id);
+        }
+        public List<Cliente> ObterTodos()
+        {
+            return this.ListaDeClientes;
+        }
+        public Cliente ObterPeloId(int id)
+        {
+            return this.ListaDeClientes.Where(c => c.Id == id).FirstOrDefault();
+        }
+        public string ObterClienteEListaDeProdutos(int idCliente, ProdutoRepositorioServico produtoServico)
+        {
+            StringBuilder sb = new StringBuilder();
+            List<Produto> lp = produtoServico.ObterPeloIdDoCliente(idCliente);
+            sb.Append($"-------------------------------------------------------\n");
+            sb.Append($"CLIENTE\n");
+            sb.Append($"-------------------------------------------------------\n");
+            sb.Append($"**** ID: {ObterPeloId(idCliente).Id} - Nome: {ObterPeloId(idCliente).Nome}\n");
+            sb.Append($"-------------------------------------------------------\n");
+            sb.Append($"PRODUTOS\n");
+            sb.Append($"-------------------------------------------------------\n");
+            foreach (var item in lp)
+            {
+                sb.Append($"**** ID: {item.Id} - Descrição: {item.Descricao} - Valor: {item.Valor}\n");
+            }
+            sb.Append($"-------------------------------------------------------\n");
+            return $"{sb}";
+        }
+    }
+------------------------------------------------------------
+CLASSE ProdutoRepositorioServico:
+
+public class ProdutoRepositorioServico : IRepositorioProduto
+    {
+        public List<Produto> ListaDeProdutos { get; set; }
+
+        public ProdutoRepositorioServico()
+        {
+            this.ListaDeProdutos = new List<Produto>();
+        }
+
+        public void Incluir(Produto produto)
+        {
+            this.ListaDeProdutos.Add(produto);
+        }
+        public void Excluir(int id)
+        {
+            this.ListaDeProdutos.RemoveAll(p => p.Id == id);
+        }
+        public List<Produto> ObterTodos()
+        {
+            return this.ListaDeProdutos;
+        }
+        public Produto ObterPeloId(int id)
+        {
+            return this.ListaDeProdutos.Where(p => p.Id == id).FirstOrDefault();
+        }
+        public List<Produto> ObterPeloIdDoCliente(int idCliente)
+        {
+            return this.ListaDeProdutos.Where(p => p.IdCliente == idCliente).ToList();
+        }
+    }
+------------------------------------------------------------
+CLASSE Program:
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Cliente clienteDiego = new Cliente(1, "Diego Cugiki");
+            Cliente clientePedro = new Cliente(2, "Pedro");
+
+            ClienteRepositorioServico clienteRepositorio = new ClienteRepositorioServico();
+            clienteRepositorio.Incluir(clienteDiego);
+            clienteRepositorio.Incluir(clientePedro);
+
+            Produto produtoArroz = new Produto(1, "Arroz", 5, clienteDiego.Id);
+            Produto produtoFeijao = new Produto(2, "Feijão", 8, clienteDiego.Id);
+            Produto produtoAcucar = new Produto(3, "Açucar", 6, clienteDiego.Id);
+            Produto produtoMacarrao = new Produto(4, "Macarrão", 4, clienteDiego.Id);
+            Produto produtoLeite = new Produto(5, "Leite", 3, clienteDiego.Id);
+            Produto produtoDesodorante = new Produto(6, "Desodorante", 5, clientePedro.Id);
+            Produto produtoOmo = new Produto(7, "Omo", 17, clientePedro.Id);
+            Produto produtoPao = new Produto(8, "Pão", 5, clientePedro.Id);
+            Produto produtoBatata = new Produto(9, "Batata", 9, clientePedro.Id);
+            Produto pordutoCenoura = new Produto(10, "Cenoura", 4.5, clientePedro.Id);
+
+            ProdutoRepositorioServico produtoRepositorio = new ProdutoRepositorioServico();
+            produtoRepositorio.Incluir(produtoArroz);
+            produtoRepositorio.Incluir(produtoFeijao);
+            produtoRepositorio.Incluir(produtoAcucar);
+            produtoRepositorio.Incluir(produtoMacarrao);
+            produtoRepositorio.Incluir(produtoLeite);
+            produtoRepositorio.Incluir(produtoDesodorante);
+            produtoRepositorio.Incluir(produtoOmo);
+            produtoRepositorio.Incluir(produtoPao);
+            produtoRepositorio.Incluir(produtoBatata);
+            produtoRepositorio.Incluir(pordutoCenoura);
+
+            string produtosDoClienteDiego = clienteRepositorio.ObterClienteEListaDeProdutos(clienteDiego.Id, produtoRepositorio);
+            string produtosDoClientePedro = clienteRepositorio.ObterClienteEListaDeProdutos(clientePedro.Id, produtoRepositorio);
+
+            Console.WriteLine(produtosDoClienteDiego);
+            Console.WriteLine(produtosDoClientePedro);
+
+            produtoRepositorio.Excluir(produtoArroz.Id);
+            produtoRepositorio.Excluir(produtoPao.Id);
+            produtoRepositorio.Excluir(produtoLeite.Id);
+            produtoRepositorio.Excluir(produtoAcucar.Id);
+
+            produtosDoClienteDiego = clienteRepositorio.ObterClienteEListaDeProdutos(clienteDiego.Id, produtoRepositorio);
+            produtosDoClientePedro = clienteRepositorio.ObterClienteEListaDeProdutos(clientePedro.Id, produtoRepositorio);
+
+            Console.WriteLine(produtosDoClienteDiego);
+            Console.WriteLine(produtosDoClientePedro);
+        }
+    }
